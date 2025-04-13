@@ -6,10 +6,106 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+}
+
+model User {
+  id                  String    @id @default(cuid())
+  email               String    @unique
+  emailVerified       DateTime?
+  password            String?
+
+  fullName            String?
+  
+  profile             Profile?
+
+  createdAt           DateTime   @default(now())
+  updatedAt           DateTime   @updatedAt
+}
+
+model Profile {
+  id                  String    @id @default(cuid())
+  firstName           String
+  lastName            String
+  publicId            String    @unique
+  headline            String?
+  summary             String?
+  profileUrn          String    @unique
+  memberUrn           String    @unique
+  displayPictureUrl   String?
+  img100              String?
+  img200              String?
+  img400              String?
+  img800              String?
+  birthDay            Int?
+  birthMonth          Int?
+  industryName        String?
+  industryUrn         String?
+  student             Boolean
+  geoCountryName      String?
+  geoCountryUrn       String?
+  geoLocationBackfilled Boolean
+  elt                 Boolean
+  locationName        String?
+
+  userId              String    @unique
+  user                User      @relation(fields: [userId], references: [id])
+  experiences         Experience[]
+  education           Education[]
+  location            Location?  @relation(fields: [locationId], references: [id])
+  locationId          String?
+
+  createdAt           DateTime   @default(now())
+  updatedAt           DateTime   @updatedAt
+}
+
+model Experience {
+  id            String    @id @default(cuid())
+  title         String
+  description   String?
+  startMonth    Int?
+  startYear     Int?
+  endMonth      Int?
+  endYear       Int?
+  locationName  String?
+  geoLocationName String?
+  company       Company   @relation(fields: [companyId], references: [id])
+  companyId     String
+  profile       Profile   @relation(fields: [profileId], references: [id])
+  profileId     String
+}
+
+model Company {
+  id                String    @id @default(cuid())
+  name              String
+  urn               String?   @unique
+  logoUrl           String?
+  employeeStart     Int?
+  employeeEnd       Int?
+  industries        String[]
+  experiences       Experience[]
+}
+
+model Education {
+  id              String    @id @default(cuid())
+  schoolName      String
+  degreeName      String?
+  fieldOfStudy    String?
+  startYear       Int?
+  endYear         Int?
+  description     String?
+  profile         Profile   @relation(fields: [profileId], references: [id])
+  profileId       String
+}
+
+model Location {
+  id              String    @id @default(cuid())
+  countryCode     String?
+  geoUrn          String?
+  name            String?
+  profiles        Profile[]
 }
