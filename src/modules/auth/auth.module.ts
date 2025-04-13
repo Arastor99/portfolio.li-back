@@ -9,6 +9,7 @@ import { UserDbModule } from 'src/models/user/user.db.module';
 import { AuthController } from './auth.controller';
 
 import { AuthService } from './auth.service';
+import { MailModule } from 'src/common/mail/mail.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { AuthService } from './auth.service';
       }),
     }),
     UserDbModule,
+    MailModule,
   ],
   controllers: [AuthController],
   providers: [AuthService],

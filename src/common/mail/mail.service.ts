@@ -1,48 +1,48 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { ConfigService } from '@nestjs/config';
 
-import * as nodemailer from 'nodemailer';
-
-import {
-  MAIL_FROM,
-  MAIL_HOST,
-  MAIL_PASS,
-  MAIL_PORT,
-  MAIL_USER,
-} from '../constants';
+import { MailerService } from '@nestjs-modules/mailer';
+import { MailSendVerificationDto } from './dto/mail.dto';
 
 @Injectable()
 export class MailService {
   private readonly logger = new Logger(MailService.name);
-  private transporter: nodemailer.Transporter;
-  private from: string;
 
-  constructor(private configService: ConfigService) {
-    this.transporter = nodemailer.createTransport({
-      host: this.configService.get<string>(MAIL_HOST),
-      port: this.configService.get<number>(MAIL_PORT),
-      auth: {
-        user: this.configService.get<string>(MAIL_USER),
-        pass: this.configService.get<string>(MAIL_PASS),
-      },
-    });
-    this.from = this.configService.get<string>(MAIL_FROM);
-  }
+  constructor(private readonly mailerService: MailerService) {}
 
-  private async sendMail(to: string, subject: string, html: string) {
+  private async sendMail(options: {
+    to: string;
+    subject: string;
+    templatePath: string;
+    context?: Record<string, any>;
+  }) {
+    const { to, subject, templatePath, context } = options;
     try {
-      const info = await this.transporter.sendMail({
-        from: this.from,
+      await this.mailerService.sendMail({
         to,
         subject,
-        html,
+        context,
+        template: templatePath,
       });
 
-      this.logger.log(`Email sent: ${info.messageId}`);
-      return info;
+      this.logger.log(`Email sent: ${to} - ${subject}`);
     } catch (err) {
       this.logger.error('Failed to send email', err);
       throw err;
     }
+  }
+
+  async sendVerificationEmail(verificationDto: MailSendVerificationDto) {
+    const { to, subject, name, url, supportLink } = verificationDto;
+
+    await this.sendMail({
+      to,
+      subject,
+      templatePath: './email-verification',
+      context: {
+        name,
+        url,
+        supportLink,
+      },
+    });
   }
 }

@@ -1,0 +1,126 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Email Confirmation</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8fc;
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+          Cantarell, sans-serif;
+      }
+      .container {
+        max-width: 600px;
+        margin: 40px auto;
+        background-color: white;
+        padding: 40px;
+        border-radius: 8px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 24px;
+      }
+      .title {
+        font-size: 32px;
+        color: #1a1a1a;
+        margin: 0;
+        font-weight: 500;
+      }
+      .logo {
+        width: 48px;
+        height: 48px;
+      }
+      .content {
+        color: #1a1a1a;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      .button {
+        display: inline-block;
+        background-color: #4580f7;
+        color: white;
+        text-decoration: none;
+        padding: 12px 24px;
+        border-radius: 6px;
+        margin: 24px 0;
+        font-weight: 500;
+      }
+      .button:hover {
+        background-color: #3b6ed4;
+      }
+      .footer {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        margin-top: 40px;
+      }
+      .footer a {
+        color: #4580f7;
+        text-decoration: none;
+      }
+      .divider {
+        border-top: 1px solid #eee;
+        margin: 32px 0;
+      }
+      .support {
+        color: #666;
+        font-size: 14px;
+      }
+      .support a {
+        color: #4580f7;
+        text-decoration: none;
+      }
+      .secondary-text {
+        color: #666;
+        font-size: 14px;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='header'>
+        <h1 class='title'>Hey, {{name}} 👋</h1>
+        <svg
+          class='logo'
+          xmlns='http://www.w3.org/2000/svg'
+          version='1.0'
+          width='48'
+          height='48'
+          viewBox='0 0 48.000000 40.000000'
+        >
+          <g
+            transform='translate(0.000000,40.000000) scale(0.100000,-0.100000)'
+            fill='#4580F7'
+            stroke='none'
+          >
+            <path
+              d='M48 384 c-49 -26 -49 -89 -3 -249 37 -127 40 -129 183 -133 107 -3 120 -2 144 18 30 23 54 88 84 228 16 76 16 82 0 107 -26 39 -54 45 -224 45 -119 -1 -164 -4 -184 -16z m367 -20 c35 -14 36 -49 4 -172 -43 -169 -35 -162 -177 -162 -64 0 -122 4 -128 8 -19 12 -32 45 -58 149 -30 119 -32 140 -9 165 14 16 34 18 184 18 92 0 175 -3 184 -6z'
+            />
+            <path
+              d='M107 248 c27 -122 43 -159 66 -156 15 2 26 19 42 68 l22 65 22 -68 c20 -58 26 -68 45 -65 17 2 25 17 42 78 36 130 37 140 10 140 -21 0 -24 -7 -36 -75 -7 -41 -16 -75 -20 -75 -4 0 -15 27 -24 61 -15 51 -20 60 -38 57 -16 -2 -25 -16 -35 -53 -21 -73 -30 -74 -43 -9 -18 90 -19 94 -44 94 l-23 0 14 -62z'
+            />
+          </g>
+        </svg>
+      </div>
+      <div class='content'>
+        <p>Click the button below to confirm your email on portfolio.li.</p>
+        <a href='{{url}}' class='button'>Confirm email</a>
+        <p class='secondary-text'>If this wasn't you, please ignore this email.</p>
+        <div class='divider'></div>
+        <p class='support'>
+          Need help? Contact our
+          <a href='{{supportLink}}'>support team</a>.
+        </p>
+      </div>
+      <div class='footer'>
+        Sent by portfolio.li.
+      </div>
+    </div>
+  </body>
+</html>

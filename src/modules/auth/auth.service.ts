@@ -10,11 +10,13 @@ import { JwtService } from '@nestjs/jwt';
 import { LoginDto, RegisterDto } from './dto/auth.dto';
 
 import { UserDbService } from 'src/models/user/user.db.service';
+import { MailService } from 'src/common/mail/mail.service';
 @Injectable()
 export class AuthService {
   constructor(
     private readonly jwtService: JwtService,
     private readonly userDbService: UserDbService,
+    private readonly mailService: MailService,
   ) {}
 
   private readonly logger = new Logger(AuthService.name);
@@ -61,15 +63,33 @@ export class AuthService {
     if (!newUser)
       throw new InternalServerErrorException('Something went wrong');
 
-    // Generate JWT token
     const token = await this.generateToken(newUser.id);
     if (!token) throw new InternalServerErrorException('Something went wrong');
 
+    // Send verification email
+    const verificationUrl = `${process.env.APP_URL}/verify/${token}`;
+    const supportLink = `${process.env.APP_URL}/support`;
+    const mailDto = {
+      to: email,
+      subject: 'Email Verification',
+      name: fullName,
+      url: verificationUrl,
+      supportLink,
+    };
+    await this.mailService.sendVerificationEmail(mailDto).catch((err) => {
+      this.logger.error('Failed to send verification email', err);
+      throw new InternalServerErrorException(
+        'Failed to send verification email',
+      );
+    });
     this.logger.debug(
-      `User ${newUser.email} registered successfully. Token: ${token}`,
+      `Verification email sent to ${email}. Verification URL: ${verificationUrl}`,
     );
 
-    return token;
+    return {
+      message:
+        'User registered successfully. Please check your email for verification.',
+    };
   }
 
   async signIn(loginDto: LoginDto) {
@@ -80,6 +100,10 @@ export class AuthService {
       where: { email },
     });
     if (!user) throw new BadRequestException('Invalid credentials');
+
+    // Check if user is verified
+    if (!user.emailVerified)
+      throw new BadRequestException('User is not verified');
 
     // Compare password
     const isPasswordValid = await this.comparePassword(password, user.password);

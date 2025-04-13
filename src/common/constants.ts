@@ -6,6 +6,7 @@ export const JWT_EXPIRES_IN = 'JWT_EXPIRES_IN';
 
 export const MAIL_HOST = 'MAIL_HOST';
 export const MAIL_PORT = 'MAIL_PORT';
+export const MAIL_SECURE = 'MAIL_SECURE';
 export const MAIL_USER = 'MAIL_USER';
 export const MAIL_PASS = 'MAIL_PASS';
 export const MAIL_FROM = 'MAIL_FROM';
