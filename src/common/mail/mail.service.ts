@@ -1,10 +1,9 @@
-import { Injectable, Logger } from '@nestjs/common';
-
+import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { MailerService } from '@nestjs-modules/mailer';
 import { MailSendVerificationDto } from './dto/mail.dto';
 
 @Injectable()
-export class MailService {
+export class MailService implements OnModuleInit {
   private readonly logger = new Logger(MailService.name);
 
   constructor(private readonly mailerService: MailerService) {}
@@ -44,5 +43,16 @@ export class MailService {
         supportLink,
       },
     });
+  }
+
+  async onModuleInit() {
+    const testEmail = 'test@example.com'; // Cambia esto por un correo válido para pruebas
+
+    await this.mailerService.sendMail({
+      to: testEmail,
+      subject: 'Test Email Configuration',
+      template: './test-email', // Asegúrate de tener una plantilla básica
+    });
+    this.logger.log('Email configuration verified successfully.');
   }
 }

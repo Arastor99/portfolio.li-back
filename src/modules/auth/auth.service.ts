@@ -145,9 +145,27 @@ export class AuthService {
     });
     if (!user) throw new BadRequestException('Invalid credentials');
 
-    // Check if user is verified
-    if (!user.emailVerified)
-      throw new BadRequestException('User is not verified');
+    // Check if user is verified proceed to send verification email
+    if (!user.emailVerified) {
+      await this.mailService
+        .sendVerificationEmail({
+          to: user.email,
+          subject: 'Email Verification',
+          name: user.fullName,
+          url: `${process.env.APP_URL}/verify/${user.id}`,
+          supportLink: `${process.env.APP_URL}/support`,
+        })
+        .catch((err) => {
+          this.logger.error('Failed to send verification email', err);
+          throw new InternalServerErrorException(
+            'Failed to send verification email',
+          );
+        });
+
+      throw new BadRequestException(
+        'User not verified. Please check your email for verification.',
+      );
+    }
 
     // Compare password
     const isPasswordValid = await this.comparePassword(password, user.password);
