@@ -11,12 +11,15 @@ import { LoginDto, RegisterDto } from './dto/auth.dto';
 
 import { UserDbService } from 'src/models/user/user.db.service';
 import { MailService } from 'src/common/mail/mail.service';
+import { TokenMailVericationService } from './tokenMailVerification.service';
+
 @Injectable()
 export class AuthService {
   constructor(
     private readonly jwtService: JwtService,
     private readonly userDbService: UserDbService,
     private readonly mailService: MailService,
+    private readonly tokenMailVerificationService: TokenMailVericationService,
   ) {}
 
   private readonly logger = new Logger(AuthService.name);
@@ -35,7 +38,7 @@ export class AuthService {
   }
 
   private async generateToken(userId: string): Promise<string> {
-    const payload = { userId };
+    const payload = { sub: userId };
     return await this.jwtService.signAsync(payload);
   }
 
@@ -63,12 +66,14 @@ export class AuthService {
     if (!newUser)
       throw new InternalServerErrorException('Something went wrong');
 
-    const token = await this.generateToken(newUser.id);
+    const token = this.tokenMailVerificationService.generateVerificationToken(
+      newUser.id,
+    );
     if (!token) throw new InternalServerErrorException('Something went wrong');
 
     // Send verification email
-    const verificationUrl = `${process.env.APP_URL}/verify/${token}`;
-    const supportLink = `${process.env.APP_URL}/support`;
+    const verificationUrl = `${process.env.APP_URL}/verify/${token}`; // TODO: move to env an use correct URLS
+    const supportLink = `${process.env.APP_URL}/support`; // TODO: move to env an use correct URLS
     const mailDto = {
       to: email,
       subject: 'Email Verification',
@@ -89,6 +94,45 @@ export class AuthService {
     return {
       message:
         'User registered successfully. Please check your email for verification.',
+    };
+  }
+
+  async verifyEmail(token: string) {
+    // Verify token
+    const decodedToken =
+      this.tokenMailVerificationService.verifyVerificationToken(token);
+    if (!decodedToken) throw new BadRequestException('Invalid token');
+
+    // Find user by ID
+    const user = await this.userDbService.findOne({
+      where: { id: decodedToken.sub },
+    });
+    if (!user) throw new BadRequestException('User not found');
+
+    // Check if user is already verified
+    if (user.emailVerified)
+      throw new BadRequestException('User is already verified');
+
+    // Update user to verified
+    await this.userDbService.update({
+      where: { id: user.id },
+      data: { emailVerified: true },
+    });
+
+    this.logger.debug(`User ${user.email} verified successfully`);
+
+    const tokenLogin = await this.generateToken(user.id);
+    if (!tokenLogin)
+      throw new InternalServerErrorException('Something went wrong');
+    this.logger.debug(
+      `User ${user.email} signed in successfully. Token: ${tokenLogin}`,
+    );
+
+    return {
+      message: 'Email verified successfully, you are now logged in',
+      data: {
+        token: tokenLogin,
+      },
     };
   }
 
@@ -117,6 +161,11 @@ export class AuthService {
       `User ${user.email} signed in successfully. Token: ${token}`,
     );
 
-    return token;
+    return {
+      message: 'User signed in successfully',
+      data: {
+        token,
+      },
+    };
   }
 }

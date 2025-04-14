@@ -10,6 +10,7 @@ import { AuthController } from './auth.controller';
 
 import { AuthService } from './auth.service';
 import { MailModule } from 'src/common/mail/mail.module';
+import { TokenMailVericationService } from './tokenMailVerification.service';
 
 @Module({
   imports: [
@@ -28,6 +29,6 @@ import { MailModule } from 'src/common/mail/mail.module';
     MailModule,
   ],
   controllers: [AuthController],
-  providers: [AuthService],
+  providers: [AuthService, TokenMailVericationService],
 })
 export class AuthModule {}
