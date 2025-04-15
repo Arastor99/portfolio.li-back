@@ -9,6 +9,11 @@ import { NODE_ENV, PORT } from './common/constants';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  app.enableCors({
+    origin: '*',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  });
+
   const configService = app.get(ConfigService);
 
   const nodeEnv = configService.get<string>(NODE_ENV);
