@@ -4,7 +4,7 @@ import { Prisma } from '@prisma/client';
 import { PrismaService } from '../prisma.service';
 
 @Injectable()
-export class UserDbService {
+export class ProfileDbService {
   constructor(private readonly prisma: PrismaService) {}
 
   private async handleRequest<T>(
@@ -19,21 +19,21 @@ export class UserDbService {
   }
 
   async findOne(params: {
-    where: Prisma.UserWhereUniqueInput;
-    select?: Prisma.UserSelect | null;
+    where: Prisma.ProfileWhereUniqueInput;
+    select?: Prisma.ProfileSelect | null;
   }) {
     const { where, select } = params;
 
     return this.handleRequest(
-      () => this.prisma.user.findUnique({ where, select }),
-      'Error retrieving user',
+      () => this.prisma.profile.findUnique({ where, select }),
+      'Error retrieving profile',
     );
   }
 
   async findMany(params: {
-    where?: Prisma.UserWhereInput;
-    orderBy?: Prisma.UserOrderByWithRelationInput;
-    select?: Prisma.UserSelect | null;
+    where?: Prisma.ProfileWhereInput;
+    orderBy?: Prisma.ProfileOrderByWithRelationInput;
+    select?: Prisma.ProfileSelect | null;
     take?: number;
     skip?: number;
   }) {
@@ -41,59 +41,59 @@ export class UserDbService {
 
     return this.handleRequest(
       () =>
-        this.prisma.user.findMany({
+        this.prisma.profile.findMany({
           where,
           orderBy,
           select,
           take,
           skip,
         }),
-      'Error retrieving users',
+      'Error retrieving profiles',
     );
   }
 
-  async create(data: Prisma.UserCreateInput) {
+  async create(data: Prisma.ProfileCreateInput) {
     return this.handleRequest(
-      () => this.prisma.user.create({ data }),
-      'Error creating user',
+      () => this.prisma.profile.create({ data }),
+      'Error creating profile',
     );
   }
 
   async createOrUpdate(params: {
-    where: Prisma.UserWhereUniqueInput;
-    data: Prisma.UserCreateInput;
+    where: Prisma.ProfileWhereUniqueInput;
+    data: Prisma.ProfileCreateInput;
   }) {
     const { where, data } = params;
 
     return this.handleRequest(
-      () => this.prisma.user.upsert({ where, create: data, update: data }),
-      'Error creating or updating user',
+      () => this.prisma.profile.upsert({ where, create: data, update: data }),
+      'Error creating or updating profile',
     );
   }
 
   async update(params: {
-    where: Prisma.UserWhereUniqueInput;
-    data: Prisma.UserUpdateInput;
+    where: Prisma.ProfileWhereUniqueInput;
+    data: Prisma.ProfileUpdateInput;
   }) {
     const { where, data } = params;
 
     return this.handleRequest(
-      () => this.prisma.user.update({ where, data }),
-      'Error updating user',
+      () => this.prisma.profile.update({ where, data }),
+      'Error updating profile',
     );
   }
 
-  async delete(where: Prisma.UserWhereUniqueInput) {
+  async delete(where: Prisma.ProfileWhereUniqueInput) {
     return this.handleRequest(
-      () => this.prisma.user.delete({ where }),
-      'Error deleting user',
+      () => this.prisma.profile.delete({ where }),
+      'Error deleting profile',
     );
   }
 
-  async count(where?: Prisma.UserWhereInput) {
+  async count(where?: Prisma.ProfileWhereInput) {
     return this.handleRequest(
-      () => this.prisma.user.count({ where }),
-      'Error counting users',
+      () => this.prisma.profile.count({ where }),
+      'Error counting profiles',
     );
   }
 }

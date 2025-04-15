@@ -21,21 +21,41 @@ model User {
 
   fullName            String?
   
+  portfolio           Portfolio?
   profile             Profile?
 
   createdAt           DateTime   @default(now())
   updatedAt           DateTime   @updatedAt
 }
 
+model Portfolio {
+  id                  String    @id @default(cuid())
+  publicId            String    @unique
+
+  userId              String    @unique
+  user                User      @relation(fields: [userId], references: [id])
+
+  templateId          String
+  template            PortfolioTemplate  @relation(fields: [templateId], references: [id])
+}
+
+model PortfolioTemplate {
+  id                  String    @id @default(cuid())
+  name                String
+
+  portfolios          Portfolio[] 
+}
+
 model Profile {
   id                  String    @id @default(cuid())
   firstName           String
   lastName            String
-  publicId            String    @unique
+
+  publicId            String   // Identificador base de linkedin
+
   headline            String?
   summary             String?
-  profileUrn          String    @unique
-  memberUrn           String    @unique
+
   displayPictureUrl   String?
   img100              String?
   img200              String?
@@ -44,10 +64,10 @@ model Profile {
   birthDay            Int?
   birthMonth          Int?
   industryName        String?
-  industryUrn         String?
+
   student             Boolean
   geoCountryName      String?
-  geoCountryUrn       String?
+
   geoLocationBackfilled Boolean
   elt                 Boolean
   locationName        String?
@@ -73,8 +93,10 @@ model Experience {
   endYear       Int?
   locationName  String?
   geoLocationName String?
+
   company       Company   @relation(fields: [companyId], references: [id])
   companyId     String
+
   profile       Profile   @relation(fields: [profileId], references: [id])
   profileId     String
 }
@@ -82,11 +104,12 @@ model Experience {
 model Company {
   id                String    @id @default(cuid())
   name              String
-  urn               String?   @unique
+
   logoUrl           String?
   employeeStart     Int?
   employeeEnd       Int?
   industries        String[]
+
   experiences       Experience[]
 }
 
@@ -98,6 +121,7 @@ model Education {
   startYear       Int?
   endYear         Int?
   description     String?
+
   profile         Profile   @relation(fields: [profileId], references: [id])
   profileId       String
 }
@@ -105,7 +129,8 @@ model Education {
 model Location {
   id              String    @id @default(cuid())
   countryCode     String?
-  geoUrn          String?
+  
   name            String?
+
   profiles        Profile[]
 }
