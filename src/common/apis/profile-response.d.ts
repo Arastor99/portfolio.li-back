@@ -11,10 +11,12 @@ export interface ProfileResponse {
   industryUrn?: string;
   firstName: string;
   entityUrn?: string;
-  birthday?: {
+
+  birthDate?: {
     day?: number;
     month?: number;
   };
+
   geoLocation?: {
     geoUrn?: string;
   };

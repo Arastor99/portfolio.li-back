@@ -1,5 +1,6 @@
 import { ProfileResponse } from '../apis/profile-response';
 import { Profile } from '../types/common';
+import { extractEntityUrn } from './common';
 
 export function adaptProfileResponse(
   profileResponse: ProfileResponse,
@@ -7,28 +8,36 @@ export function adaptProfileResponse(
   let memberWithBackgroundImg = profileResponse?.projects
     ?.find((project) =>
       project.members.find(
-        (member) => member.entityUrn === profileResponse.entityUrn,
+        (member) =>
+          extractEntityUrn(member.profileUrn) ===
+          extractEntityUrn(profileResponse.entityUrn),
       ),
     )
     ?.members?.find(
-      (member) => member.entityUrn === profileResponse.entityUrn,
+      (member) =>
+        extractEntityUrn(member.profileUrn) ===
+        extractEntityUrn(profileResponse.entityUrn),
     ).member;
 
   if (!memberWithBackgroundImg)
     memberWithBackgroundImg = profileResponse?.publications
       ?.find((publication) =>
         publication.authors.find(
-          (member) => member.member.entityUrn === profileResponse.entityUrn,
+          (member) =>
+            extractEntityUrn(member.profileUrn) ===
+            extractEntityUrn(profileResponse.entityUrn),
         ),
       )
       ?.authors?.find(
-        (member) => member.member.entityUrn === profileResponse.entityUrn,
+        (member) =>
+          extractEntityUrn(member.profileUrn) ===
+          extractEntityUrn(profileResponse.entityUrn),
       ).member;
 
   return {
     firstName: profileResponse.firstName,
     lastName: profileResponse.lastName,
-    publicId: profileResponse.public_id,
+    publicId: extractEntityUrn(profileResponse.public_id),
     headline: profileResponse?.headline,
     summary: profileResponse?.summary,
 
@@ -51,8 +60,8 @@ export function adaptProfileResponse(
       ].artifacts[0]?.fileIdentifyingUrlPathSegment
     }`,
 
-    birthDay: profileResponse?.birthday?.day,
-    birthMonth: profileResponse?.birthday?.month,
+    birthDay: profileResponse?.birthDate?.day,
+    birthMonth: profileResponse?.birthDate?.month,
 
     industryName: profileResponse?.industryName,
     student: profileResponse.student,

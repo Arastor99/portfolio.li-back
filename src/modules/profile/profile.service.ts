@@ -152,7 +152,10 @@ export class ProfileService {
     };
 
     // Create the profile in the database
-    return this.profileDbService.create(profileData);
+    return this.profileDbService.createOrUpdate({
+      where: { publicId: profileData.publicId },
+      data: profileData,
+    });
   }
 
   private async getProfile(publicId: string) {
