@@ -177,7 +177,9 @@ export class ProfileService {
     return profile;
   }
 
-  async importLinkedInProfile(userId: string, publicId: string) {
+  async importLinkedInProfile(params: { userId?: string; publicId: string }) {
+    const { userId, publicId } = params;
+
     const profile = await this.getProfile(publicId);
 
     if (!profile) {
@@ -185,16 +187,18 @@ export class ProfileService {
     }
 
     // Relacionar el perfil con el usuario
-    // await this.profileDbService.update({
-    //   where: { publicId },
-    //   data: {
-    //     users: {
-    //       connect: {
-    //         id: userId,
-    //       },
-    //     },
-    //   },
-    // });
+    if (userId) {
+      await this.profileDbService.update({
+        where: { publicId },
+        data: {
+          users: {
+            connect: {
+              id: userId,
+            },
+          },
+        },
+      });
+    }
 
     return profile;
   }
