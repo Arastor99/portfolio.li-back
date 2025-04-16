@@ -26,6 +26,7 @@ CREATE TABLE "Portfolio" (
 CREATE TABLE "PortfolioTemplate" (
     "id" TEXT NOT NULL,
     "name" TEXT NOT NULL,
+    "description" TEXT NOT NULL,
 
     CONSTRAINT "PortfolioTemplate_pkey" PRIMARY KEY ("id")
 );
@@ -181,6 +182,9 @@ CREATE UNIQUE INDEX "Portfolio_publicId_key" ON "Portfolio"("publicId");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Portfolio_userId_key" ON "Portfolio"("userId");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "PortfolioTemplate_name_key" ON "PortfolioTemplate"("name");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Profile_publicId_key" ON "Profile"("publicId");

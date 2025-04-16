@@ -4,6 +4,7 @@ import { AuthModule } from './modules/auth/auth.module';
 import { PrismaModule } from './models/prisma.module';
 import { envValidationSchema } from './config/env.validation';
 import { ProfileModule } from './modules/profile/profile.module';
+import { PortfolioTemplateModule } from './modules/portfolio-template/portfolio-template.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { ProfileModule } from './modules/profile/profile.module';
     PrismaModule,
     AuthModule,
     ProfileModule,
+    PortfolioTemplateModule,
   ],
 })
 export class AppModule {}

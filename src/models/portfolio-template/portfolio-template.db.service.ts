@@ -113,7 +113,7 @@ export class PortfolioTemplateDbService implements OnModuleInit {
     );
   }
 
-  private TEMPLATES = [
+  TEMPLATES = [
     {
       name: 'default',
       description: 'Default portfolio template',
