@@ -189,7 +189,8 @@ export class ProfileService {
       throw new Error('Profile not found');
     }
 
-    // Relacionar el perfil con el usuario
+    // If a userId is provided, associate the profile with the user
+
     if (userId) {
       await this.profileDbService.update({
         where: { publicId },
