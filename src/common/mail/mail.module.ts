@@ -6,6 +6,7 @@ import { MailerModule } from '@nestjs-modules/mailer';
 import { HandlebarsAdapter } from '@nestjs-modules/mailer/dist/adapters/handlebars.adapter';
 
 import {
+  MAIL_FROM,
   MAIL_HOST,
   MAIL_PASS,
   MAIL_PORT,
@@ -32,7 +33,7 @@ import { MailService } from './mail.service';
           },
         },
         defaults: {
-          from: process.env.MAIL_FROM,
+          from: configService.get<string>(MAIL_FROM),
         },
         template: {
           dir: join(__dirname, 'templates'),

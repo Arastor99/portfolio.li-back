@@ -22,7 +22,9 @@ model User {
   fullName            String?
   
   portfolio           Portfolio?
-  profile             Profile?
+  
+  profileId           String?
+  profile             Profile?  @relation("UserProfile", fields: [profileId], references: [id])
 
   createdAt           DateTime   @default(now())
   updatedAt           DateTime   @updatedAt
@@ -51,33 +53,36 @@ model Profile {
   firstName           String
   lastName            String
 
-  publicId            String   // Identificador base de linkedin
+  publicId            String   @unique // Identificador base de linkedin
 
   headline            String?
   summary             String?
 
-  displayPictureUrl   String?
-  img100              String?
-  img200              String?
-  img400              String?
-  img800              String?
+  profilePictureUrl    String?
+  backgroundPictureUrl String?
+
   birthDay            Int?
   birthMonth          Int?
   industryName        String?
 
   student             Boolean
-  geoCountryName      String?
 
-  geoLocationBackfilled Boolean
-  elt                 Boolean
   locationName        String?
+  geoCountryName      String?
+  geoLocationName     String?
 
-  userId              String    @unique
-  user                User      @relation(fields: [userId], references: [id])
+  users               User[]    @relation("UserProfile")
+
   experiences         Experience[]
   education           Education[]
-  location            Location?  @relation(fields: [locationId], references: [id])
-  locationId          String?
+  languages           Launguages[]
+  publications        Publication[]
+  cerifications       Certification[]
+  volunteer           Volunteer[]
+  honors              Honor[]
+  projects            Project[]
+  skills              Skill[]
+  
 
   createdAt           DateTime   @default(now())
   updatedAt           DateTime   @updatedAt
@@ -87,50 +92,123 @@ model Experience {
   id            String    @id @default(cuid())
   title         String
   description   String?
-  startMonth    Int?
-  startYear     Int?
-  endMonth      Int?
-  endYear       Int?
-  locationName  String?
-  geoLocationName String?
 
-  company       Company   @relation(fields: [companyId], references: [id])
-  companyId     String
+  startDate     DateTime?
+  endDate       DateTime?
+
+  locationName        String?
+  geoLocationName     String?
+
+  companyName         String?
+  companyLogoUrl      String?
+  companyEmployees    String?
+  companyIndustries   String[]
 
   profile       Profile   @relation(fields: [profileId], references: [id])
   profileId     String
 }
 
-model Company {
-  id                String    @id @default(cuid())
-  name              String
-
-  logoUrl           String?
-  employeeStart     Int?
-  employeeEnd       Int?
-  industries        String[]
-
-  experiences       Experience[]
-}
-
 model Education {
   id              String    @id @default(cuid())
+
   schoolName      String
+  schoolLogoUrl    String?
+
   degreeName      String?
+  grade           String?
   fieldOfStudy    String?
+  
   startYear       Int?
   endYear         Int?
+
+  activities      String?
   description     String?
 
   profile         Profile   @relation(fields: [profileId], references: [id])
   profileId       String
 }
 
-model Location {
+model Launguages {
   id              String    @id @default(cuid())
-  countryCode     String?
-  
-  name            String?
+  name            String
+  proficiency     String
 
-  profiles        Profile[]
+  profile         Profile   @relation(fields: [profileId], references: [id])
+  profileId       String
+}
+
+model Publication {
+  id              String    @id @default(cuid())
+  name            String
+  publisher       String
+  description     String?
+  url             String
+
+  profile         Profile   @relation(fields: [profileId], references: [id])
+  profileId       String
+}
+
+model Certification {
+  id              String    @id @default(cuid())
+  authority       String
+  name            String
+  url             String // This can be used img sometimes
+
+  startDate       DateTime?
+  endDate         DateTime?
+
+  companyName         String?
+  companyLogoUrl      String?
+
+  profile         Profile   @relation(fields: [profileId], references: [id])
+  profileId       String
+}
+
+model Volunteer{
+  id              String    @id @default(cuid())
+  role            String
+  description     String?
+
+  cause           String?
+
+  startDate       DateTime?
+  endDate         DateTime?
+
+  companyName     String?
+  companyLogoUrl  String?
+
+  profile         Profile   @relation(fields: [profileId], references: [id])
+  profileId       String
+}
+
+model Honor {
+  id              String    @id @default(cuid())
+  title           String
+  description     String?
+
+  issueDate       DateTime?
+  issuer          String?
+
+  profile         Profile   @relation(fields: [profileId], references: [id])
+  profileId       String
+}
+
+model Project {
+  id              String    @id @default(cuid())
+  title           String
+  description     String?
+
+  startDate       DateTime?
+  endDate         DateTime?
+
+  profile         Profile   @relation(fields: [profileId], references: [id])
+  profileId       String
+}
+
+model Skill {
+  id              String    @id @default(cuid())
+  name            String
+
+  profile         Profile   @relation(fields: [profileId], references: [id])
+  profileId       String
 }

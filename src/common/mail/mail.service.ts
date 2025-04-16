@@ -48,16 +48,16 @@ export class MailService implements OnModuleInit {
   async onModuleInit() {
     const testEmail = 'test@example.com'; // Cambia esto por un correo válido para pruebas
 
-    await this.mailerService
-      .sendMail({
-        to: testEmail,
-        subject: 'Test Email Configuration',
-        template: './test-email', // Asegúrate de tener una plantilla básica
-      })
-      .catch((error) => {
-        this.logger.error('Mail service is not working');
-        throw error;
-      });
-    this.logger.log('Email configuration verified successfully.');
+    // await this.mailerService
+    //   .sendMail({
+    //     to: testEmail,
+    //     subject: 'Test Email Configuration',
+    //     template: './test-email', // Asegúrate de tener una plantilla básica
+    //   })
+    //   .catch((error) => {
+    //     this.logger.error('Mail service is not working');
+    //     throw error;
+    //   });
+    // this.logger.log('Email configuration verified successfully.');
   }
 }

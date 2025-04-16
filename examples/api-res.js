@@ -1753,3 +1753,3453 @@ const profile_2 = {
   ],
   urn_id: 'ACoAADS3qpYByMxTkXB04om1RYIaATCahC47YL4',
 };
+
+const profile_3 = {
+  industryName: 'Data Infrastructure and Analytics',
+  lastName: 'Amin',
+  locationName: 'United Kingdom',
+  student: False,
+  geoCountryName: 'United Kingdom',
+  geoCountryUrn: 'urn:li:fs_geo:101165590',
+  geoLocationBackfilled: False,
+  elt: True,
+  industryUrn: 'urn:li:fs_industry:2458',
+  firstName: 'Danish',
+  entityUrn: 'urn:li:fs_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+  geoLocation: { geoUrn: 'urn:li:fs_geo:101165590' },
+  location: { basicLocation: { countryCode: 'gb' } },
+  headline:
+    'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+  displayPictureUrl:
+    'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+  img_200_200:
+    '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+  img_400_400:
+    '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+  img_100_100:
+    '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+  img_588_588:
+    '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+  profile_id: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+  profile_urn: 'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+  member_urn: 'urn:li:member:879747278',
+  public_id: 'd4min',
+  experience: [
+    {
+      locationName: 'London Area, United Kingdom',
+      entityUrn:
+        'urn:li:fs_position:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,2581098868)',
+      geoLocationName: 'London Area, United Kingdom',
+      geoUrn: 'urn:li:fs_geo:90009496',
+      companyName: 'Pirical',
+      timePeriod: {
+        endDate: { month: 3, year: 2025 },
+        startDate: { month: 10, year: 2024 },
+      },
+      description:
+        '- Maintained and optimized 20+ data pipelines using Python (Pandas), SQL, and AWS services,\nachieving 99.9% uptime.\n\n- Led technical consultations with Fortune 500 clients, translating complex data quality issues into\naccessible insights for non-technical stakeholders with 95% client satisfaction.\n\n- Created standardized SQL template queries using PostgreSQL and Redash, reducing data\ninvestigation time by 70%.\n\n- Analysed complex people analytics datasets to deliver actionable insights on leadership diversity\nand attrition trends\n\n- Designed and implemented an automated alert system using Mailchimp and Python, reducing late\ndata submissions by 75% and improving pipeline efficiency for 50+ enterprise clients, including all\n5 magic circle law firms.',
+      company: {
+        employeeCountRange: { start: 51, end: 200 },
+        industries: ['Computer Software'],
+      },
+      title: 'Data Engineer',
+      region: 'urn:li:fs_region:(gb,4573)',
+      companyUrn: 'urn:li:fs_miniCompany:17948604',
+      companyLogoUrl:
+        'https://media.licdn.com/dms/image/v2/C560BAQH8Lw9qJr89vA/company-logo_',
+    },
+    {
+      locationName: 'Manchester, England, United Kingdom',
+      entityUrn:
+        'urn:li:fs_position:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,2581309082)',
+      geoLocationName: 'Manchester, England, United Kingdom',
+      geoUrn: 'urn:li:fs_geo:108541532',
+      companyName: 'British Muslim Heritage Centre',
+      timePeriod: {
+        endDate: { month: 10, year: 2024 },
+        startDate: { month: 7, year: 2024 },
+      },
+      description:
+        '- Directed cross-functional teams to deliver live broadcasts on tight deadlines, ensuring seamless collaboration while driving a 20% increase in listener engagement through data-driven content optimisation.\n\n- Bridged communication between creative and technical teams, translating technical needs into actionable steps for non-technical stakeholders.\n\n- Identified and implemented process improvements, reducing production time by 15% and streamlining workflows.',
+      company: {
+        employeeCountRange: { start: 11, end: 50 },
+        industries: ['International Affairs'],
+      },
+      title: 'Volunteer Producer',
+      region: 'urn:li:fs_region:(gb,0)',
+      companyUrn: 'urn:li:fs_miniCompany:6746274',
+      companyLogoUrl:
+        'https://media.licdn.com/dms/image/v2/C560BAQFSCv_VNeb-Ag/company-logo_',
+    },
+    {
+      locationName: 'London Area, United Kingdom',
+      entityUrn:
+        'urn:li:fs_position:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,2581302482)',
+      geoLocationName: 'London Area, United Kingdom',
+      geoUrn: 'urn:li:fs_geo:90009496',
+      companyName: 'AiCore',
+      timePeriod: {
+        endDate: { month: 7, year: 2024 },
+        startDate: { month: 12, year: 2023 },
+      },
+      description:
+        '- Built an end-to-end Data Pipeline, using AWS, Apache Spark and Kafka which enables stakeholders to perform real time data processing, facilitating for quick and informed decision making.\n\n- Gained practical experience through completing 14 learning courses and over 100 hands-on exercises on topics including Python, Command Line, AWS, ETL/ELT processes, Pandas, and Databricks.',
+      company: {
+        employeeCountRange: { start: 51, end: 200 },
+        industries: ['Computer Software'],
+      },
+      title: 'Data Engineer',
+      region: 'urn:li:fs_region:(gb,4573)',
+      companyUrn: 'urn:li:fs_miniCompany:18690627',
+      companyLogoUrl:
+        'https://media.licdn.com/dms/image/v2/C4E0BAQFd1hpR6yzytg/company-logo_',
+    },
+  ],
+  education: [
+    {
+      entityUrn:
+        'urn:li:fs_education:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1064374053)',
+      school: {
+        objectUrn: 'urn:li:school:4152024',
+        entityUrn: 'urn:li:fs_miniSchool:4152024',
+        active: True,
+        schoolName: 'AiCore',
+        trackingId: 'kALCeAW5ROuHrcQwUZuo/g==',
+        logoUrl:
+          'https://media.licdn.com/dms/image/v2/C4E0BAQFd1hpR6yzytg/company-logo_',
+      },
+      timePeriod: { endDate: { month: 7, year: 2024 } },
+      schoolName: 'AiCore',
+      fieldOfStudy: 'Data Engineering & Analytics',
+      schoolUrn: 'urn:li:fs_miniSchool:4152024',
+    },
+    {
+      entityUrn:
+        'urn:li:fs_education:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1059445620)',
+      school: {
+        objectUrn: 'urn:li:school:12674',
+        entityUrn: 'urn:li:fs_miniSchool:12674',
+        active: True,
+        schoolName: 'The University of Salford',
+        trackingId: '10+0EpZ3SVupRdz9oGfghQ==',
+        logoUrl:
+          'https://media.licdn.com/dms/image/v2/C560BAQGvhp9vn9v2fg/company-logo_',
+      },
+      timePeriod: { endDate: { year: 2021 }, startDate: { year: 2019 } },
+      fieldOfStudyUrn: 'urn:li:fs_fieldOfStudy:100189',
+      degreeName: "Bachelor's degree",
+      schoolName: 'The University of Salford',
+      fieldOfStudy: 'Computer Science',
+      degreeUrn: 'urn:li:fs_degree:200',
+      schoolUrn: 'urn:li:fs_miniSchool:12674',
+    },
+    {
+      entityUrn:
+        'urn:li:fs_education:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1065819989)',
+      school: {
+        objectUrn: 'urn:li:school:465001',
+        entityUrn: 'urn:li:fs_miniSchool:465001',
+        active: True,
+        schoolName: 'Loreto Sixth Form College',
+        trackingId: 'XjierhMoT7y34/GzTxTyYA==',
+        logoUrl:
+          'https://media.licdn.com/dms/image/v2/C4E0BAQFZ_ikCN0LglA/company-logo_',
+      },
+      timePeriod: { endDate: { month: 8, year: 2019 } },
+      degreeName: 'A Levels',
+      schoolName: 'Loreto Sixth Form College',
+      fieldOfStudy: 'Computer Science, Mathematics, Psychology',
+      schoolUrn: 'urn:li:fs_miniSchool:465001',
+    },
+  ],
+  languages: [
+    { name: 'English', proficiency: 'NATIVE_OR_BILINGUAL' },
+    { name: 'Urdu', proficiency: 'NATIVE_OR_BILINGUAL' },
+  ],
+  publications: [],
+  certifications: [
+    {
+      authority: 'AiCore',
+      name: 'Certified Software Engineer',
+      timePeriod: {
+        endDate: { month: 2, year: 2026 },
+        startDate: { month: 2, year: 2024 },
+      },
+      company: {
+        objectUrn: 'urn:li:company:18690627',
+        entityUrn: 'urn:li:fs_miniCompany:18690627',
+        name: 'AiCore',
+        showcase: False,
+        active: True,
+        logo: {
+          'com.linkedin.common.VectorImage': {
+            artifacts: [
+              {
+                width: 200,
+                fileIdentifyingUrlPathSegment:
+                  '200_200/company-logo_200_200/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=PFSpLbWFC_9F7c1LMaIR7vq2rbXqSkLF2qAk8Txaj4k',
+                expiresAt: 1750291200000,
+                height: 200,
+              },
+              {
+                width: 100,
+                fileIdentifyingUrlPathSegment:
+                  '100_100/company-logo_100_100/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=LR4cCfAjiGUHVVnBeKWHaJ67kwHNko0CU83-AGxjebg',
+                expiresAt: 1750291200000,
+                height: 100,
+              },
+              {
+                width: 400,
+                fileIdentifyingUrlPathSegment:
+                  '400_400/company-logo_400_400/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=0RGNPX6ar27MlsihONmXwnJWa7HDpikQbvs2bwpLUNg',
+                expiresAt: 1750291200000,
+                height: 400,
+              },
+            ],
+            rootUrl:
+              'https://media.licdn.com/dms/image/v2/C4E0BAQFd1hpR6yzytg/company-logo_',
+          },
+        },
+        universalName: 'aicore',
+        dashCompanyUrn: 'urn:li:fsd_company:18690627',
+        trackingId: 'Bh7pas8+RGSNpGW4xnTtpw==',
+      },
+      displaySource: 'theaicore.com',
+      companyUrn: 'urn:li:fs_miniCompany:18690627',
+      url: 'https://portal.theaicore.com/showcase/certificate/2/3d17c9fd-2a9b-4680-90d8-ddd8cc24386e-4781f4cc-2a3a-420c-adb6-271ba141bf8a',
+    },
+    {
+      authority: 'AiCore',
+      name: 'Certified Data and Cloud Engineer',
+      timePeriod: {
+        endDate: { month: 7, year: 2026 },
+        startDate: { month: 7, year: 2024 },
+      },
+      company: {
+        objectUrn: 'urn:li:company:18690627',
+        entityUrn: 'urn:li:fs_miniCompany:18690627',
+        name: 'AiCore',
+        showcase: False,
+        active: True,
+        logo: {
+          'com.linkedin.common.VectorImage': {
+            artifacts: [
+              {
+                width: 200,
+                fileIdentifyingUrlPathSegment:
+                  '200_200/company-logo_200_200/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=PFSpLbWFC_9F7c1LMaIR7vq2rbXqSkLF2qAk8Txaj4k',
+                expiresAt: 1750291200000,
+                height: 200,
+              },
+              {
+                width: 100,
+                fileIdentifyingUrlPathSegment:
+                  '100_100/company-logo_100_100/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=LR4cCfAjiGUHVVnBeKWHaJ67kwHNko0CU83-AGxjebg',
+                expiresAt: 1750291200000,
+                height: 100,
+              },
+              {
+                width: 400,
+                fileIdentifyingUrlPathSegment:
+                  '400_400/company-logo_400_400/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=0RGNPX6ar27MlsihONmXwnJWa7HDpikQbvs2bwpLUNg',
+                expiresAt: 1750291200000,
+                height: 400,
+              },
+            ],
+            rootUrl:
+              'https://media.licdn.com/dms/image/v2/C4E0BAQFd1hpR6yzytg/company-logo_',
+          },
+        },
+        universalName: 'aicore',
+        dashCompanyUrn: 'urn:li:fsd_company:18690627',
+        trackingId: 'DIlbG4O3TaCz+rWtJytS0A==',
+      },
+      displaySource: 'theaicore.com',
+      companyUrn: 'urn:li:fs_miniCompany:18690627',
+      url: 'https://portal.theaicore.com/showcase/certificate/2/3d17c9fd-2a9b-4680-90d8-ddd8cc24386e-0da02867-91fb-44b8-bb59-52ca8efaa60c',
+    },
+  ],
+  volunteer: [],
+  honors: [],
+  projects: [
+    {
+      members: [
+        {
+          member: {
+            firstName: 'Danish',
+            lastName: 'Amin',
+            dashEntityUrn:
+              'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+            occupation:
+              'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+            objectUrn: 'urn:li:member:879747278',
+            entityUrn:
+              'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+            backgroundImage: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 1400,
+                    fileIdentifyingUrlPathSegment:
+                      '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+                    expiresAt: 1750291200000,
+                    height: 350,
+                  },
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+              },
+            },
+            publicIdentifier: 'd4min',
+            picture: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+                    expiresAt: 1750291200000,
+                    height: 400,
+                  },
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+                    expiresAt: 1750291200000,
+                    height: 100,
+                  },
+                  {
+                    width: 588,
+                    fileIdentifyingUrlPathSegment:
+                      '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+                    expiresAt: 1750291200000,
+                    height: 588,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+              },
+            },
+            trackingId: 'xqAv2wd7QOeMqp3wKC7EVw==',
+          },
+          entityUrn:
+            'urn:li:fs_contributor:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1746850081,458381006)',
+          profileUrn:
+            'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+        },
+      ],
+      timePeriod: {
+        endDate: { month: 3, year: 2025 },
+        startDate: { month: 3, year: 2025 },
+      },
+      description:
+        'DataCanary is a data quality tool that helps you analyse and validate your data',
+      title: 'DataCanary',
+    },
+    {
+      members: [
+        {
+          member: {
+            firstName: 'Danish',
+            lastName: 'Amin',
+            dashEntityUrn:
+              'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+            occupation:
+              'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+            objectUrn: 'urn:li:member:879747278',
+            entityUrn:
+              'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+            backgroundImage: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 1400,
+                    fileIdentifyingUrlPathSegment:
+                      '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+                    expiresAt: 1750291200000,
+                    height: 350,
+                  },
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+              },
+            },
+            publicIdentifier: 'd4min',
+            picture: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+                    expiresAt: 1750291200000,
+                    height: 400,
+                  },
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+                    expiresAt: 1750291200000,
+                    height: 100,
+                  },
+                  {
+                    width: 588,
+                    fileIdentifyingUrlPathSegment:
+                      '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+                    expiresAt: 1750291200000,
+                    height: 588,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+              },
+            },
+            trackingId: 'xqAv2wd7QOeMqp3wKC7EVw==',
+          },
+          entityUrn:
+            'urn:li:fs_contributor:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,2035075545,461117643)',
+          profileUrn:
+            'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+        },
+      ],
+      description:
+        'AirCanvas is a computer vision project that lets you draw using hand gestures. Built with OpenCV and MediaPipe, it tracks your hand movements to simulate basic painting—like MS Paint, but without a mouse.',
+      title: 'AirCanvas',
+    },
+    {
+      members: [
+        {
+          member: {
+            firstName: 'Danish',
+            lastName: 'Amin',
+            dashEntityUrn:
+              'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+            occupation:
+              'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+            objectUrn: 'urn:li:member:879747278',
+            entityUrn:
+              'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+            backgroundImage: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 1400,
+                    fileIdentifyingUrlPathSegment:
+                      '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+                    expiresAt: 1750291200000,
+                    height: 350,
+                  },
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+              },
+            },
+            publicIdentifier: 'd4min',
+            picture: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+                    expiresAt: 1750291200000,
+                    height: 400,
+                  },
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+                    expiresAt: 1750291200000,
+                    height: 100,
+                  },
+                  {
+                    width: 588,
+                    fileIdentifyingUrlPathSegment:
+                      '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+                    expiresAt: 1750291200000,
+                    height: 588,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+              },
+            },
+            trackingId: 'xqAv2wd7QOeMqp3wKC7EVw==',
+          },
+          entityUrn:
+            'urn:li:fs_contributor:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1559777548,458088047)',
+          profileUrn:
+            'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+        },
+      ],
+      description:
+        "- Built a comprehensive simulation of Axelrod's Prisoner's Dilemma tournament using Python with object-oriented programming principles to model complex game theory interactions\n\n- Implemented multiple strategy classes (TitForTat, AlwaysDefect, Grudger) with configurable parameters to analyse cooperation emergence in iterated games\n\n- Created a robust tournament system with detailed match tracking, cooperation rate analysis, and comprehensive result aggregation using NumPy and Pandas\n\n- Developed a complete data pipeline with SQLAlchemy database integration for storing tournament results and custom exporters for PowerBI visualisations\n\n- Demonstrated strong software engineering practices through comprehensive test coverage, modular design, and well-documented code following Python best practices",
+      title: 'Axelrod Tournament Simulation',
+    },
+    {
+      members: [
+        {
+          member: {
+            firstName: 'Danish',
+            lastName: 'Amin',
+            dashEntityUrn:
+              'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+            occupation:
+              'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+            objectUrn: 'urn:li:member:879747278',
+            entityUrn:
+              'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+            backgroundImage: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 1400,
+                    fileIdentifyingUrlPathSegment:
+                      '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+                    expiresAt: 1750291200000,
+                    height: 350,
+                  },
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+              },
+            },
+            publicIdentifier: 'd4min',
+            picture: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+                    expiresAt: 1750291200000,
+                    height: 400,
+                  },
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+                    expiresAt: 1750291200000,
+                    height: 100,
+                  },
+                  {
+                    width: 588,
+                    fileIdentifyingUrlPathSegment:
+                      '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+                    expiresAt: 1750291200000,
+                    height: 588,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+              },
+            },
+            trackingId: 'xqAv2wd7QOeMqp3wKC7EVw==',
+          },
+          entityUrn:
+            'urn:li:fs_contributor:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1746994576,458380038)',
+          profileUrn:
+            'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+        },
+      ],
+      description:
+        "Exploratory data analysis of a financial institution's loan portfolio to uncover patterns, relationships, and anomalies in lending data. This analysis aims to enhance decision-making for loan approvals, improve risk management strategies, and optimize portfolio profitability through statistical analysis and data visualisation techniques.",
+      title: 'Loans Portfolio - EDA',
+    },
+    {
+      members: [
+        {
+          member: {
+            firstName: 'Danish',
+            lastName: 'Amin',
+            dashEntityUrn:
+              'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+            occupation:
+              'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+            objectUrn: 'urn:li:member:879747278',
+            entityUrn:
+              'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+            backgroundImage: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 1400,
+                    fileIdentifyingUrlPathSegment:
+                      '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+                    expiresAt: 1750291200000,
+                    height: 350,
+                  },
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+              },
+            },
+            publicIdentifier: 'd4min',
+            picture: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+                    expiresAt: 1750291200000,
+                    height: 400,
+                  },
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+                    expiresAt: 1750291200000,
+                    height: 100,
+                  },
+                  {
+                    width: 588,
+                    fileIdentifyingUrlPathSegment:
+                      '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+                    expiresAt: 1750291200000,
+                    height: 588,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+              },
+            },
+            trackingId: 'xqAv2wd7QOeMqp3wKC7EVw==',
+          },
+          entityUrn:
+            'urn:li:fs_contributor:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,597559211,456505716)',
+          profileUrn:
+            'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+        },
+      ],
+      timePeriod: {
+        endDate: { month: 6, year: 2024 },
+        startDate: { month: 3, year: 2024 },
+      },
+      description:
+        '- Technologies administered: Kafka, AWS MSK, MSK Connect, AWS API Gateway, AWS S3, Spark, Spark Structured Streaming, Databricks, Airflow, AWS MWAA, AWS Kinesis.\n\n- Built an end-to-end data processing pipeline hosted on AWS, capable of handling 500,000+ daily API requests\n\n- Created an API using API Gateway and used AWS MSK and MSK Connect to distribute the data from the API to an AWS S3 data lake.\n\n- Extracted batch data from AWS S3 and applied transformations in Databricks using PySpark.\nImplemented AWS MWAA to automate and orchestrate Databricks workloads, improving the reliability and efficiency of data pipelines.\n\n- Streamed data in real-time using AWS Kinesis and performed near real-time analysis leveraging a Spark cluster on Databricks.\n\n- Enabled Pinterest to analyse real-time data to support swift, data-driven decisions.\nIncreased data accessibility and standardisation due to the pipeline enhances collaboration across teams and stakeholders.',
+      title: 'Pinterest Data Pipeline',
+    },
+    {
+      members: [
+        {
+          member: {
+            firstName: 'Danish',
+            lastName: 'Amin',
+            dashEntityUrn:
+              'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+            occupation:
+              'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+            objectUrn: 'urn:li:member:879747278',
+            entityUrn:
+              'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+            backgroundImage: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 1400,
+                    fileIdentifyingUrlPathSegment:
+                      '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+                    expiresAt: 1750291200000,
+                    height: 350,
+                  },
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+              },
+            },
+            publicIdentifier: 'd4min',
+            picture: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+                    expiresAt: 1750291200000,
+                    height: 400,
+                  },
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+                    expiresAt: 1750291200000,
+                    height: 100,
+                  },
+                  {
+                    width: 588,
+                    fileIdentifyingUrlPathSegment:
+                      '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+                    expiresAt: 1750291200000,
+                    height: 588,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+              },
+            },
+            trackingId: 'xqAv2wd7QOeMqp3wKC7EVw==',
+          },
+          entityUrn:
+            'urn:li:fs_contributor:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1559234465,458087166)',
+          profileUrn:
+            'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+        },
+      ],
+      timePeriod: {
+        endDate: { month: 2, year: 2024 },
+        startDate: { month: 12, year: 2023 },
+      },
+      description:
+        '- Technologies implemented: Python, APIs, PostgreSQL, Pgadmin4, Pandas, AWS RDS, PowerBI.\n\n- Developed a system that processed and cleansed over 100,000 records from APIs, PDF\ndocuments, cloud databases, and JSON files, reducing data inconsistencies by 25%.\n\n- Engineered a star-based database schema improving data retrieval performance by 30%,\noptimizing query speed and enabling more efficient data analysis within the retail sector.\n\n- Conducted in-depth analysis of processed retail data, identifying key trends and patterns\nthat provided actionable insights for the business.\n\n- Delivered insights with the potential to enhance retail operations and improve decision-\nmaking processes, contributing to increased efficiency and profitability.\n\n- Created interactive data visualisations in Power BI, enabling stakeholders to gain actionable\ninsights from over 100,000+ records and improving data-driven decision-making across the\nretail organisation.',
+      title: 'Multinational Retail Data Centralisation',
+    },
+    {
+      members: [
+        {
+          member: {
+            firstName: 'Danish',
+            lastName: 'Amin',
+            dashEntityUrn:
+              'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+            occupation:
+              'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+            objectUrn: 'urn:li:member:879747278',
+            entityUrn:
+              'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+            backgroundImage: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 1400,
+                    fileIdentifyingUrlPathSegment:
+                      '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+                    expiresAt: 1750291200000,
+                    height: 350,
+                  },
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+              },
+            },
+            publicIdentifier: 'd4min',
+            picture: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+                    expiresAt: 1750291200000,
+                    height: 400,
+                  },
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+                    expiresAt: 1750291200000,
+                    height: 100,
+                  },
+                  {
+                    width: 588,
+                    fileIdentifyingUrlPathSegment:
+                      '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+                    expiresAt: 1750291200000,
+                    height: 588,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+              },
+            },
+            trackingId: 'xqAv2wd7QOeMqp3wKC7EVw==',
+          },
+          entityUrn:
+            'urn:li:fs_contributor:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1559566356,458083648)',
+          profileUrn:
+            'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+        },
+      ],
+      description:
+        '- Developed an interactive Rock-Paper-Scissors game using computer vision that recognises hand gestures through a webcam\n\n- Created and trained a custom machine learning model with Teachable Machine to accurately classify rock, paper, and scissors gestures in real-time\n\n- Implemented the project using Python, TensorFlow/Keras, OpenCV, and NumPy for image processing and gesture recognition\n\n- Built a complete game system with round management, intelligent validation, and scoring that tracks wins until a player reaches 3 victories\n\n- Applied object-oriented programming principles and proper software architecture for maintainable, modular code design',
+      title: 'Computer Vision Rock-Paper-Scissors',
+    },
+  ],
+  skills: [
+    { name: 'Computer Vision' },
+    { name: 'OpenCV' },
+    { name: 'DAX' },
+    { name: 'Distributed Systems' },
+  ],
+  urn_id: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+};
+
+const profile_4 = {
+  summary:
+    'I design, build, and grow impactful products.\n\nBased in London and Berlin.',
+  industryName: 'Technology, Information and Internet',
+  lastName: 'Tiersen',
+  locationName: 'United Kingdom',
+  student: False,
+  geoCountryName: 'United Kingdom',
+  geoCountryUrn: 'urn:li:fs_geo:101165590',
+  geoLocationBackfilled: False,
+  elt: False,
+  industryUrn: 'urn:li:fs_industry:6',
+  firstName: 'Federico',
+  entityUrn: 'urn:li:fs_profile:ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+  geoLocation: { geoUrn: 'urn:li:fs_geo:100495523' },
+  geoLocationName: 'London, England',
+  location: { basicLocation: { countryCode: 'gb' } },
+  headline: 'Head of Product at Mindstep · Founder of Spur',
+  displayPictureUrl:
+    'https://media.licdn.com/dms/image/v2/D4E03AQEaoZFTtBGPNA/profile-displayphoto-shrink_',
+  img_100_100:
+    '100_100/profile-displayphoto-shrink_100_100/0/1698068603208?e=1750291200&v=beta&t=Vs6kAzGXGajah1l_zIRi6jSxH549CrmSHF4GD0LFHa4',
+  img_200_200:
+    '200_200/profile-displayphoto-shrink_200_200/0/1698068603208?e=1750291200&v=beta&t=02IRdy4F-Ry22CRtLXDckuiocCjmA9oS5ZlvhGyrwC4',
+  img_400_400:
+    '400_400/profile-displayphoto-shrink_400_400/0/1698068603208?e=1750291200&v=beta&t=Dkk2fqyUPFxT29Gx6-1migsJyKUj-_Ro5PCc0JHJlds',
+  img_800_800:
+    '800_800/profile-displayphoto-shrink_800_800/0/1698068603208?e=1750291200&v=beta&t=frOvRdzUza6WX2YwFQmzJ4LdCkBXTjDfsiPi1APIcAs',
+  profile_id: 'ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+  profile_urn: 'urn:li:fs_miniProfile:ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+  member_urn: 'urn:li:member:577464017',
+  public_id: 'federico-tiersen-695484141',
+  experience: [
+    {
+      locationName: 'City Of London, England, United Kingdom',
+      geoUrn: 'urn:li:fs_geo:110652431',
+      companyName: 'Mindstep',
+      description:
+        "• Leading teams of designers, engineers, product managers, researchers, and doctors to build iOS and web apps that support the mental health of 750k people. \n• Overseeing the design and development of B2B apps for health insurers and the NHS that generated £700k in revenue and £2.5M in capital.\n• Directing Mindstep's product strategy and heading the development of the first AI agent to provide complete mental health support, from therapeutic conversations to practical skills and clinical referrals.",
+      title: 'Head of Product',
+      companyUrn: 'urn:li:fs_miniCompany:18740300',
+      honors: [
+        'urn:li:fs_honor:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,1557623334)',
+        'urn:li:fs_honor:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,692943164)',
+      ],
+      entityUrn:
+        'urn:li:fs_position:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,2174053766)',
+      geoLocationName: 'City Of London, England, United Kingdom',
+      timePeriod: { startDate: { month: 5, year: 2023 } },
+      company: {
+        employeeCountRange: { start: 11, end: 50 },
+        industries: ['Mental Health Care'],
+      },
+      region: 'urn:li:fs_region:(gb,4583)',
+      companyLogoUrl:
+        'https://media.licdn.com/dms/image/v2/D4D0BAQFc3gaWTUQHFg/company-logo_',
+    },
+    {
+      locationName: 'City Of London, England, United Kingdom',
+      entityUrn:
+        'urn:li:fs_position:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,2615789368)',
+      geoLocationName: 'City Of London, England, United Kingdom',
+      geoUrn: 'urn:li:fs_geo:110652431',
+      companyName: 'Spur Technologies Ltd',
+      timePeriod: { startDate: { month: 8, year: 2024 } },
+      description:
+        '- Helping musicians get their music heard by promoting their tracks on social media content.\n- Launched www.spur.promo and achieved a 3:1 LTV to CAC ratio through Google Search Ads and TikTok content.\n- Connected an audience of over 3 million listeners to emerging musicians.',
+      company: {
+        employeeCountRange: { start: 2, end: 10 },
+        industries: ['Computer Software'],
+      },
+      title: 'Founder & CEO',
+      region: 'urn:li:fs_region:(gb,4583)',
+      companyUrn: 'urn:li:fs_miniCompany:105821880',
+      companyLogoUrl:
+        'https://media.licdn.com/dms/image/v2/D4E0BAQG2bSM8JpPoog/company-logo_',
+    },
+    {
+      locationName: 'London, England, United Kingdom',
+      entityUrn:
+        'urn:li:fs_position:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,1829165301)',
+      geoLocationName: 'London, England, United Kingdom',
+      geoUrn: 'urn:li:fs_geo:102257491',
+      companyName: 'Refrain',
+      timePeriod: {
+        endDate: { month: 4, year: 2025 },
+        startDate: { month: 6, year: 2021 },
+      },
+      company: {
+        employeeCountRange: { start: 2, end: 10 },
+        industries: ['Retail'],
+      },
+      title: 'Member of Board',
+      region: 'urn:li:fs_region:(gb,0)',
+      companyUrn: 'urn:li:fs_miniCompany:11867440',
+      companyLogoUrl:
+        'https://media.licdn.com/dms/image/v2/C4D0BAQFnLFTtJn4SMQ/company-logo_',
+    },
+    {
+      locationName: 'Londres, Inglaterra, Reino Unido',
+      geoUrn: 'urn:li:fs_geo:102257491',
+      companyName: 'Mindstep',
+      description:
+        "• Doubled key activation and retention metrics by establishing data-driven processes and redesigning Mindstep's onboarding, care plans, and video playback experiences.\n• Designed digital care plans that significantly improve the mental health of 9 in 10 users. Their effect in 3 weeks is stronger than taking antidepressants for 6 months.\n• Reached #2 in the Medical iOS App Store charts and won App Store editorial awards.",
+      title: 'UX Lead',
+      companyUrn: 'urn:li:fs_miniCompany:18740300',
+      honors: [
+        'urn:li:fs_honor:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,1557404860)',
+        'urn:li:fs_honor:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,692984740)',
+      ],
+      entityUrn:
+        'urn:li:fs_position:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,2104175012)',
+      geoLocationName: 'Londres, Inglaterra, Reino Unido',
+      timePeriod: {
+        endDate: { month: 5, year: 2023 },
+        startDate: { month: 11, year: 2022 },
+      },
+      company: {
+        employeeCountRange: { start: 11, end: 50 },
+        industries: ['Mental Health Care'],
+      },
+      region: 'urn:li:fs_region:(gb,0)',
+      companyLogoUrl:
+        'https://media.licdn.com/dms/image/v2/D4D0BAQFc3gaWTUQHFg/company-logo_',
+    },
+    {
+      locationName: 'London, England, United Kingdom',
+      entityUrn:
+        'urn:li:fs_position:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,1829163508)',
+      geoLocationName: 'London, England, United Kingdom',
+      geoUrn: 'urn:li:fs_geo:102257491',
+      companyName: 'Mindstep',
+      timePeriod: {
+        endDate: { month: 1, year: 2023 },
+        startDate: { month: 8, year: 2021 },
+      },
+      description:
+        '• Led UX research and design as the first design employee, launching an iOS app with clinical assessments and video-based care for Anxiety, Depression, early Dementia, Migraine, and Concussion.\n• Reached 250k users in the UK, deployed the app to NHS clinical trials, and achieved UKCA Class I medical device certification.\n• Won the Design Week Award 2021 for Best Use of Data.',
+      company: {
+        employeeCountRange: { start: 11, end: 50 },
+        industries: ['Mental Health Care'],
+      },
+      title: 'UX/UI Clinical Researcher and Designer',
+      region: 'urn:li:fs_region:(gb,0)',
+      companyUrn: 'urn:li:fs_miniCompany:18740300',
+      companyLogoUrl:
+        'https://media.licdn.com/dms/image/v2/D4D0BAQFc3gaWTUQHFg/company-logo_',
+    },
+  ],
+  education: [
+    {
+      entityUrn:
+        'urn:li:fs_education:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,418216389)',
+      school: {
+        objectUrn: 'urn:li:school:12598',
+        entityUrn: 'urn:li:fs_miniSchool:12598',
+        active: True,
+        schoolName: 'Imperial College London',
+        trackingId: 'rn5gtGI4RVCz3cS3fvlcyg==',
+        logoUrl:
+          'https://media.licdn.com/dms/image/v2/D4E0BAQGOM2ioD3Ym6w/company-logo_',
+      },
+      grade: 'First Class Honours',
+      timePeriod: {
+        endDate: { month: 6, year: 2020 },
+        startDate: { month: 10, year: 2016 },
+      },
+      description:
+        '•\tDesigned and built digital and physical products including a mixed reality navigation app, a sports wearable that optimises recovery, a stick blender for the blind, a dancing segway, and a flying roller coaster.\n•\tCombined design thinking with engineering knowledge and practice to create innovative products and systems at the intersection of computing, mechanics, and electronics. \n•\tDeveloped design and engineering skills, with an emphasis on creativity, computer-aided engineering, optimisation, human factors and the design process.\n•\tLearned to bring new innovations to market through manufacturing techniques, product development, technical design and rapid prototyping.\n•\tAchieved the highest Thesis marks of the cohort and won 3 awards for my work on Holdable Devices: phone cases that detect phone addiction from hand movements and nudge users to be on their phone more mindfully. Read more at https://link.springer.com/chapter/10.1007/978-3-030-78465-2_35 and',
+      degreeName: 'Master of Engineering - MEng',
+      schoolName: 'Imperial College London',
+      fieldOfStudy: 'Design Engineering',
+      honors: [
+        'urn:li:fs_honor:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,525464186)',
+        'urn:li:fs_honor:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,525566678)',
+        'urn:li:fs_honor:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,2090279223)',
+      ],
+      degreeUrn: 'urn:li:fs_degree:551',
+      schoolUrn: 'urn:li:fs_miniSchool:12598',
+    },
+    {
+      entityUrn:
+        'urn:li:fs_education:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,706302664)',
+      school: {
+        objectUrn: 'urn:li:school:4152024',
+        entityUrn: 'urn:li:fs_miniSchool:4152024',
+        active: True,
+        schoolName: 'AiCore',
+        trackingId: 'dvR1yZrwRkGvjlpQtFOTow==',
+        logoUrl:
+          'https://media.licdn.com/dms/image/v2/C4E0BAQFd1hpR6yzytg/company-logo_',
+      },
+      timePeriod: {
+        endDate: { month: 7, year: 2021 },
+        startDate: { month: 2, year: 2021 },
+      },
+      description:
+        'Studying a Masters-equivalent intensive course on practical applications of AI to solving real world problems.\xa0Key topics include:\n\n- Web scraping\n- SQL\n- Data science (Data cleaning, visualization, A/B testing, recommendation systems, statistics, time series modelling)\n- Machine learning (Regression, random forest, SVMs, PCA, t-SNE )\n- Deep learning (Pytorch, neural networks, CNNs, RNNs, Autoencoders, GANs)\n- Natural Language Processing (LSTMs, transformers, attention mechanism, BERT, HuggingFace)\n- Training in the cloud (AWS EC2)\n- Deployment (Python Flask, Cron, API creation, AWS Lambda, Docker, ONNX, TensorFlow.JS, GCP AI services)',
+      degreeName: 'Data Science and Machine Learning',
+      schoolName: 'AiCore',
+      schoolUrn: 'urn:li:fs_miniSchool:4152024',
+    },
+    {
+      entityUrn:
+        'urn:li:fs_education:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,438130581)',
+      school: {
+        objectUrn: 'urn:li:school:21176',
+        entityUrn: 'urn:li:fs_miniSchool:21176',
+        active: True,
+        schoolName: 'International School of Brussels',
+        trackingId: 'j7rvO9sQRT2ckzmS/PRmCA==',
+        logoUrl:
+          'https://media.licdn.com/dms/image/v2/C4E0BAQHwAd3gNDfvzg/company-logo_',
+      },
+      activities:
+        'Sports Management, Football, Rock Climbing, Strings Orchestra',
+      timePeriod: { endDate: { year: 2016 }, startDate: { year: 2009 } },
+      description:
+        'Higher Level Mathematics, Physics, Visual Arts. Standard Level Business Management, English A Language and Literature, French A Language and Literature',
+      degreeName: 'International Baccalaureate',
+      schoolName: 'International School of Brussels',
+      schoolUrn: 'urn:li:fs_miniSchool:21176',
+    },
+  ],
+  languages: [
+    { name: 'English ', proficiency: 'NATIVE_OR_BILINGUAL' },
+    { name: 'French ', proficiency: 'NATIVE_OR_BILINGUAL' },
+    { name: 'Italian ', proficiency: 'NATIVE_OR_BILINGUAL' },
+    { name: 'Spanish', proficiency: 'FULL_PROFESSIONAL' },
+  ],
+  publications: [
+    {
+      date: { month: 8, year: 2021, day: 11 },
+      name: 'Smart Home Sensing and Monitoring in Households With Dementia: User-Centered Design Approach',
+      publisher: 'JMIR Aging',
+      description:
+        'Designed and tested smart home devices for people living with Dementia and their carers. Cited by over 70 papers.',
+      url: 'https://pubmed.ncbi.nlm.nih.gov/34383672/',
+      authors: [
+        {
+          member: {
+            firstName: 'Federico',
+            lastName: 'Tiersen',
+            dashEntityUrn:
+              'urn:li:fsd_profile:ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+            occupation: 'Head of Product at Mindstep · Founder of Spur',
+            objectUrn: 'urn:li:member:577464017',
+            entityUrn:
+              'urn:li:fs_miniProfile:ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+            backgroundImage: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '200_800/profile-displaybackgroundimage-shrink_200_800/0/1620647134578?e=1750291200&v=beta&t=DKNPhO5VrZZYNpCoVmehlFiSAoesZyC8EXhA4ot3Jw4',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 1400,
+                    fileIdentifyingUrlPathSegment:
+                      '350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1620647134578?e=1750291200&v=beta&t=MjK6IcfCylA-uH6fiO_Bhcrc_7avhTtXqvhbhkEwTeQ',
+                    expiresAt: 1750291200000,
+                    height: 350,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/C5616AQFMKI400Kivzg/profile-displaybackgroundimage-shrink_',
+              },
+            },
+            publicIdentifier: 'federico-tiersen-695484141',
+            picture: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/profile-displayphoto-shrink_100_100/0/1698068603208?e=1750291200&v=beta&t=Vs6kAzGXGajah1l_zIRi6jSxH549CrmSHF4GD0LFHa4',
+                    expiresAt: 1750291200000,
+                    height: 100,
+                  },
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/profile-displayphoto-shrink_200_200/0/1698068603208?e=1750291200&v=beta&t=02IRdy4F-Ry22CRtLXDckuiocCjmA9oS5ZlvhGyrwC4',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/profile-displayphoto-shrink_400_400/0/1698068603208?e=1750291200&v=beta&t=Dkk2fqyUPFxT29Gx6-1migsJyKUj-_Ro5PCc0JHJlds',
+                    expiresAt: 1750291200000,
+                    height: 400,
+                  },
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '800_800/profile-displayphoto-shrink_800_800/0/1698068603208?e=1750291200&v=beta&t=frOvRdzUza6WX2YwFQmzJ4LdCkBXTjDfsiPi1APIcAs',
+                    expiresAt: 1750291200000,
+                    height: 800,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E03AQEaoZFTtBGPNA/profile-displayphoto-shrink_',
+              },
+            },
+            trackingId: 'x7/9ZZ3BTTSOYfUVxiRlZw==',
+          },
+          profileUrn:
+            'urn:li:fs_miniProfile:ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+        },
+      ],
+    },
+    {
+      date: { month: 7, year: 2021, day: 3 },
+      name: 'Holdable Devices: Supporting Mindfulness, Psychological Autonomy and Self-Regulation During Smartphone Use',
+      publisher:
+        'Human-Computer Interaction: Interaction Techniques and Novel Applications',
+      description:
+        'Designed and built a phone case that senses phone addiction and helps people use their phone mindfully. Won the Best Paper Award at the Human Computer Interaction International Conference (HCII).',
+      url: 'https://link.springer.com/chapter/10.1007/978-3-030-78465-2_35',
+      authors: [
+        {
+          member: {
+            firstName: 'Federico',
+            lastName: 'Tiersen',
+            dashEntityUrn:
+              'urn:li:fsd_profile:ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+            occupation: 'Head of Product at Mindstep · Founder of Spur',
+            objectUrn: 'urn:li:member:577464017',
+            entityUrn:
+              'urn:li:fs_miniProfile:ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+            backgroundImage: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '200_800/profile-displaybackgroundimage-shrink_200_800/0/1620647134578?e=1750291200&v=beta&t=DKNPhO5VrZZYNpCoVmehlFiSAoesZyC8EXhA4ot3Jw4',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 1400,
+                    fileIdentifyingUrlPathSegment:
+                      '350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1620647134578?e=1750291200&v=beta&t=MjK6IcfCylA-uH6fiO_Bhcrc_7avhTtXqvhbhkEwTeQ',
+                    expiresAt: 1750291200000,
+                    height: 350,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/C5616AQFMKI400Kivzg/profile-displaybackgroundimage-shrink_',
+              },
+            },
+            publicIdentifier: 'federico-tiersen-695484141',
+            picture: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/profile-displayphoto-shrink_100_100/0/1698068603208?e=1750291200&v=beta&t=Vs6kAzGXGajah1l_zIRi6jSxH549CrmSHF4GD0LFHa4',
+                    expiresAt: 1750291200000,
+                    height: 100,
+                  },
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/profile-displayphoto-shrink_200_200/0/1698068603208?e=1750291200&v=beta&t=02IRdy4F-Ry22CRtLXDckuiocCjmA9oS5ZlvhGyrwC4',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/profile-displayphoto-shrink_400_400/0/1698068603208?e=1750291200&v=beta&t=Dkk2fqyUPFxT29Gx6-1migsJyKUj-_Ro5PCc0JHJlds',
+                    expiresAt: 1750291200000,
+                    height: 400,
+                  },
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '800_800/profile-displayphoto-shrink_800_800/0/1698068603208?e=1750291200&v=beta&t=frOvRdzUza6WX2YwFQmzJ4LdCkBXTjDfsiPi1APIcAs',
+                    expiresAt: 1750291200000,
+                    height: 800,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E03AQEaoZFTtBGPNA/profile-displayphoto-shrink_',
+              },
+            },
+            trackingId: 'x7/9ZZ3BTTSOYfUVxiRlZw==',
+          },
+          profileUrn:
+            'urn:li:fs_miniProfile:ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+        },
+      ],
+    },
+    {
+      name: 'Agglomerative Hierarchical Clustering of Long-Lasting Post-Concussive Symptoms: Symptom-Centric Association with Functional Impairments (P8-1.001)',
+      publisher: 'Neurology',
+      url: 'https://www.neurology.org/doi/10.1212/WNL.0000000000202048',
+      authors: [
+        {
+          member: {
+            firstName: 'Federico',
+            lastName: 'Tiersen',
+            dashEntityUrn:
+              'urn:li:fsd_profile:ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+            occupation: 'Head of Product at Mindstep · Founder of Spur',
+            objectUrn: 'urn:li:member:577464017',
+            entityUrn:
+              'urn:li:fs_miniProfile:ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+            backgroundImage: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '200_800/profile-displaybackgroundimage-shrink_200_800/0/1620647134578?e=1750291200&v=beta&t=DKNPhO5VrZZYNpCoVmehlFiSAoesZyC8EXhA4ot3Jw4',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 1400,
+                    fileIdentifyingUrlPathSegment:
+                      '350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1620647134578?e=1750291200&v=beta&t=MjK6IcfCylA-uH6fiO_Bhcrc_7avhTtXqvhbhkEwTeQ',
+                    expiresAt: 1750291200000,
+                    height: 350,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/C5616AQFMKI400Kivzg/profile-displaybackgroundimage-shrink_',
+              },
+            },
+            publicIdentifier: 'federico-tiersen-695484141',
+            picture: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/profile-displayphoto-shrink_100_100/0/1698068603208?e=1750291200&v=beta&t=Vs6kAzGXGajah1l_zIRi6jSxH549CrmSHF4GD0LFHa4',
+                    expiresAt: 1750291200000,
+                    height: 100,
+                  },
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/profile-displayphoto-shrink_200_200/0/1698068603208?e=1750291200&v=beta&t=02IRdy4F-Ry22CRtLXDckuiocCjmA9oS5ZlvhGyrwC4',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/profile-displayphoto-shrink_400_400/0/1698068603208?e=1750291200&v=beta&t=Dkk2fqyUPFxT29Gx6-1migsJyKUj-_Ro5PCc0JHJlds',
+                    expiresAt: 1750291200000,
+                    height: 400,
+                  },
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '800_800/profile-displayphoto-shrink_800_800/0/1698068603208?e=1750291200&v=beta&t=frOvRdzUza6WX2YwFQmzJ4LdCkBXTjDfsiPi1APIcAs',
+                    expiresAt: 1750291200000,
+                    height: 800,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E03AQEaoZFTtBGPNA/profile-displayphoto-shrink_',
+              },
+            },
+            trackingId: 'x7/9ZZ3BTTSOYfUVxiRlZw==',
+          },
+          profileUrn:
+            'urn:li:fs_miniProfile:ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+        },
+      ],
+    },
+    {
+      name: 'Hierarchical clustering of prolonged post-concussive symptoms after 12 months: symptom-centric analysis and association with functional impairments',
+      publisher: 'Brain Injury',
+      url: 'https://pubmed.ncbi.nlm.nih.gov/36529935/',
+      authors: [
+        {
+          member: {
+            firstName: 'Federico',
+            lastName: 'Tiersen',
+            dashEntityUrn:
+              'urn:li:fsd_profile:ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+            occupation: 'Head of Product at Mindstep · Founder of Spur',
+            objectUrn: 'urn:li:member:577464017',
+            entityUrn:
+              'urn:li:fs_miniProfile:ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+            backgroundImage: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '200_800/profile-displaybackgroundimage-shrink_200_800/0/1620647134578?e=1750291200&v=beta&t=DKNPhO5VrZZYNpCoVmehlFiSAoesZyC8EXhA4ot3Jw4',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 1400,
+                    fileIdentifyingUrlPathSegment:
+                      '350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1620647134578?e=1750291200&v=beta&t=MjK6IcfCylA-uH6fiO_Bhcrc_7avhTtXqvhbhkEwTeQ',
+                    expiresAt: 1750291200000,
+                    height: 350,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/C5616AQFMKI400Kivzg/profile-displaybackgroundimage-shrink_',
+              },
+            },
+            publicIdentifier: 'federico-tiersen-695484141',
+            picture: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/profile-displayphoto-shrink_100_100/0/1698068603208?e=1750291200&v=beta&t=Vs6kAzGXGajah1l_zIRi6jSxH549CrmSHF4GD0LFHa4',
+                    expiresAt: 1750291200000,
+                    height: 100,
+                  },
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/profile-displayphoto-shrink_200_200/0/1698068603208?e=1750291200&v=beta&t=02IRdy4F-Ry22CRtLXDckuiocCjmA9oS5ZlvhGyrwC4',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/profile-displayphoto-shrink_400_400/0/1698068603208?e=1750291200&v=beta&t=Dkk2fqyUPFxT29Gx6-1migsJyKUj-_Ro5PCc0JHJlds',
+                    expiresAt: 1750291200000,
+                    height: 400,
+                  },
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '800_800/profile-displayphoto-shrink_800_800/0/1698068603208?e=1750291200&v=beta&t=frOvRdzUza6WX2YwFQmzJ4LdCkBXTjDfsiPi1APIcAs',
+                    expiresAt: 1750291200000,
+                    height: 800,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E03AQEaoZFTtBGPNA/profile-displayphoto-shrink_',
+              },
+            },
+            trackingId: 'x7/9ZZ3BTTSOYfUVxiRlZw==',
+          },
+          profileUrn:
+            'urn:li:fs_miniProfile:ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+        },
+      ],
+    },
+  ],
+  certifications: [
+    {
+      authority: 'AiCore',
+      name: 'Certified Software Engineer',
+      timePeriod: {
+        endDate: { month: 2, year: 2026 },
+        startDate: { month: 2, year: 2024 },
+      },
+      company: {
+        objectUrn: 'urn:li:company:18690627',
+        entityUrn: 'urn:li:fs_miniCompany:18690627',
+        name: 'AiCore',
+        showcase: False,
+        active: True,
+        logo: {
+          'com.linkedin.common.VectorImage': {
+            artifacts: [
+              {
+                width: 200,
+                fileIdentifyingUrlPathSegment:
+                  '200_200/company-logo_200_200/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=PFSpLbWFC_9F7c1LMaIR7vq2rbXqSkLF2qAk8Txaj4k',
+                expiresAt: 1750291200000,
+                height: 200,
+              },
+              {
+                width: 100,
+                fileIdentifyingUrlPathSegment:
+                  '100_100/company-logo_100_100/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=LR4cCfAjiGUHVVnBeKWHaJ67kwHNko0CU83-AGxjebg',
+                expiresAt: 1750291200000,
+                height: 100,
+              },
+              {
+                width: 400,
+                fileIdentifyingUrlPathSegment:
+                  '400_400/company-logo_400_400/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=0RGNPX6ar27MlsihONmXwnJWa7HDpikQbvs2bwpLUNg',
+                expiresAt: 1750291200000,
+                height: 400,
+              },
+            ],
+            rootUrl:
+              'https://media.licdn.com/dms/image/v2/C4E0BAQFd1hpR6yzytg/company-logo_',
+          },
+        },
+        universalName: 'aicore',
+        dashCompanyUrn: 'urn:li:fsd_company:18690627',
+        trackingId: 'Bh7pas8+RGSNpGW4xnTtpw==',
+      },
+      displaySource: 'theaicore.com',
+      companyUrn: 'urn:li:fs_miniCompany:18690627',
+      url: 'https://portal.theaicore.com/showcase/certificate/2/3d17c9fd-2a9b-4680-90d8-ddd8cc24386e-4781f4cc-2a3a-420c-adb6-271ba141bf8a',
+    },
+    {
+      authority: 'AiCore',
+      name: 'Certified Data and Cloud Engineer',
+      timePeriod: {
+        endDate: { month: 7, year: 2026 },
+        startDate: { month: 7, year: 2024 },
+      },
+      company: {
+        objectUrn: 'urn:li:company:18690627',
+        entityUrn: 'urn:li:fs_miniCompany:18690627',
+        name: 'AiCore',
+        showcase: False,
+        active: True,
+        logo: {
+          'com.linkedin.common.VectorImage': {
+            artifacts: [
+              {
+                width: 200,
+                fileIdentifyingUrlPathSegment:
+                  '200_200/company-logo_200_200/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=PFSpLbWFC_9F7c1LMaIR7vq2rbXqSkLF2qAk8Txaj4k',
+                expiresAt: 1750291200000,
+                height: 200,
+              },
+              {
+                width: 100,
+                fileIdentifyingUrlPathSegment:
+                  '100_100/company-logo_100_100/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=LR4cCfAjiGUHVVnBeKWHaJ67kwHNko0CU83-AGxjebg',
+                expiresAt: 1750291200000,
+                height: 100,
+              },
+              {
+                width: 400,
+                fileIdentifyingUrlPathSegment:
+                  '400_400/company-logo_400_400/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=0RGNPX6ar27MlsihONmXwnJWa7HDpikQbvs2bwpLUNg',
+                expiresAt: 1750291200000,
+                height: 400,
+              },
+            ],
+            rootUrl:
+              'https://media.licdn.com/dms/image/v2/C4E0BAQFd1hpR6yzytg/company-logo_',
+          },
+        },
+        universalName: 'aicore',
+        dashCompanyUrn: 'urn:li:fsd_company:18690627',
+        trackingId: 'DIlbG4O3TaCz+rWtJytS0A==',
+      },
+      displaySource: 'theaicore.com',
+      companyUrn: 'urn:li:fs_miniCompany:18690627',
+      url: 'https://portal.theaicore.com/showcase/certificate/2/3d17c9fd-2a9b-4680-90d8-ddd8cc24386e-0da02867-91fb-44b8-bb59-52ca8efaa60c',
+    },
+  ],
+  volunteer: [
+    {
+      role: 'Volunteering Project Leader',
+      companyName: 'Chevrefeuille asbl',
+      timePeriod: {
+        endDate: { month: 5, year: 2016 },
+        startDate: { month: 9, year: 2014 },
+      },
+      cause: 'SOCIAL_SERVICES',
+      description:
+        "Entertaining children and managing donations at a women's shelter.",
+    },
+    {
+      role: 'Disabled Students Sports Coach',
+      companyName: 'International School of Brussels',
+      timePeriod: {
+        endDate: { month: 6, year: 2015 },
+        startDate: { month: 9, year: 2014 },
+      },
+      cause: 'HEALTH',
+      description:
+        'Training disabled high school students as part of the Sports Management program.',
+      company: {
+        miniCompany: {
+          objectUrn: 'urn:li:company:1026612',
+          entityUrn: 'urn:li:fs_miniCompany:1026612',
+          name: 'International School of Brussels',
+          showcase: False,
+          active: True,
+          logo: {
+            'com.linkedin.common.VectorImage': {
+              artifacts: [
+                {
+                  width: 200,
+                  fileIdentifyingUrlPathSegment:
+                    '200_200/company-logo_200_200/0/1630627915018/international_school_of_brussels_logo?e=1750291200&v=beta&t=O3S3n_zLkeGlRs8hkDVy2XJDpLQqYmQqGSH8y1z4Sm0',
+                  expiresAt: 1750291200000,
+                  height: 200,
+                },
+                {
+                  width: 100,
+                  fileIdentifyingUrlPathSegment:
+                    '100_100/company-logo_100_100/0/1630627915018/international_school_of_brussels_logo?e=1750291200&v=beta&t=YwP8R3U2-H4GnPrUKYRZJ8f7hRoLTsx0lJnhs7ILJJs',
+                  expiresAt: 1750291200000,
+                  height: 100,
+                },
+                {
+                  width: 400,
+                  fileIdentifyingUrlPathSegment:
+                    '400_400/company-logo_400_400/0/1630627915018/international_school_of_brussels_logo?e=1750291200&v=beta&t=aCcE8Va94NY191vHktZA9gcNnYgqOJ9g9BBQnaS0Otk',
+                  expiresAt: 1750291200000,
+                  height: 400,
+                },
+              ],
+              rootUrl:
+                'https://media.licdn.com/dms/image/v2/C4E0BAQHwAd3gNDfvzg/company-logo_',
+            },
+          },
+          universalName: 'international-school-of-brussels',
+          dashCompanyUrn: 'urn:li:fsd_company:1026612',
+          trackingId: 'NSyBDNYiT6WNz6aY3IVKMg==',
+        },
+      },
+      companyUrn: 'urn:li:fs_miniCompany:1026612',
+    },
+  ],
+  honors: [
+    {
+      occupation:
+        'urn:li:fs_position:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,2174053766)',
+      title: 'App of the Day',
+      issueDate: { month: 12, year: 2024 },
+      issuer: 'Apple',
+    },
+    {
+      occupation:
+        'urn:li:fs_position:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,2104175012)',
+      title: 'Top Medical App',
+      issueDate: { month: 3, year: 2023 },
+      issuer: 'Apple',
+    },
+    {
+      occupation:
+        'urn:li:fs_position:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,2174053766)',
+      title: 'Behind the App Feature',
+      issueDate: { month: 2, year: 2023 },
+      issuer: 'Apple',
+    },
+    {
+      occupation:
+        'urn:li:fs_position:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,2104175012)',
+      title: 'Design Week Award: Best Use of Data',
+      issueDate: { month: 9, year: 2021 },
+      issuer: 'Design Week',
+    },
+    {
+      occupation:
+        'urn:li:fs_education:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,418216389)',
+      title: 'Best Paper Award 2021',
+      issueDate: { month: 7, year: 2021 },
+      issuer: 'Human Computer Interaction International Conference',
+    },
+    {
+      occupation:
+        'urn:li:fs_education:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,418216389)',
+      title:
+        'Institution of Engineering Designers Prize for Outstanding Performance',
+      issueDate: { month: 9, year: 2020 },
+      issuer: 'Institution of Engineering Designers',
+    },
+    {
+      occupation:
+        'urn:li:fs_education:(ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks,418216389)',
+      title:
+        'Design Engineering Selected Innovation Reward (DESIRE) for Creativity',
+      issueDate: { month: 6, year: 2020 },
+      issuer: 'Dyson School of Design Engineering',
+    },
+  ],
+  projects: [
+    {
+      occupation:
+        'urn:li:fs_position:(ACoAADS3qpYByMxTkXB04om1RYIaATCahC47YL4,2208451026)',
+      members: [
+        {
+          member: {
+            firstName: 'Jose Antonio',
+            lastName: 'Barba Rodríguez',
+            dashEntityUrn:
+              'urn:li:fsd_profile:ACoAADS3qpYByMxTkXB04om1RYIaATCahC47YL4',
+            occupation: 'CTO at WaLead',
+            objectUrn: 'urn:li:member:884451990',
+            entityUrn:
+              'urn:li:fs_miniProfile:ACoAADS3qpYByMxTkXB04om1RYIaATCahC47YL4',
+            backgroundImage: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '200_800/profile-displaybackgroundimage-shrink_200_800/0/1736241217137?e=1745452800&v=beta&t=cVYAMC8E_XrECwfyQZ6BcK4CaiUL6wZW0Fg0mQaeoCE',
+                    expiresAt: 1745452800000,
+                    height: 200,
+                  },
+                  {
+                    width: 1128,
+                    fileIdentifyingUrlPathSegment:
+                      '350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1736241217137?e=1745452800&v=beta&t=o2IRQbI9O6H3Zmx8nzTcB5Tjk9hlpiJ1a8IJ25XKkUY',
+                    expiresAt: 1745452800000,
+                    height: 282,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4D16AQFxN8btV5N9hw/profile-displaybackgroundimage-shrink_',
+              },
+            },
+            publicIdentifier: 'antonio-fullstackdev',
+            picture: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/profile-displayphoto-shrink_100_100/0/1712128771491?e=1745452800&v=beta&t=SwxrYUmO29Qp8XsS7WvSQNrn3SU1F3nHtRDM52FxJss',
+                    expiresAt: 1745452800000,
+                    height: 100,
+                  },
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/profile-displayphoto-shrink_200_200/0/1712128771491?e=1745452800&v=beta&t=IAnzRHvtDHzIL802vc-Q4YQxLtFKhRDqgnZDA6n1mZA',
+                    expiresAt: 1745452800000,
+                    height: 200,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/profile-displayphoto-shrink_400_400/0/1712128771491?e=1745452800&v=beta&t=UFyN2rEpGaw5xTJl_19yP1STDPICVO5LVDkPOBFtc4M',
+                    expiresAt: 1745452800000,
+                    height: 400,
+                  },
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '800_800/profile-displayphoto-shrink_800_800/0/1712128771491?e=1745452800&v=beta&t=Q71drDa7g-waILxsomN45ja9o9MdKBpaYGDJnFaWSpM',
+                    expiresAt: 1745452800000,
+                    height: 800,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E03AQEDfuS_JQ6WMA/profile-displayphoto-shrink_',
+              },
+            },
+            trackingId: 'wrNiB1UwTUyx9TYPkWjNIQ==',
+          },
+          entityUrn:
+            'urn:li:fs_contributor:(ACoAADS3qpYByMxTkXB04om1RYIaATCahC47YL4,2107568283,413602646)',
+          profileUrn:
+            'urn:li:fs_miniProfile:ACoAADS3qpYByMxTkXB04om1RYIaATCahC47YL4',
+        },
+      ],
+      timePeriod: {
+        endDate: { month: 12, year: 2023 },
+        startDate: { month: 10, year: 2023 },
+      },
+      description:
+        '📎 https://wof-project.vercel.app/\n\nWoF es una plataforma innovadora que conecta dueños de animales con cuidadores profesionales de manera eficiente. En el front-end, se utiliza React para una interfaz dinámica, SCSS para estilos atractivos y Redux para gestionar el estado. La seguridad se basa en JWT y un sistema de login de terceros. El panel de administración permite supervisión y control seguros.\n\nEn el back-end, la API hexagonal en Express facilita escalabilidad y mantenimiento. La base de datos SQL asegura almacenamiento eficiente. Los métodos de pago con PayPal y tarjeta ofrecen seguridad en transacciones. Para mejorar la experiencia, se implementa la persistencia de datos en local storage, brindando una experiencia fluida y personalizada a los usuarios.\n\nEn resumen, WoF combina tecnologías modernas para conectar usuarios y cuidadores, con métodos de pago seguros y funcionalidades que mejoran la experiencia del usuario, como la persistencia de datos en local storage. 🐶🐱 #react #developer #sass #project\n\nDejen feedback!!',
+      title: 'WoF',
+    },
+    {
+      occupation:
+        'urn:li:fs_education:(ACoAADS3qpYByMxTkXB04om1RYIaATCahC47YL4,870414054)',
+      members: [
+        {
+          member: {
+            firstName: 'Jose Antonio',
+            lastName: 'Barba Rodríguez',
+            dashEntityUrn:
+              'urn:li:fsd_profile:ACoAADS3qpYByMxTkXB04om1RYIaATCahC47YL4',
+            occupation: 'CTO at WaLead',
+            objectUrn: 'urn:li:member:884451990',
+            entityUrn:
+              'urn:li:fs_miniProfile:ACoAADS3qpYByMxTkXB04om1RYIaATCahC47YL4',
+            backgroundImage: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '200_800/profile-displaybackgroundimage-shrink_200_800/0/1736241217137?e=1745452800&v=beta&t=cVYAMC8E_XrECwfyQZ6BcK4CaiUL6wZW0Fg0mQaeoCE',
+                    expiresAt: 1745452800000,
+                    height: 200,
+                  },
+                  {
+                    width: 1128,
+                    fileIdentifyingUrlPathSegment:
+                      '350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1736241217137?e=1745452800&v=beta&t=o2IRQbI9O6H3Zmx8nzTcB5Tjk9hlpiJ1a8IJ25XKkUY',
+                    expiresAt: 1745452800000,
+                    height: 282,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4D16AQFxN8btV5N9hw/profile-displaybackgroundimage-shrink_',
+              },
+            },
+            publicIdentifier: 'antonio-fullstackdev',
+            picture: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/profile-displayphoto-shrink_100_100/0/1712128771491?e=1745452800&v=beta&t=SwxrYUmO29Qp8XsS7WvSQNrn3SU1F3nHtRDM52FxJss',
+                    expiresAt: 1745452800000,
+                    height: 100,
+                  },
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/profile-displayphoto-shrink_200_200/0/1712128771491?e=1745452800&v=beta&t=IAnzRHvtDHzIL802vc-Q4YQxLtFKhRDqgnZDA6n1mZA',
+                    expiresAt: 1745452800000,
+                    height: 200,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/profile-displayphoto-shrink_400_400/0/1712128771491?e=1745452800&v=beta&t=UFyN2rEpGaw5xTJl_19yP1STDPICVO5LVDkPOBFtc4M',
+                    expiresAt: 1745452800000,
+                    height: 400,
+                  },
+                  {
+                    width: 800,
+                    fileIdentifyingUrlPathSegment:
+                      '800_800/profile-displayphoto-shrink_800_800/0/1712128771491?e=1745452800&v=beta&t=Q71drDa7g-waILxsomN45ja9o9MdKBpaYGDJnFaWSpM',
+                    expiresAt: 1745452800000,
+                    height: 800,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/D4E03AQEDfuS_JQ6WMA/profile-displayphoto-shrink_',
+              },
+            },
+            trackingId: 'wrNiB1UwTUyx9TYPkWjNIQ==',
+          },
+          entityUrn:
+            'urn:li:fs_contributor:(ACoAADS3qpYByMxTkXB04om1RYIaATCahC47YL4,1206900335,407081015)',
+          profileUrn:
+            'urn:li:fs_miniProfile:ACoAADS3qpYByMxTkXB04om1RYIaATCahC47YL4',
+        },
+      ],
+      description:
+        'Portfolio generated with Next.Js\nhttps://portfolio-esetoni.vercel.app/',
+      title: 'Portfolio',
+    },
+  ],
+  skills: [
+    { name: 'Entrepreneurship' },
+    { name: 'Marketing' },
+    { name: 'Product Strategy' },
+    { name: 'Large Language Models (LLM)' },
+  ],
+  urn_id: 'ACoAACJrZtEBJ4Z5qG7pO_WYv0EnV64bi2wz6ks',
+};
+
+const internal_profile_1 = {
+  positionGroupView: {
+    paging: { start: 0, count: 5, total: 3, links: [] },
+    entityUrn:
+      'urn:li:fs_positionGroupView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [
+      {
+        timePeriod: {
+          endDate: { month: 3, year: 2025 },
+          startDate: { month: 10, year: 2024 },
+        },
+        name: 'Pirical',
+        positions: [
+          {
+            locationName: 'London Area, United Kingdom',
+            entityUrn:
+              'urn:li:fs_position:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,2581098868)',
+            geoLocationName: 'London Area, United Kingdom',
+            geoUrn: 'urn:li:fs_geo:90009496',
+            companyName: 'Pirical',
+            timePeriod: {
+              endDate: { month: 3, year: 2025 },
+              startDate: { month: 10, year: 2024 },
+            },
+            description:
+              '- Maintained and optimized 20+ data pipelines using Python (Pandas), SQL, and AWS services,\nachieving 99.9% uptime.\n\n- Led technical consultations with Fortune 500 clients, translating complex data quality issues into\naccessible insights for non-technical stakeholders with 95% client satisfaction.\n\n- Created standardized SQL template queries using PostgreSQL and Redash, reducing data\ninvestigation time by 70%.\n\n- Analysed complex people analytics datasets to deliver actionable insights on leadership diversity\nand attrition trends\n\n- Designed and implemented an automated alert system using Mailchimp and Python, reducing late\ndata submissions by 75% and improving pipeline efficiency for 50+ enterprise clients, including all\n5 magic circle law firms.',
+            company: {
+              miniCompany: {
+                objectUrn: 'urn:li:company:17948604',
+                entityUrn: 'urn:li:fs_miniCompany:17948604',
+                name: 'Pirical',
+                showcase: False,
+                active: True,
+                logo: {
+                  'com.linkedin.common.VectorImage': {
+                    artifacts: [
+                      {
+                        width: 200,
+                        fileIdentifyingUrlPathSegment:
+                          '200_200/company-logo_200_200/0/1630615452916/pirical_logo?e=1750291200&v=beta&t=te3ZrytY2g-L8auckDNyheaTOig12FEgHkeLlk32-bI',
+                        expiresAt: 1750291200000,
+                        height: 200,
+                      },
+                      {
+                        width: 100,
+                        fileIdentifyingUrlPathSegment:
+                          '100_100/company-logo_100_100/0/1630615452916/pirical_logo?e=1750291200&v=beta&t=PbFAsgkR_BcgDKjBAWLqki-gEUn1oclJDIfkF29tz3o',
+                        expiresAt: 1750291200000,
+                        height: 100,
+                      },
+                      {
+                        width: 400,
+                        fileIdentifyingUrlPathSegment:
+                          '400_400/company-logo_400_400/0/1630615452916/pirical_logo?e=1750291200&v=beta&t=MvEJlM27G0Cjyr5aE6SvVDRQn80J7Rl3Fxu9nc8aCNo',
+                        expiresAt: 1750291200000,
+                        height: 400,
+                      },
+                    ],
+                    rootUrl:
+                      'https://media.licdn.com/dms/image/v2/C560BAQH8Lw9qJr89vA/company-logo_',
+                  },
+                },
+                universalName: 'pirical',
+                dashCompanyUrn: 'urn:li:fsd_company:17948604',
+                trackingId: '40f6pfolSaS7s1PX9xv1uQ==',
+              },
+              employeeCountRange: { start: 51, end: 200 },
+              industries: ['Computer Software'],
+            },
+            title: 'Data Engineer',
+            region: 'urn:li:fs_region:(gb,4573)',
+            companyUrn: 'urn:li:fs_miniCompany:17948604',
+          },
+        ],
+        paging: { start: 0, count: 5, total: 1, links: [] },
+        miniCompany: {
+          objectUrn: 'urn:li:company:17948604',
+          entityUrn: 'urn:li:fs_miniCompany:17948604',
+          name: 'Pirical',
+          showcase: False,
+          active: True,
+          logo: {
+            'com.linkedin.common.VectorImage': {
+              artifacts: [
+                {
+                  width: 200,
+                  fileIdentifyingUrlPathSegment:
+                    '200_200/company-logo_200_200/0/1630615452916/pirical_logo?e=1750291200&v=beta&t=te3ZrytY2g-L8auckDNyheaTOig12FEgHkeLlk32-bI',
+                  expiresAt: 1750291200000,
+                  height: 200,
+                },
+                {
+                  width: 100,
+                  fileIdentifyingUrlPathSegment:
+                    '100_100/company-logo_100_100/0/1630615452916/pirical_logo?e=1750291200&v=beta&t=PbFAsgkR_BcgDKjBAWLqki-gEUn1oclJDIfkF29tz3o',
+                  expiresAt: 1750291200000,
+                  height: 100,
+                },
+                {
+                  width: 400,
+                  fileIdentifyingUrlPathSegment:
+                    '400_400/company-logo_400_400/0/1630615452916/pirical_logo?e=1750291200&v=beta&t=MvEJlM27G0Cjyr5aE6SvVDRQn80J7Rl3Fxu9nc8aCNo',
+                  expiresAt: 1750291200000,
+                  height: 400,
+                },
+              ],
+              rootUrl:
+                'https://media.licdn.com/dms/image/v2/C560BAQH8Lw9qJr89vA/company-logo_',
+            },
+          },
+          universalName: 'pirical',
+          dashCompanyUrn: 'urn:li:fsd_company:17948604',
+          trackingId: '40f6pfolSaS7s1PX9xv1uQ==',
+        },
+        entityUrn:
+          'urn:li:fs_positionGroup:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,0)',
+      },
+      {
+        timePeriod: {
+          endDate: { month: 10, year: 2024 },
+          startDate: { month: 7, year: 2024 },
+        },
+        name: 'British Muslim Heritage Centre',
+        positions: [
+          {
+            locationName: 'Manchester, England, United Kingdom',
+            entityUrn:
+              'urn:li:fs_position:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,2581309082)',
+            geoLocationName: 'Manchester, England, United Kingdom',
+            geoUrn: 'urn:li:fs_geo:108541532',
+            companyName: 'British Muslim Heritage Centre',
+            timePeriod: {
+              endDate: { month: 10, year: 2024 },
+              startDate: { month: 7, year: 2024 },
+            },
+            description:
+              '- Directed cross-functional teams to deliver live broadcasts on tight deadlines, ensuring seamless collaboration while driving a 20% increase in listener engagement through data-driven content optimisation.\n\n- Bridged communication between creative and technical teams, translating technical needs into actionable steps for non-technical stakeholders.\n\n- Identified and implemented process improvements, reducing production time by 15% and streamlining workflows.',
+            company: {
+              miniCompany: {
+                objectUrn: 'urn:li:company:6746274',
+                entityUrn: 'urn:li:fs_miniCompany:6746274',
+                name: 'British Muslim Heritage Centre',
+                showcase: False,
+                active: True,
+                logo: {
+                  'com.linkedin.common.VectorImage': {
+                    artifacts: [
+                      {
+                        width: 200,
+                        fileIdentifyingUrlPathSegment:
+                          '200_200/company-logo_200_200/0/1630593289474/british_muslim_heritage_centre_logo?e=1750291200&v=beta&t=AOoL6BkZ0C4RO-hgiwvdjX8DBptwJlssnhFSDXGK1Yw',
+                        expiresAt: 1750291200000,
+                        height: 200,
+                      },
+                      {
+                        width: 100,
+                        fileIdentifyingUrlPathSegment:
+                          '100_100/company-logo_100_100/0/1630593289474/british_muslim_heritage_centre_logo?e=1750291200&v=beta&t=XzA1e0UeJy9SPD8Ie9-zvgAQzJf9z1diL_9U7Ajw9sg',
+                        expiresAt: 1750291200000,
+                        height: 100,
+                      },
+                      {
+                        width: 400,
+                        fileIdentifyingUrlPathSegment:
+                          '400_400/company-logo_400_400/0/1630593289474/british_muslim_heritage_centre_logo?e=1750291200&v=beta&t=LzIkuGg7EgzZlT2ojvFZ6M0lnjko_uoT00ijns1J-mQ',
+                        expiresAt: 1750291200000,
+                        height: 400,
+                      },
+                    ],
+                    rootUrl:
+                      'https://media.licdn.com/dms/image/v2/C560BAQFSCv_VNeb-Ag/company-logo_',
+                  },
+                },
+                universalName: 'british-muslim-heritage-centre',
+                dashCompanyUrn: 'urn:li:fsd_company:6746274',
+                trackingId: 'ozSD6ETGQ/GIdio1UPfMBg==',
+              },
+              employeeCountRange: { start: 11, end: 50 },
+              industries: ['International Affairs'],
+            },
+            title: 'Volunteer Producer',
+            region: 'urn:li:fs_region:(gb,0)',
+            companyUrn: 'urn:li:fs_miniCompany:6746274',
+          },
+        ],
+        paging: { start: 0, count: 2, total: 1, links: [] },
+        miniCompany: {
+          objectUrn: 'urn:li:company:6746274',
+          entityUrn: 'urn:li:fs_miniCompany:6746274',
+          name: 'British Muslim Heritage Centre',
+          showcase: False,
+          active: True,
+          logo: {
+            'com.linkedin.common.VectorImage': {
+              artifacts: [
+                {
+                  width: 200,
+                  fileIdentifyingUrlPathSegment:
+                    '200_200/company-logo_200_200/0/1630593289474/british_muslim_heritage_centre_logo?e=1750291200&v=beta&t=AOoL6BkZ0C4RO-hgiwvdjX8DBptwJlssnhFSDXGK1Yw',
+                  expiresAt: 1750291200000,
+                  height: 200,
+                },
+                {
+                  width: 100,
+                  fileIdentifyingUrlPathSegment:
+                    '100_100/company-logo_100_100/0/1630593289474/british_muslim_heritage_centre_logo?e=1750291200&v=beta&t=XzA1e0UeJy9SPD8Ie9-zvgAQzJf9z1diL_9U7Ajw9sg',
+                  expiresAt: 1750291200000,
+                  height: 100,
+                },
+                {
+                  width: 400,
+                  fileIdentifyingUrlPathSegment:
+                    '400_400/company-logo_400_400/0/1630593289474/british_muslim_heritage_centre_logo?e=1750291200&v=beta&t=LzIkuGg7EgzZlT2ojvFZ6M0lnjko_uoT00ijns1J-mQ',
+                  expiresAt: 1750291200000,
+                  height: 400,
+                },
+              ],
+              rootUrl:
+                'https://media.licdn.com/dms/image/v2/C560BAQFSCv_VNeb-Ag/company-logo_',
+            },
+          },
+          universalName: 'british-muslim-heritage-centre',
+          dashCompanyUrn: 'urn:li:fsd_company:6746274',
+          trackingId: 'ozSD6ETGQ/GIdio1UPfMBg==',
+        },
+        entityUrn:
+          'urn:li:fs_positionGroup:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1)',
+      },
+      {
+        timePeriod: {
+          endDate: { month: 7, year: 2024 },
+          startDate: { month: 12, year: 2023 },
+        },
+        name: 'AiCore',
+        positions: [
+          {
+            locationName: 'London Area, United Kingdom',
+            entityUrn:
+              'urn:li:fs_position:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,2581302482)',
+            geoLocationName: 'London Area, United Kingdom',
+            geoUrn: 'urn:li:fs_geo:90009496',
+            companyName: 'AiCore',
+            timePeriod: {
+              endDate: { month: 7, year: 2024 },
+              startDate: { month: 12, year: 2023 },
+            },
+            description:
+              '- Built an end-to-end Data Pipeline, using AWS, Apache Spark and Kafka which enables stakeholders to perform real time data processing, facilitating for quick and informed decision making.\n\n- Gained practical experience through completing 14 learning courses and over 100 hands-on exercises on topics including Python, Command Line, AWS, ETL/ELT processes, Pandas, and Databricks.',
+            company: {
+              miniCompany: {
+                objectUrn: 'urn:li:company:18690627',
+                entityUrn: 'urn:li:fs_miniCompany:18690627',
+                name: 'AiCore',
+                showcase: False,
+                active: True,
+                logo: {
+                  'com.linkedin.common.VectorImage': {
+                    artifacts: [
+                      {
+                        width: 200,
+                        fileIdentifyingUrlPathSegment:
+                          '200_200/company-logo_200_200/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=PFSpLbWFC_9F7c1LMaIR7vq2rbXqSkLF2qAk8Txaj4k',
+                        expiresAt: 1750291200000,
+                        height: 200,
+                      },
+                      {
+                        width: 100,
+                        fileIdentifyingUrlPathSegment:
+                          '100_100/company-logo_100_100/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=LR4cCfAjiGUHVVnBeKWHaJ67kwHNko0CU83-AGxjebg',
+                        expiresAt: 1750291200000,
+                        height: 100,
+                      },
+                      {
+                        width: 400,
+                        fileIdentifyingUrlPathSegment:
+                          '400_400/company-logo_400_400/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=0RGNPX6ar27MlsihONmXwnJWa7HDpikQbvs2bwpLUNg',
+                        expiresAt: 1750291200000,
+                        height: 400,
+                      },
+                    ],
+                    rootUrl:
+                      'https://media.licdn.com/dms/image/v2/C4E0BAQFd1hpR6yzytg/company-logo_',
+                  },
+                },
+                universalName: 'aicore',
+                dashCompanyUrn: 'urn:li:fsd_company:18690627',
+                trackingId: '/YVRQCTiRf2So76hkb8sTw==',
+              },
+              employeeCountRange: { start: 51, end: 200 },
+              industries: ['Computer Software'],
+            },
+            title: 'Data Engineer',
+            region: 'urn:li:fs_region:(gb,4573)',
+            companyUrn: 'urn:li:fs_miniCompany:18690627',
+          },
+        ],
+        paging: { start: 0, count: 2, total: 1, links: [] },
+        miniCompany: {
+          objectUrn: 'urn:li:company:18690627',
+          entityUrn: 'urn:li:fs_miniCompany:18690627',
+          name: 'AiCore',
+          showcase: False,
+          active: True,
+          logo: {
+            'com.linkedin.common.VectorImage': {
+              artifacts: [
+                {
+                  width: 200,
+                  fileIdentifyingUrlPathSegment:
+                    '200_200/company-logo_200_200/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=PFSpLbWFC_9F7c1LMaIR7vq2rbXqSkLF2qAk8Txaj4k',
+                  expiresAt: 1750291200000,
+                  height: 200,
+                },
+                {
+                  width: 100,
+                  fileIdentifyingUrlPathSegment:
+                    '100_100/company-logo_100_100/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=LR4cCfAjiGUHVVnBeKWHaJ67kwHNko0CU83-AGxjebg',
+                  expiresAt: 1750291200000,
+                  height: 100,
+                },
+                {
+                  width: 400,
+                  fileIdentifyingUrlPathSegment:
+                    '400_400/company-logo_400_400/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=0RGNPX6ar27MlsihONmXwnJWa7HDpikQbvs2bwpLUNg',
+                  expiresAt: 1750291200000,
+                  height: 400,
+                },
+              ],
+              rootUrl:
+                'https://media.licdn.com/dms/image/v2/C4E0BAQFd1hpR6yzytg/company-logo_',
+            },
+          },
+          universalName: 'aicore',
+          dashCompanyUrn: 'urn:li:fsd_company:18690627',
+          trackingId: '/YVRQCTiRf2So76hkb8sTw==',
+        },
+        entityUrn:
+          'urn:li:fs_positionGroup:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,2)',
+      },
+    ],
+  },
+  patentView: {
+    paging: { start: 0, count: 10, total: 0, links: [] },
+    entityUrn: 'urn:li:fs_patentView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [],
+  },
+  summaryTreasuryMediaCount: 0,
+  summaryTreasuryMedias: [],
+  educationView: {
+    paging: { start: 0, count: 3, total: 3, links: [] },
+    entityUrn:
+      'urn:li:fs_educationView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [
+      {
+        entityUrn:
+          'urn:li:fs_education:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1064374053)',
+        school: {
+          objectUrn: 'urn:li:school:4152024',
+          entityUrn: 'urn:li:fs_miniSchool:4152024',
+          active: True,
+          logo: {
+            'com.linkedin.common.VectorImage': {
+              artifacts: [
+                {
+                  width: 200,
+                  fileIdentifyingUrlPathSegment:
+                    '200_200/company-logo_200_200/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=PFSpLbWFC_9F7c1LMaIR7vq2rbXqSkLF2qAk8Txaj4k',
+                  expiresAt: 1750291200000,
+                  height: 200,
+                },
+                {
+                  width: 100,
+                  fileIdentifyingUrlPathSegment:
+                    '100_100/company-logo_100_100/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=LR4cCfAjiGUHVVnBeKWHaJ67kwHNko0CU83-AGxjebg',
+                  expiresAt: 1750291200000,
+                  height: 100,
+                },
+                {
+                  width: 400,
+                  fileIdentifyingUrlPathSegment:
+                    '400_400/company-logo_400_400/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=0RGNPX6ar27MlsihONmXwnJWa7HDpikQbvs2bwpLUNg',
+                  expiresAt: 1750291200000,
+                  height: 400,
+                },
+              ],
+              rootUrl:
+                'https://media.licdn.com/dms/image/v2/C4E0BAQFd1hpR6yzytg/company-logo_',
+            },
+          },
+          schoolName: 'AiCore',
+          trackingId: 'kALCeAW5ROuHrcQwUZuo/g==',
+        },
+        timePeriod: { endDate: { month: 7, year: 2024 } },
+        schoolName: 'AiCore',
+        fieldOfStudy: 'Data Engineering & Analytics',
+        schoolUrn: 'urn:li:fs_miniSchool:4152024',
+      },
+      {
+        entityUrn:
+          'urn:li:fs_education:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1059445620)',
+        school: {
+          objectUrn: 'urn:li:school:12674',
+          entityUrn: 'urn:li:fs_miniSchool:12674',
+          active: True,
+          logo: {
+            'com.linkedin.common.VectorImage': {
+              artifacts: [
+                {
+                  width: 200,
+                  fileIdentifyingUrlPathSegment:
+                    '200_200/company-logo_200_200/0/1631322950656?e=1750291200&v=beta&t=DVWDQRpwZzZWWdx0IJqqMpH4Il2yYtLcNzbvJwYG2Aw',
+                  expiresAt: 1750291200000,
+                  height: 200,
+                },
+                {
+                  width: 100,
+                  fileIdentifyingUrlPathSegment:
+                    '100_100/company-logo_100_100/0/1631322950656?e=1750291200&v=beta&t=vph9TixPfYA3OH-ZXzkFks-KgQiou5KHPaQ7HQH9UaM',
+                  expiresAt: 1750291200000,
+                  height: 100,
+                },
+                {
+                  width: 400,
+                  fileIdentifyingUrlPathSegment:
+                    '400_400/company-logo_400_400/0/1631322950656?e=1750291200&v=beta&t=F3lCLrzayluwwmSO3xtrvb3RToBJT9tS22E4Wq1etwE',
+                  expiresAt: 1750291200000,
+                  height: 400,
+                },
+              ],
+              rootUrl:
+                'https://media.licdn.com/dms/image/v2/C560BAQGvhp9vn9v2fg/company-logo_',
+            },
+          },
+          schoolName: 'The University of Salford',
+          trackingId: '10+0EpZ3SVupRdz9oGfghQ==',
+        },
+        timePeriod: { endDate: { year: 2021 }, startDate: { year: 2019 } },
+        fieldOfStudyUrn: 'urn:li:fs_fieldOfStudy:100189',
+        degreeName: "Bachelor's degree",
+        schoolName: 'The University of Salford',
+        fieldOfStudy: 'Computer Science',
+        degreeUrn: 'urn:li:fs_degree:200',
+        schoolUrn: 'urn:li:fs_miniSchool:12674',
+      },
+      {
+        entityUrn:
+          'urn:li:fs_education:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1065819989)',
+        school: {
+          objectUrn: 'urn:li:school:465001',
+          entityUrn: 'urn:li:fs_miniSchool:465001',
+          active: True,
+          logo: {
+            'com.linkedin.common.VectorImage': {
+              artifacts: [
+                {
+                  width: 200,
+                  fileIdentifyingUrlPathSegment:
+                    '200_200/company-logo_200_200/0/1630566654748?e=1750291200&v=beta&t=VqnjQkBuAsnxt1kszWGGnMHZWercAH08vAOLq8y1drI',
+                  expiresAt: 1750291200000,
+                  height: 200,
+                },
+                {
+                  width: 100,
+                  fileIdentifyingUrlPathSegment:
+                    '100_100/company-logo_100_100/0/1630566654748?e=1750291200&v=beta&t=-1GxURt7HS7TNXYph6UTEySRa1bd6my2aZT-fXTAG1Q',
+                  expiresAt: 1750291200000,
+                  height: 100,
+                },
+                {
+                  width: 400,
+                  fileIdentifyingUrlPathSegment:
+                    '400_400/company-logo_400_400/0/1630566654748?e=1750291200&v=beta&t=Ku67w1_ZTeiofk21AwbW9g7G_64y0MJMSP3m-JGOliU',
+                  expiresAt: 1750291200000,
+                  height: 400,
+                },
+              ],
+              rootUrl:
+                'https://media.licdn.com/dms/image/v2/C4E0BAQFZ_ikCN0LglA/company-logo_',
+            },
+          },
+          schoolName: 'Loreto Sixth Form College',
+          trackingId: 'XjierhMoT7y34/GzTxTyYA==',
+        },
+        timePeriod: { endDate: { month: 8, year: 2019 } },
+        degreeName: 'A Levels',
+        schoolName: 'Loreto Sixth Form College',
+        fieldOfStudy: 'Computer Science, Mathematics, Psychology',
+        schoolUrn: 'urn:li:fs_miniSchool:465001',
+      },
+    ],
+  },
+  organizationView: {
+    paging: { start: 0, count: 10, total: 0, links: [] },
+    entityUrn:
+      'urn:li:fs_organizationView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [],
+  },
+  projectView: {
+    paging: { start: 0, count: 10, total: 7, links: [] },
+    entityUrn: 'urn:li:fs_projectView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [
+      {
+        entityUrn:
+          'urn:li:fs_project:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1746850081)',
+        members: [
+          {
+            member: {
+              firstName: 'Danish',
+              lastName: 'Amin',
+              dashEntityUrn:
+                'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+              occupation:
+                'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+              objectUrn: 'urn:li:member:879747278',
+              entityUrn:
+                'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+              backgroundImage: {
+                'com.linkedin.common.VectorImage': {
+                  artifacts: [
+                    {
+                      width: 1400,
+                      fileIdentifyingUrlPathSegment:
+                        '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+                      expiresAt: 1750291200000,
+                      height: 350,
+                    },
+                    {
+                      width: 800,
+                      fileIdentifyingUrlPathSegment:
+                        '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+                      expiresAt: 1750291200000,
+                      height: 200,
+                    },
+                  ],
+                  rootUrl:
+                    'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+                },
+              },
+              publicIdentifier: 'd4min',
+              picture: {
+                'com.linkedin.common.VectorImage': {
+                  artifacts: [
+                    {
+                      width: 200,
+                      fileIdentifyingUrlPathSegment:
+                        '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+                      expiresAt: 1750291200000,
+                      height: 200,
+                    },
+                    {
+                      width: 400,
+                      fileIdentifyingUrlPathSegment:
+                        '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+                      expiresAt: 1750291200000,
+                      height: 400,
+                    },
+                    {
+                      width: 100,
+                      fileIdentifyingUrlPathSegment:
+                        '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+                      expiresAt: 1750291200000,
+                      height: 100,
+                    },
+                    {
+                      width: 588,
+                      fileIdentifyingUrlPathSegment:
+                        '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+                      expiresAt: 1750291200000,
+                      height: 588,
+                    },
+                  ],
+                  rootUrl:
+                    'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+                },
+              },
+              trackingId: 'xqAv2wd7QOeMqp3wKC7EVw==',
+            },
+            entityUrn:
+              'urn:li:fs_contributor:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1746850081,458381006)',
+            profileUrn:
+              'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+          },
+        ],
+        timePeriod: {
+          endDate: { month: 3, year: 2025 },
+          startDate: { month: 3, year: 2025 },
+        },
+        description:
+          'DataCanary is a data quality tool that helps you analyse and validate your data',
+        title: 'DataCanary',
+      },
+      {
+        entityUrn:
+          'urn:li:fs_project:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,2035075545)',
+        members: [
+          {
+            member: {
+              firstName: 'Danish',
+              lastName: 'Amin',
+              dashEntityUrn:
+                'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+              occupation:
+                'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+              objectUrn: 'urn:li:member:879747278',
+              entityUrn:
+                'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+              backgroundImage: {
+                'com.linkedin.common.VectorImage': {
+                  artifacts: [
+                    {
+                      width: 1400,
+                      fileIdentifyingUrlPathSegment:
+                        '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+                      expiresAt: 1750291200000,
+                      height: 350,
+                    },
+                    {
+                      width: 800,
+                      fileIdentifyingUrlPathSegment:
+                        '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+                      expiresAt: 1750291200000,
+                      height: 200,
+                    },
+                  ],
+                  rootUrl:
+                    'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+                },
+              },
+              publicIdentifier: 'd4min',
+              picture: {
+                'com.linkedin.common.VectorImage': {
+                  artifacts: [
+                    {
+                      width: 200,
+                      fileIdentifyingUrlPathSegment:
+                        '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+                      expiresAt: 1750291200000,
+                      height: 200,
+                    },
+                    {
+                      width: 400,
+                      fileIdentifyingUrlPathSegment:
+                        '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+                      expiresAt: 1750291200000,
+                      height: 400,
+                    },
+                    {
+                      width: 100,
+                      fileIdentifyingUrlPathSegment:
+                        '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+                      expiresAt: 1750291200000,
+                      height: 100,
+                    },
+                    {
+                      width: 588,
+                      fileIdentifyingUrlPathSegment:
+                        '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+                      expiresAt: 1750291200000,
+                      height: 588,
+                    },
+                  ],
+                  rootUrl:
+                    'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+                },
+              },
+              trackingId: 'xqAv2wd7QOeMqp3wKC7EVw==',
+            },
+            entityUrn:
+              'urn:li:fs_contributor:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,2035075545,461117643)',
+            profileUrn:
+              'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+          },
+        ],
+        description:
+          'AirCanvas is a computer vision project that lets you draw using hand gestures. Built with OpenCV and MediaPipe, it tracks your hand movements to simulate basic painting—like MS Paint, but without a mouse.',
+        title: 'AirCanvas',
+      },
+      {
+        entityUrn:
+          'urn:li:fs_project:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1559777548)',
+        members: [
+          {
+            member: {
+              firstName: 'Danish',
+              lastName: 'Amin',
+              dashEntityUrn:
+                'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+              occupation:
+                'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+              objectUrn: 'urn:li:member:879747278',
+              entityUrn:
+                'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+              backgroundImage: {
+                'com.linkedin.common.VectorImage': {
+                  artifacts: [
+                    {
+                      width: 1400,
+                      fileIdentifyingUrlPathSegment:
+                        '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+                      expiresAt: 1750291200000,
+                      height: 350,
+                    },
+                    {
+                      width: 800,
+                      fileIdentifyingUrlPathSegment:
+                        '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+                      expiresAt: 1750291200000,
+                      height: 200,
+                    },
+                  ],
+                  rootUrl:
+                    'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+                },
+              },
+              publicIdentifier: 'd4min',
+              picture: {
+                'com.linkedin.common.VectorImage': {
+                  artifacts: [
+                    {
+                      width: 200,
+                      fileIdentifyingUrlPathSegment:
+                        '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+                      expiresAt: 1750291200000,
+                      height: 200,
+                    },
+                    {
+                      width: 400,
+                      fileIdentifyingUrlPathSegment:
+                        '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+                      expiresAt: 1750291200000,
+                      height: 400,
+                    },
+                    {
+                      width: 100,
+                      fileIdentifyingUrlPathSegment:
+                        '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+                      expiresAt: 1750291200000,
+                      height: 100,
+                    },
+                    {
+                      width: 588,
+                      fileIdentifyingUrlPathSegment:
+                        '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+                      expiresAt: 1750291200000,
+                      height: 588,
+                    },
+                  ],
+                  rootUrl:
+                    'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+                },
+              },
+              trackingId: 'xqAv2wd7QOeMqp3wKC7EVw==',
+            },
+            entityUrn:
+              'urn:li:fs_contributor:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1559777548,458088047)',
+            profileUrn:
+              'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+          },
+        ],
+        description:
+          "- Built a comprehensive simulation of Axelrod's Prisoner's Dilemma tournament using Python with object-oriented programming principles to model complex game theory interactions\n\n- Implemented multiple strategy classes (TitForTat, AlwaysDefect, Grudger) with configurable parameters to analyse cooperation emergence in iterated games\n\n- Created a robust tournament system with detailed match tracking, cooperation rate analysis, and comprehensive result aggregation using NumPy and Pandas\n\n- Developed a complete data pipeline with SQLAlchemy database integration for storing tournament results and custom exporters for PowerBI visualisations\n\n- Demonstrated strong software engineering practices through comprehensive test coverage, modular design, and well-documented code following Python best practices",
+        title: 'Axelrod Tournament Simulation',
+      },
+      {
+        entityUrn:
+          'urn:li:fs_project:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1746994576)',
+        members: [
+          {
+            member: {
+              firstName: 'Danish',
+              lastName: 'Amin',
+              dashEntityUrn:
+                'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+              occupation:
+                'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+              objectUrn: 'urn:li:member:879747278',
+              entityUrn:
+                'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+              backgroundImage: {
+                'com.linkedin.common.VectorImage': {
+                  artifacts: [
+                    {
+                      width: 1400,
+                      fileIdentifyingUrlPathSegment:
+                        '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+                      expiresAt: 1750291200000,
+                      height: 350,
+                    },
+                    {
+                      width: 800,
+                      fileIdentifyingUrlPathSegment:
+                        '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+                      expiresAt: 1750291200000,
+                      height: 200,
+                    },
+                  ],
+                  rootUrl:
+                    'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+                },
+              },
+              publicIdentifier: 'd4min',
+              picture: {
+                'com.linkedin.common.VectorImage': {
+                  artifacts: [
+                    {
+                      width: 200,
+                      fileIdentifyingUrlPathSegment:
+                        '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+                      expiresAt: 1750291200000,
+                      height: 200,
+                    },
+                    {
+                      width: 400,
+                      fileIdentifyingUrlPathSegment:
+                        '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+                      expiresAt: 1750291200000,
+                      height: 400,
+                    },
+                    {
+                      width: 100,
+                      fileIdentifyingUrlPathSegment:
+                        '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+                      expiresAt: 1750291200000,
+                      height: 100,
+                    },
+                    {
+                      width: 588,
+                      fileIdentifyingUrlPathSegment:
+                        '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+                      expiresAt: 1750291200000,
+                      height: 588,
+                    },
+                  ],
+                  rootUrl:
+                    'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+                },
+              },
+              trackingId: 'xqAv2wd7QOeMqp3wKC7EVw==',
+            },
+            entityUrn:
+              'urn:li:fs_contributor:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1746994576,458380038)',
+            profileUrn:
+              'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+          },
+        ],
+        description:
+          "Exploratory data analysis of a financial institution's loan portfolio to uncover patterns, relationships, and anomalies in lending data. This analysis aims to enhance decision-making for loan approvals, improve risk management strategies, and optimize portfolio profitability through statistical analysis and data visualisation techniques.",
+        title: 'Loans Portfolio - EDA',
+      },
+      {
+        entityUrn:
+          'urn:li:fs_project:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,597559211)',
+        members: [
+          {
+            member: {
+              firstName: 'Danish',
+              lastName: 'Amin',
+              dashEntityUrn:
+                'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+              occupation:
+                'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+              objectUrn: 'urn:li:member:879747278',
+              entityUrn:
+                'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+              backgroundImage: {
+                'com.linkedin.common.VectorImage': {
+                  artifacts: [
+                    {
+                      width: 1400,
+                      fileIdentifyingUrlPathSegment:
+                        '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+                      expiresAt: 1750291200000,
+                      height: 350,
+                    },
+                    {
+                      width: 800,
+                      fileIdentifyingUrlPathSegment:
+                        '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+                      expiresAt: 1750291200000,
+                      height: 200,
+                    },
+                  ],
+                  rootUrl:
+                    'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+                },
+              },
+              publicIdentifier: 'd4min',
+              picture: {
+                'com.linkedin.common.VectorImage': {
+                  artifacts: [
+                    {
+                      width: 200,
+                      fileIdentifyingUrlPathSegment:
+                        '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+                      expiresAt: 1750291200000,
+                      height: 200,
+                    },
+                    {
+                      width: 400,
+                      fileIdentifyingUrlPathSegment:
+                        '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+                      expiresAt: 1750291200000,
+                      height: 400,
+                    },
+                    {
+                      width: 100,
+                      fileIdentifyingUrlPathSegment:
+                        '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+                      expiresAt: 1750291200000,
+                      height: 100,
+                    },
+                    {
+                      width: 588,
+                      fileIdentifyingUrlPathSegment:
+                        '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+                      expiresAt: 1750291200000,
+                      height: 588,
+                    },
+                  ],
+                  rootUrl:
+                    'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+                },
+              },
+              trackingId: 'xqAv2wd7QOeMqp3wKC7EVw==',
+            },
+            entityUrn:
+              'urn:li:fs_contributor:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,597559211,456505716)',
+            profileUrn:
+              'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+          },
+        ],
+        timePeriod: {
+          endDate: { month: 6, year: 2024 },
+          startDate: { month: 3, year: 2024 },
+        },
+        description:
+          '- Technologies administered: Kafka, AWS MSK, MSK Connect, AWS API Gateway, AWS S3, Spark, Spark Structured Streaming, Databricks, Airflow, AWS MWAA, AWS Kinesis.\n\n- Built an end-to-end data processing pipeline hosted on AWS, capable of handling 500,000+ daily API requests\n\n- Created an API using API Gateway and used AWS MSK and MSK Connect to distribute the data from the API to an AWS S3 data lake.\n\n- Extracted batch data from AWS S3 and applied transformations in Databricks using PySpark.\nImplemented AWS MWAA to automate and orchestrate Databricks workloads, improving the reliability and efficiency of data pipelines.\n\n- Streamed data in real-time using AWS Kinesis and performed near real-time analysis leveraging a Spark cluster on Databricks.\n\n- Enabled Pinterest to analyse real-time data to support swift, data-driven decisions.\nIncreased data accessibility and standardisation due to the pipeline enhances collaboration across teams and stakeholders.',
+        title: 'Pinterest Data Pipeline',
+      },
+      {
+        entityUrn:
+          'urn:li:fs_project:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1559234465)',
+        members: [
+          {
+            member: {
+              firstName: 'Danish',
+              lastName: 'Amin',
+              dashEntityUrn:
+                'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+              occupation:
+                'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+              objectUrn: 'urn:li:member:879747278',
+              entityUrn:
+                'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+              backgroundImage: {
+                'com.linkedin.common.VectorImage': {
+                  artifacts: [
+                    {
+                      width: 1400,
+                      fileIdentifyingUrlPathSegment:
+                        '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+                      expiresAt: 1750291200000,
+                      height: 350,
+                    },
+                    {
+                      width: 800,
+                      fileIdentifyingUrlPathSegment:
+                        '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+                      expiresAt: 1750291200000,
+                      height: 200,
+                    },
+                  ],
+                  rootUrl:
+                    'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+                },
+              },
+              publicIdentifier: 'd4min',
+              picture: {
+                'com.linkedin.common.VectorImage': {
+                  artifacts: [
+                    {
+                      width: 200,
+                      fileIdentifyingUrlPathSegment:
+                        '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+                      expiresAt: 1750291200000,
+                      height: 200,
+                    },
+                    {
+                      width: 400,
+                      fileIdentifyingUrlPathSegment:
+                        '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+                      expiresAt: 1750291200000,
+                      height: 400,
+                    },
+                    {
+                      width: 100,
+                      fileIdentifyingUrlPathSegment:
+                        '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+                      expiresAt: 1750291200000,
+                      height: 100,
+                    },
+                    {
+                      width: 588,
+                      fileIdentifyingUrlPathSegment:
+                        '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+                      expiresAt: 1750291200000,
+                      height: 588,
+                    },
+                  ],
+                  rootUrl:
+                    'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+                },
+              },
+              trackingId: 'xqAv2wd7QOeMqp3wKC7EVw==',
+            },
+            entityUrn:
+              'urn:li:fs_contributor:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1559234465,458087166)',
+            profileUrn:
+              'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+          },
+        ],
+        timePeriod: {
+          endDate: { month: 2, year: 2024 },
+          startDate: { month: 12, year: 2023 },
+        },
+        description:
+          '- Technologies implemented: Python, APIs, PostgreSQL, Pgadmin4, Pandas, AWS RDS, PowerBI.\n\n- Developed a system that processed and cleansed over 100,000 records from APIs, PDF\ndocuments, cloud databases, and JSON files, reducing data inconsistencies by 25%.\n\n- Engineered a star-based database schema improving data retrieval performance by 30%,\noptimizing query speed and enabling more efficient data analysis within the retail sector.\n\n- Conducted in-depth analysis of processed retail data, identifying key trends and patterns\nthat provided actionable insights for the business.\n\n- Delivered insights with the potential to enhance retail operations and improve decision-\nmaking processes, contributing to increased efficiency and profitability.\n\n- Created interactive data visualisations in Power BI, enabling stakeholders to gain actionable\ninsights from over 100,000+ records and improving data-driven decision-making across the\nretail organisation.',
+        title: 'Multinational Retail Data Centralisation',
+      },
+      {
+        entityUrn:
+          'urn:li:fs_project:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1559566356)',
+        members: [
+          {
+            member: {
+              firstName: 'Danish',
+              lastName: 'Amin',
+              dashEntityUrn:
+                'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+              occupation:
+                'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+              objectUrn: 'urn:li:member:879747278',
+              entityUrn:
+                'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+              backgroundImage: {
+                'com.linkedin.common.VectorImage': {
+                  artifacts: [
+                    {
+                      width: 1400,
+                      fileIdentifyingUrlPathSegment:
+                        '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+                      expiresAt: 1750291200000,
+                      height: 350,
+                    },
+                    {
+                      width: 800,
+                      fileIdentifyingUrlPathSegment:
+                        '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+                      expiresAt: 1750291200000,
+                      height: 200,
+                    },
+                  ],
+                  rootUrl:
+                    'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+                },
+              },
+              publicIdentifier: 'd4min',
+              picture: {
+                'com.linkedin.common.VectorImage': {
+                  artifacts: [
+                    {
+                      width: 200,
+                      fileIdentifyingUrlPathSegment:
+                        '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+                      expiresAt: 1750291200000,
+                      height: 200,
+                    },
+                    {
+                      width: 400,
+                      fileIdentifyingUrlPathSegment:
+                        '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+                      expiresAt: 1750291200000,
+                      height: 400,
+                    },
+                    {
+                      width: 100,
+                      fileIdentifyingUrlPathSegment:
+                        '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+                      expiresAt: 1750291200000,
+                      height: 100,
+                    },
+                    {
+                      width: 588,
+                      fileIdentifyingUrlPathSegment:
+                        '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+                      expiresAt: 1750291200000,
+                      height: 588,
+                    },
+                  ],
+                  rootUrl:
+                    'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+                },
+              },
+              trackingId: 'xqAv2wd7QOeMqp3wKC7EVw==',
+            },
+            entityUrn:
+              'urn:li:fs_contributor:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1559566356,458083648)',
+            profileUrn:
+              'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+          },
+        ],
+        description:
+          '- Developed an interactive Rock-Paper-Scissors game using computer vision that recognises hand gestures through a webcam\n\n- Created and trained a custom machine learning model with Teachable Machine to accurately classify rock, paper, and scissors gestures in real-time\n\n- Implemented the project using Python, TensorFlow/Keras, OpenCV, and NumPy for image processing and gesture recognition\n\n- Built a complete game system with round management, intelligent validation, and scoring that tracks wins until a player reaches 3 victories\n\n- Applied object-oriented programming principles and proper software architecture for maintainable, modular code design',
+        title: 'Computer Vision Rock-Paper-Scissors',
+      },
+    ],
+  },
+  positionView: {
+    paging: { start: 0, count: 5, total: 3, links: [] },
+    entityUrn: 'urn:li:fs_positionView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [
+      {
+        locationName: 'London Area, United Kingdom',
+        entityUrn:
+          'urn:li:fs_position:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,2581098868)',
+        geoLocationName: 'London Area, United Kingdom',
+        geoUrn: 'urn:li:fs_geo:90009496',
+        companyName: 'Pirical',
+        timePeriod: {
+          endDate: { month: 3, year: 2025 },
+          startDate: { month: 10, year: 2024 },
+        },
+        description:
+          '- Maintained and optimized 20+ data pipelines using Python (Pandas), SQL, and AWS services,\nachieving 99.9% uptime.\n\n- Led technical consultations with Fortune 500 clients, translating complex data quality issues into\naccessible insights for non-technical stakeholders with 95% client satisfaction.\n\n- Created standardized SQL template queries using PostgreSQL and Redash, reducing data\ninvestigation time by 70%.\n\n- Analysed complex people analytics datasets to deliver actionable insights on leadership diversity\nand attrition trends\n\n- Designed and implemented an automated alert system using Mailchimp and Python, reducing late\ndata submissions by 75% and improving pipeline efficiency for 50+ enterprise clients, including all\n5 magic circle law firms.',
+        company: {
+          miniCompany: {
+            objectUrn: 'urn:li:company:17948604',
+            entityUrn: 'urn:li:fs_miniCompany:17948604',
+            name: 'Pirical',
+            showcase: False,
+            active: True,
+            logo: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/company-logo_200_200/0/1630615452916/pirical_logo?e=1750291200&v=beta&t=te3ZrytY2g-L8auckDNyheaTOig12FEgHkeLlk32-bI',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/company-logo_100_100/0/1630615452916/pirical_logo?e=1750291200&v=beta&t=PbFAsgkR_BcgDKjBAWLqki-gEUn1oclJDIfkF29tz3o',
+                    expiresAt: 1750291200000,
+                    height: 100,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/company-logo_400_400/0/1630615452916/pirical_logo?e=1750291200&v=beta&t=MvEJlM27G0Cjyr5aE6SvVDRQn80J7Rl3Fxu9nc8aCNo',
+                    expiresAt: 1750291200000,
+                    height: 400,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/C560BAQH8Lw9qJr89vA/company-logo_',
+              },
+            },
+            universalName: 'pirical',
+            dashCompanyUrn: 'urn:li:fsd_company:17948604',
+            trackingId: '7ZJp8yM8TWSgmLPtY3Hmyw==',
+          },
+          employeeCountRange: { start: 51, end: 200 },
+          industries: ['Computer Software'],
+        },
+        title: 'Data Engineer',
+        region: 'urn:li:fs_region:(gb,4573)',
+        companyUrn: 'urn:li:fs_miniCompany:17948604',
+      },
+      {
+        locationName: 'Manchester, England, United Kingdom',
+        entityUrn:
+          'urn:li:fs_position:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,2581309082)',
+        geoLocationName: 'Manchester, England, United Kingdom',
+        geoUrn: 'urn:li:fs_geo:108541532',
+        companyName: 'British Muslim Heritage Centre',
+        timePeriod: {
+          endDate: { month: 10, year: 2024 },
+          startDate: { month: 7, year: 2024 },
+        },
+        description:
+          '- Directed cross-functional teams to deliver live broadcasts on tight deadlines, ensuring seamless collaboration while driving a 20% increase in listener engagement through data-driven content optimisation.\n\n- Bridged communication between creative and technical teams, translating technical needs into actionable steps for non-technical stakeholders.\n\n- Identified and implemented process improvements, reducing production time by 15% and streamlining workflows.',
+        company: {
+          miniCompany: {
+            objectUrn: 'urn:li:company:6746274',
+            entityUrn: 'urn:li:fs_miniCompany:6746274',
+            name: 'British Muslim Heritage Centre',
+            showcase: False,
+            active: True,
+            logo: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/company-logo_200_200/0/1630593289474/british_muslim_heritage_centre_logo?e=1750291200&v=beta&t=AOoL6BkZ0C4RO-hgiwvdjX8DBptwJlssnhFSDXGK1Yw',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/company-logo_100_100/0/1630593289474/british_muslim_heritage_centre_logo?e=1750291200&v=beta&t=XzA1e0UeJy9SPD8Ie9-zvgAQzJf9z1diL_9U7Ajw9sg',
+                    expiresAt: 1750291200000,
+                    height: 100,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/company-logo_400_400/0/1630593289474/british_muslim_heritage_centre_logo?e=1750291200&v=beta&t=LzIkuGg7EgzZlT2ojvFZ6M0lnjko_uoT00ijns1J-mQ',
+                    expiresAt: 1750291200000,
+                    height: 400,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/C560BAQFSCv_VNeb-Ag/company-logo_',
+              },
+            },
+            universalName: 'british-muslim-heritage-centre',
+            dashCompanyUrn: 'urn:li:fsd_company:6746274',
+            trackingId: 'aiujigT9R5KfaWn0l+FIMw==',
+          },
+          employeeCountRange: { start: 11, end: 50 },
+          industries: ['International Affairs'],
+        },
+        title: 'Volunteer Producer',
+        region: 'urn:li:fs_region:(gb,0)',
+        companyUrn: 'urn:li:fs_miniCompany:6746274',
+      },
+      {
+        locationName: 'London Area, United Kingdom',
+        entityUrn:
+          'urn:li:fs_position:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,2581302482)',
+        geoLocationName: 'London Area, United Kingdom',
+        geoUrn: 'urn:li:fs_geo:90009496',
+        companyName: 'AiCore',
+        timePeriod: {
+          endDate: { month: 7, year: 2024 },
+          startDate: { month: 12, year: 2023 },
+        },
+        description:
+          '- Built an end-to-end Data Pipeline, using AWS, Apache Spark and Kafka which enables stakeholders to perform real time data processing, facilitating for quick and informed decision making.\n\n- Gained practical experience through completing 14 learning courses and over 100 hands-on exercises on topics including Python, Command Line, AWS, ETL/ELT processes, Pandas, and Databricks.',
+        company: {
+          miniCompany: {
+            objectUrn: 'urn:li:company:18690627',
+            entityUrn: 'urn:li:fs_miniCompany:18690627',
+            name: 'AiCore',
+            showcase: False,
+            active: True,
+            logo: {
+              'com.linkedin.common.VectorImage': {
+                artifacts: [
+                  {
+                    width: 200,
+                    fileIdentifyingUrlPathSegment:
+                      '200_200/company-logo_200_200/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=PFSpLbWFC_9F7c1LMaIR7vq2rbXqSkLF2qAk8Txaj4k',
+                    expiresAt: 1750291200000,
+                    height: 200,
+                  },
+                  {
+                    width: 100,
+                    fileIdentifyingUrlPathSegment:
+                      '100_100/company-logo_100_100/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=LR4cCfAjiGUHVVnBeKWHaJ67kwHNko0CU83-AGxjebg',
+                    expiresAt: 1750291200000,
+                    height: 100,
+                  },
+                  {
+                    width: 400,
+                    fileIdentifyingUrlPathSegment:
+                      '400_400/company-logo_400_400/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=0RGNPX6ar27MlsihONmXwnJWa7HDpikQbvs2bwpLUNg',
+                    expiresAt: 1750291200000,
+                    height: 400,
+                  },
+                ],
+                rootUrl:
+                  'https://media.licdn.com/dms/image/v2/C4E0BAQFd1hpR6yzytg/company-logo_',
+              },
+            },
+            universalName: 'aicore',
+            dashCompanyUrn: 'urn:li:fsd_company:18690627',
+            trackingId: 'Vo1QtWKwQkGc6gPPx0HT0A==',
+          },
+          employeeCountRange: { start: 51, end: 200 },
+          industries: ['Computer Software'],
+        },
+        title: 'Data Engineer',
+        region: 'urn:li:fs_region:(gb,4573)',
+        companyUrn: 'urn:li:fs_miniCompany:18690627',
+      },
+    ],
+  },
+  profile: {
+    industryName: 'Data Infrastructure and Analytics',
+    lastName: 'Amin',
+    supportedLocales: [{ country: 'US', language: 'en' }],
+    locationName: 'United Kingdom',
+    student: False,
+    geoCountryName: 'United Kingdom',
+    geoCountryUrn: 'urn:li:fs_geo:101165590',
+    versionTag: '1450657232',
+    geoLocationBackfilled: False,
+    elt: True,
+    industryUrn: 'urn:li:fs_industry:2458',
+    defaultLocale: { country: 'US', language: 'en' },
+    firstName: 'Danish',
+    showEducationOnProfileTopCard: True,
+    entityUrn: 'urn:li:fs_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    geoLocation: { geoUrn: 'urn:li:fs_geo:101165590' },
+    location: { basicLocation: { countryCode: 'gb' } },
+    miniProfile: {
+      firstName: 'Danish',
+      lastName: 'Amin',
+      dashEntityUrn:
+        'urn:li:fsd_profile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+      occupation:
+        'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+      objectUrn: 'urn:li:member:879747278',
+      entityUrn:
+        'urn:li:fs_miniProfile:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+      backgroundImage: {
+        'com.linkedin.common.VectorImage': {
+          artifacts: [
+            {
+              width: 1400,
+              fileIdentifyingUrlPathSegment:
+                '350_1400/B4EZUjWwt8G0AY-/0/1740054924577?e=1750291200&v=beta&t=bRgNivBuAT7f6WCtEFOxH_-8OoLaZKSuTYer6P90Tbw',
+              expiresAt: 1750291200000,
+              height: 350,
+            },
+            {
+              width: 800,
+              fileIdentifyingUrlPathSegment:
+                '200_800/B4EZUjWwt8G0AU-/0/1740054924577?e=1750291200&v=beta&t=Cm4VEV2HdH8ScM0mWZUEvB9i9Jfg6-VvPDZPBm6MC9U',
+              expiresAt: 1750291200000,
+              height: 200,
+            },
+          ],
+          rootUrl:
+            'https://media.licdn.com/dms/image/v2/D4E16AQHP4Yjk3YgRRw/profile-displaybackgroundimage-shrink_',
+        },
+      },
+      publicIdentifier: 'd4min',
+      picture: {
+        'com.linkedin.common.VectorImage': {
+          artifacts: [
+            {
+              width: 200,
+              fileIdentifyingUrlPathSegment:
+                '200_200/B4EZXAihwWG0AY-/0/1742692032747?e=1750291200&v=beta&t=UI_rhX_0InItIqFfLeG4YnlG5BXLhYWkGcM4kjTMP5Q',
+              expiresAt: 1750291200000,
+              height: 200,
+            },
+            {
+              width: 400,
+              fileIdentifyingUrlPathSegment:
+                '400_400/B4EZXAihwWG0Ag-/0/1742692032747?e=1750291200&v=beta&t=u2lwdRLlpmYa9FSg7VsZ-lfGr_xIBpi6ZJEdwpI5sUg',
+              expiresAt: 1750291200000,
+              height: 400,
+            },
+            {
+              width: 100,
+              fileIdentifyingUrlPathSegment:
+                '100_100/B4EZXAihwWG0AU-/0/1742692032747?e=1750291200&v=beta&t=1PwrYb5C8_3IoV_Q00XysyYRO4umEz6Am03ejUfHM88',
+              expiresAt: 1750291200000,
+              height: 100,
+            },
+            {
+              width: 588,
+              fileIdentifyingUrlPathSegment:
+                '800_800/B4EZXAihwWG0Ac-/0/1742692032762?e=1750291200&v=beta&t=LdDwKik69ZaCJw5xUxZK8JnUWAWK0RabNTM8d7uyEQA',
+              expiresAt: 1750291200000,
+              height: 588,
+            },
+          ],
+          rootUrl:
+            'https://media.licdn.com/dms/image/v2/D4E03AQErjMvQkL-ZWw/profile-displayphoto-shrink_',
+        },
+      },
+      trackingId: '6fEVQZI5SCelWvyNH6P6ww==',
+    },
+    headline:
+      'Junior Data Engineer & Data Analyst | Proficient in Spark, Databricks, SQL, Airflow, Kafka, AWS | Turning Data into Actionable Insights',
+  },
+  languageView: {
+    paging: { start: 0, count: 10, total: 2, links: [] },
+    entityUrn: 'urn:li:fs_languageView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [
+      {
+        name: 'English',
+        entityUrn:
+          'urn:li:fs_language:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1076244737)',
+        proficiency: 'NATIVE_OR_BILINGUAL',
+      },
+      {
+        name: 'Urdu',
+        entityUrn:
+          'urn:li:fs_language:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,593140768)',
+        proficiency: 'NATIVE_OR_BILINGUAL',
+      },
+    ],
+  },
+  certificationView: {
+    paging: { start: 0, count: 10, total: 2, links: [] },
+    entityUrn:
+      'urn:li:fs_certificationView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [
+      {
+        entityUrn:
+          'urn:li:fs_certification:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1055367768)',
+        authority: 'AiCore',
+        name: 'Certified Software Engineer',
+        timePeriod: {
+          endDate: { month: 2, year: 2026 },
+          startDate: { month: 2, year: 2024 },
+        },
+        company: {
+          objectUrn: 'urn:li:company:18690627',
+          entityUrn: 'urn:li:fs_miniCompany:18690627',
+          name: 'AiCore',
+          showcase: False,
+          active: True,
+          logo: {
+            'com.linkedin.common.VectorImage': {
+              artifacts: [
+                {
+                  width: 200,
+                  fileIdentifyingUrlPathSegment:
+                    '200_200/company-logo_200_200/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=PFSpLbWFC_9F7c1LMaIR7vq2rbXqSkLF2qAk8Txaj4k',
+                  expiresAt: 1750291200000,
+                  height: 200,
+                },
+                {
+                  width: 100,
+                  fileIdentifyingUrlPathSegment:
+                    '100_100/company-logo_100_100/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=LR4cCfAjiGUHVVnBeKWHaJ67kwHNko0CU83-AGxjebg',
+                  expiresAt: 1750291200000,
+                  height: 100,
+                },
+                {
+                  width: 400,
+                  fileIdentifyingUrlPathSegment:
+                    '400_400/company-logo_400_400/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=0RGNPX6ar27MlsihONmXwnJWa7HDpikQbvs2bwpLUNg',
+                  expiresAt: 1750291200000,
+                  height: 400,
+                },
+              ],
+              rootUrl:
+                'https://media.licdn.com/dms/image/v2/C4E0BAQFd1hpR6yzytg/company-logo_',
+            },
+          },
+          universalName: 'aicore',
+          dashCompanyUrn: 'urn:li:fsd_company:18690627',
+          trackingId: 'Bh7pas8+RGSNpGW4xnTtpw==',
+        },
+        displaySource: 'theaicore.com',
+        companyUrn: 'urn:li:fs_miniCompany:18690627',
+        url: 'https://portal.theaicore.com/showcase/certificate/2/3d17c9fd-2a9b-4680-90d8-ddd8cc24386e-4781f4cc-2a3a-420c-adb6-271ba141bf8a',
+      },
+      {
+        entityUrn:
+          'urn:li:fs_certification:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1055469615)',
+        authority: 'AiCore',
+        name: 'Certified Data and Cloud Engineer',
+        timePeriod: {
+          endDate: { month: 7, year: 2026 },
+          startDate: { month: 7, year: 2024 },
+        },
+        company: {
+          objectUrn: 'urn:li:company:18690627',
+          entityUrn: 'urn:li:fs_miniCompany:18690627',
+          name: 'AiCore',
+          showcase: False,
+          active: True,
+          logo: {
+            'com.linkedin.common.VectorImage': {
+              artifacts: [
+                {
+                  width: 200,
+                  fileIdentifyingUrlPathSegment:
+                    '200_200/company-logo_200_200/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=PFSpLbWFC_9F7c1LMaIR7vq2rbXqSkLF2qAk8Txaj4k',
+                  expiresAt: 1750291200000,
+                  height: 200,
+                },
+                {
+                  width: 100,
+                  fileIdentifyingUrlPathSegment:
+                    '100_100/company-logo_100_100/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=LR4cCfAjiGUHVVnBeKWHaJ67kwHNko0CU83-AGxjebg',
+                  expiresAt: 1750291200000,
+                  height: 100,
+                },
+                {
+                  width: 400,
+                  fileIdentifyingUrlPathSegment:
+                    '400_400/company-logo_400_400/0/1643111058828/aicore_logo?e=1750291200&v=beta&t=0RGNPX6ar27MlsihONmXwnJWa7HDpikQbvs2bwpLUNg',
+                  expiresAt: 1750291200000,
+                  height: 400,
+                },
+              ],
+              rootUrl:
+                'https://media.licdn.com/dms/image/v2/C4E0BAQFd1hpR6yzytg/company-logo_',
+            },
+          },
+          universalName: 'aicore',
+          dashCompanyUrn: 'urn:li:fsd_company:18690627',
+          trackingId: 'DIlbG4O3TaCz+rWtJytS0A==',
+        },
+        displaySource: 'theaicore.com',
+        companyUrn: 'urn:li:fs_miniCompany:18690627',
+        url: 'https://portal.theaicore.com/showcase/certificate/2/3d17c9fd-2a9b-4680-90d8-ddd8cc24386e-0da02867-91fb-44b8-bb59-52ca8efaa60c',
+      },
+    ],
+  },
+  testScoreView: {
+    paging: { start: 0, count: 10, total: 0, links: [] },
+    entityUrn:
+      'urn:li:fs_testScoreView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [],
+  },
+  volunteerCauseView: {
+    paging: { start: 0, count: 0, total: 0, links: [] },
+    entityUrn:
+      'urn:li:fs_volunteerCauseView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [],
+  },
+  entityUrn: 'urn:li:fs_profileView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+  courseView: {
+    paging: { start: 0, count: 10, total: 0, links: [] },
+    entityUrn: 'urn:li:fs_courseView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [],
+  },
+  honorView: {
+    paging: { start: 0, count: 10, total: 0, links: [] },
+    entityUrn: 'urn:li:fs_honorView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [],
+  },
+  skillView: {
+    paging: { start: 0, count: 4, total: 78, links: [] },
+    entityUrn: 'urn:li:fs_skillView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [
+      {
+        name: 'Computer Vision',
+        entityUrn:
+          'urn:li:fs_skill:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1)',
+      },
+      {
+        name: 'OpenCV',
+        entityUrn:
+          'urn:li:fs_skill:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,2)',
+      },
+      {
+        name: 'DAX',
+        entityUrn:
+          'urn:li:fs_skill:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,95213032)',
+      },
+      {
+        name: 'Distributed Systems',
+        entityUrn:
+          'urn:li:fs_skill:(ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M,1301168573)',
+      },
+    ],
+  },
+  volunteerExperienceView: {
+    paging: { start: 0, count: 3, total: 0, links: [] },
+    entityUrn:
+      'urn:li:fs_volunteerExperienceView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [],
+  },
+  primaryLocale: { country: 'US', language: 'en' },
+  publicationView: {
+    paging: { start: 0, count: 10, total: 0, links: [] },
+    entityUrn:
+      'urn:li:fs_publicationView:ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    profileId: 'ACoAADRv4M4BdQFFAv3YeVHBZ-4Lua1jsuGYN_M',
+    elements: [],
+  },
+};
