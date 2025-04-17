@@ -12,11 +12,14 @@ import { LoginDto, RegisterDto } from './dto/auth.dto';
 import { UserDbService } from 'src/models/user/user.db.service';
 import { MailService } from 'src/common/mail/mail.service';
 import { TokenMailVericationService } from './tokenMailVerification.service';
+import { ConfigService } from '@nestjs/config';
+import { CLIENT_URL } from 'src/common/constants';
 
 @Injectable()
 export class AuthService {
   constructor(
     private readonly jwtService: JwtService,
+    private readonly configService: ConfigService,
     private readonly userDbService: UserDbService,
     private readonly mailService: MailService,
     private readonly tokenMailVerificationService: TokenMailVericationService,
@@ -71,9 +74,12 @@ export class AuthService {
     );
     if (!token) throw new InternalServerErrorException('Something went wrong');
 
+    const APP_URL = this.configService.get<string>(CLIENT_URL);
+
     // Send verification email
-    const verificationUrl = `${process.env.APP_URL}/verify/${token}`; // TODO: move to env an use correct URLS
-    const supportLink = `${process.env.APP_URL}/support`; // TODO: move to env an use correct URLS
+    const verificationUrl = `${APP_URL}/verify/${token}`; // TODO: move to env an use correct URLS
+    const supportLink = `${APP_URL}/support`; // TODO: move to env an use correct URLS
+
     const mailDto = {
       to: email,
       subject: 'Email Verification',
