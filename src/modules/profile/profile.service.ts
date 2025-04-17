@@ -184,9 +184,7 @@ export class ProfileService {
       const profileData =
         await this.profileExtractionApiService.getProfile(publicId);
 
-      if (!profileData) {
-        throw new Error('Profile data is empty or null');
-      }
+      if (!profileData) throw new Error('Profile data is empty or null');
 
       const adaptedProfile = adaptProfileResponse(profileData);
       const newProfile = await this.createProfile(adaptedProfile);
