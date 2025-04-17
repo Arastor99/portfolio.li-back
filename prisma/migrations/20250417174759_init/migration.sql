@@ -48,6 +48,7 @@ CREATE TABLE "Profile" (
     "locationName" TEXT,
     "geoCountryName" TEXT,
     "geoLocationName" TEXT,
+    "userMockedId" TEXT,
     "userId" TEXT,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
@@ -191,7 +192,7 @@ CREATE UNIQUE INDEX "PortfolioTemplate_name_key" ON "PortfolioTemplate"("name");
 CREATE UNIQUE INDEX "Profile_userId_key" ON "Profile"("userId");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "Profile_publicId_userId_key" ON "Profile"("publicId", "userId");
+CREATE UNIQUE INDEX "Profile_publicId_userMockedId_key" ON "Profile"("publicId", "userMockedId");
 
 -- AddForeignKey
 ALTER TABLE "Portfolio" ADD CONSTRAINT "Portfolio_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;

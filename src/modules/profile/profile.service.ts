@@ -161,21 +161,21 @@ export class ProfileService {
     // Create the profile in the database
     return await this.profileDbService.createOrUpdate({
       where: {
-        publicId_userId: {
+        publicId_userMockedId: {
           publicId: adaptedProfile.publicId,
-          userId: 'DEFAULT_NO_USER_ID',
+          userMockedId: 'WAITING_FOR_USER',
         },
       },
-      data: profileData,
+      data: { ...profileData, userMockedId: 'WAITING_FOR_USER' },
     });
   }
 
   private async getProfile(publicId: string) {
     const profile = await this.profileDbService.findOne({
       where: {
-        publicId_userId: {
-          publicId,
-          userId: 'DEFAULT_NO_USER_ID',
+        publicId_userMockedId: {
+          publicId: publicId,
+          userMockedId: 'WAITING_FOR_USER',
         },
       },
     });

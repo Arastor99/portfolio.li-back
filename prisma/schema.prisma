@@ -55,7 +55,7 @@ model Profile {
   firstName           String
   lastName            String
 
-  publicId            String  
+  publicId            String   
 
   headline            String?
   summary             String?
@@ -73,10 +73,12 @@ model Profile {
   geoCountryName      String?
   geoLocationName     String?
 
+  userMockedId        String? 
+
   userId              String? @unique
   user                User?   @relation(fields: [userId], references: [id])
 
-  @@unique([publicId, userId])
+  @@unique([publicId, userMockedId])
 
   experiences         Experience[]
   education           Education[]

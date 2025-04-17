@@ -13,23 +13,38 @@ import {
 @Injectable()
 class ProfileExtractionApiService {
   private readonly logger = new Logger(ProfileExtractionApiService.name);
-  constructor(private readonly configService: ConfigService) {}
+
+  private readonly API_URL: string;
+  private readonly API_KEY: string;
+
+  constructor(private readonly configService: ConfigService) {
+    this.API_URL = this.configService.get(PROFILE_EXTRACTION_API_URL);
+    this.API_KEY = this.configService.get(PROFILE_EXTRACTION_API_KEY);
+  }
 
   async getProfile(publicId: string) {
     this.logger.debug(`Fetching profile with publicId: ${publicId}`);
 
-    const url = this.configService.get(PROFILE_EXTRACTION_API_URL);
-
     const headers = {
       'Content-Type': 'application/json',
-      'X-API-Key': this.configService.get(PROFILE_EXTRACTION_API_KEY),
+      'X-API-Key': this.API_KEY,
     };
 
-    const response = await fetch(`${url}/${publicId}/raw`, {
+    const response = await fetch(`${this.API_URL}/${publicId}/raw`, {
       headers,
+      signal: AbortSignal.timeout(30000), // 30 seconds timeout
+    }).catch(() => {
+      throw new ServiceUnavailableException(
+        'Service is temporarily unavailable',
+      );
     });
+
     if (!response.ok) {
       if (response.status === 503)
+        throw new ServiceUnavailableException(
+          'Service is temporarily unavailable',
+        );
+      else if (response.status === 401)
         throw new ServiceUnavailableException(
           'Service is temporarily unavailable',
         );

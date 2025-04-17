@@ -37,7 +37,7 @@ export function adaptProfileResponse(response: any): Profile {
   return {
     firstName: profileResponse.firstName,
     lastName: profileResponse.lastName,
-    publicId: extractEntityUrn(profileResponse.public_id),
+    publicId: profileResponse.public_id,
     headline: profileResponse?.headline,
     summary: profileResponse?.summary,
 
