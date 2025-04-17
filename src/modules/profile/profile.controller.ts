@@ -29,7 +29,6 @@ export class ProfileController {
     @CurrentUser('userId') userId?: string,
   ) {
     if (!publicId) throw new BadRequestException('Public ID is required');
-    console.log('userId', userId);
 
     return await this.profileService.importLinkedInProfile({
       userId,
