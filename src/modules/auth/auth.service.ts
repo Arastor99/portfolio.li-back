@@ -130,9 +130,7 @@ export class AuthService {
 
     return {
       message: 'Email verified successfully, you are now logged in',
-      data: {
-        token: tokenLogin,
-      },
+      token: tokenLogin,
     };
   }
 
@@ -181,9 +179,7 @@ export class AuthService {
 
     return {
       message: 'User signed in successfully',
-      data: {
-        token,
-      },
+      token,
     };
   }
 }
