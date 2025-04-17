@@ -16,4 +16,9 @@ export class AuthController {
   async signIn(@Body() loginDto: LoginDto) {
     return await this.authService.signIn(loginDto);
   }
+
+  @Post('verify-email')
+  async verifyEmail(@Body('token') token: string) {
+    return await this.authService.verifyEmail(token);
+  }
 }
