@@ -1,4 +1,9 @@
-import { Injectable } from '@nestjs/common';
+import {
+  BadRequestException,
+  Injectable,
+  Logger,
+  ServiceUnavailableException,
+} from '@nestjs/common';
 import ProfileExtractionApiService from 'src/common/apis/profile-extraction-api.service';
 import { Profile } from 'src/common/types/common';
 import { adaptProfileResponse } from 'src/common/utils/adapter';
@@ -6,6 +11,8 @@ import { ProfileDbService } from 'src/models/profile/profile.db.service';
 
 @Injectable()
 export class ProfileService {
+  private readonly logger = new Logger(ProfileService.name);
+
   constructor(
     private readonly profileDbService: ProfileDbService,
     private readonly profileExtractionApiService: ProfileExtractionApiService,
@@ -152,15 +159,25 @@ export class ProfileService {
     };
 
     // Create the profile in the database
-    return this.profileDbService.createOrUpdate({
-      where: { publicId: profileData.publicId },
+    return await this.profileDbService.createOrUpdate({
+      where: {
+        publicId_userId: {
+          publicId: adaptedProfile.publicId,
+          userId: 'DEFAULT_NO_USER_ID',
+        },
+      },
       data: profileData,
     });
   }
 
   private async getProfile(publicId: string) {
     const profile = await this.profileDbService.findOne({
-      where: { publicId },
+      where: {
+        publicId_userId: {
+          publicId,
+          userId: 'DEFAULT_NO_USER_ID',
+        },
+      },
     });
 
     if (!profile) {
@@ -183,27 +200,39 @@ export class ProfileService {
   async importLinkedInProfile(params: { userId?: string; publicId: string }) {
     const { userId, publicId } = params;
 
-    const profile = await this.getProfile(publicId);
+    try {
+      const profile = await this.getProfile(publicId);
 
-    if (!profile) {
-      throw new Error('Profile not found');
-    }
+      if (!profile) {
+        throw new Error('Profile not found');
+      }
 
-    // If a userId is provided, associate the profile with the user
+      // If a userId is provided, associate the profile with the user
 
-    if (userId) {
-      await this.profileDbService.update({
-        where: { publicId },
-        data: {
-          users: {
-            connect: {
-              id: userId,
+      if (userId) {
+        await this.profileDbService.update({
+          where: {
+            id: profile.id,
+          },
+          data: {
+            user: {
+              connect: {
+                id: userId,
+              },
             },
           },
-        },
-      });
-    }
+        });
+      }
 
-    return profile;
+      return profile;
+    } catch (error) {
+      this.logger.error('Error importing LinkedIn profile', error);
+      if (error.status === 503) {
+        throw new ServiceUnavailableException(
+          'Service is temporarily unavailable',
+        );
+      }
+      throw new BadRequestException('Failed to fetch profile data');
+    }
   }
 }

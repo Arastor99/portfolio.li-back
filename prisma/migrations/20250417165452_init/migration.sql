@@ -5,7 +5,6 @@ CREATE TABLE "User" (
     "emailVerified" BOOLEAN NOT NULL DEFAULT false,
     "password" TEXT,
     "fullName" TEXT,
-    "profileId" TEXT,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
@@ -15,7 +14,8 @@ CREATE TABLE "User" (
 -- CreateTable
 CREATE TABLE "Portfolio" (
     "id" TEXT NOT NULL,
-    "publicId" TEXT NOT NULL,
+    "url" TEXT NOT NULL,
+    "active" BOOLEAN NOT NULL DEFAULT true,
     "userId" TEXT NOT NULL,
     "templateId" TEXT NOT NULL,
 
@@ -48,6 +48,7 @@ CREATE TABLE "Profile" (
     "locationName" TEXT,
     "geoCountryName" TEXT,
     "geoLocationName" TEXT,
+    "userId" TEXT,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
@@ -178,7 +179,7 @@ CREATE TABLE "Skill" (
 CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "Portfolio_publicId_key" ON "Portfolio"("publicId");
+CREATE UNIQUE INDEX "Portfolio_url_key" ON "Portfolio"("url");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Portfolio_userId_key" ON "Portfolio"("userId");
@@ -187,16 +188,19 @@ CREATE UNIQUE INDEX "Portfolio_userId_key" ON "Portfolio"("userId");
 CREATE UNIQUE INDEX "PortfolioTemplate_name_key" ON "PortfolioTemplate"("name");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "Profile_publicId_key" ON "Profile"("publicId");
+CREATE UNIQUE INDEX "Profile_userId_key" ON "Profile"("userId");
 
--- AddForeignKey
-ALTER TABLE "User" ADD CONSTRAINT "User_profileId_fkey" FOREIGN KEY ("profileId") REFERENCES "Profile"("id") ON DELETE SET NULL ON UPDATE CASCADE;
+-- CreateIndex
+CREATE UNIQUE INDEX "Profile_publicId_userId_key" ON "Profile"("publicId", "userId");
 
 -- AddForeignKey
 ALTER TABLE "Portfolio" ADD CONSTRAINT "Portfolio_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "Portfolio" ADD CONSTRAINT "Portfolio_templateId_fkey" FOREIGN KEY ("templateId") REFERENCES "PortfolioTemplate"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "Profile" ADD CONSTRAINT "Profile_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE SET NULL ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "Experience" ADD CONSTRAINT "Experience_profileId_fkey" FOREIGN KEY ("profileId") REFERENCES "Profile"("id") ON DELETE RESTRICT ON UPDATE CASCADE;

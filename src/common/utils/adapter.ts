@@ -2,9 +2,9 @@ import { ProfileResponse } from '../apis/profile-response';
 import { Profile } from '../types/common';
 import { extractEntityUrn } from './common';
 
-export function adaptProfileResponse(
-  profileResponse: ProfileResponse,
-): Profile {
+export function adaptProfileResponse(response: any): Profile {
+  const profileResponse = response?.profile as ProfileResponse;
+
   let memberWithBackgroundImg = profileResponse?.projects
     ?.find((project) =>
       project.members.find(
