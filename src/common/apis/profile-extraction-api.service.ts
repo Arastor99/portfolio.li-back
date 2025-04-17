@@ -49,6 +49,10 @@ class ProfileExtractionApiService {
           'Service is temporarily unavailable',
         );
 
+      this.logger.debug(
+        `Failed to fetch profile with publicId: ${publicId}, Response Details: ${response}`,
+      );
+
       throw new Error('Failed to fetch profile');
     }
 
