@@ -21,11 +21,19 @@ export class ProfileDbService {
   async findOne(params: {
     where: Prisma.ProfileWhereUniqueInput;
     select?: Prisma.ProfileSelect | null;
+    include?: Prisma.ProfileInclude | null;
   }) {
-    const { where, select } = params;
+    const { where, select, include } = params;
+
+    if (select && include)
+      throw new Error('Cannot use both select and include at the same time');
 
     return this.handleRequest(
-      () => this.prisma.profile.findUnique({ where, select }),
+      () =>
+        this.prisma.profile.findUnique({
+          where,
+          ...(select ? { select } : include ? { include } : {}),
+        }),
       'Error retrieving profile',
     );
   }

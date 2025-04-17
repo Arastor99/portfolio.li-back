@@ -225,6 +225,7 @@ export class ProfileService {
       return profile;
     } catch (error) {
       this.logger.error('Error importing LinkedIn profile', error);
+      this.logger.debug('Error details', error);
       if (error.status === 503) {
         throw new ServiceUnavailableException(
           'Service is temporarily unavailable',
@@ -232,5 +233,28 @@ export class ProfileService {
       }
       throw new BadRequestException('Failed to fetch profile data');
     }
+  }
+
+  async getProfileByUserId(userId: string) {
+    const profile = await this.profileDbService.findOne({
+      where: {
+        userId,
+      },
+      include: {
+        certifications: true,
+        education: true,
+        experiences: true,
+        honors: true,
+        languages: true,
+        publications: true,
+        projects: true,
+        skills: true,
+        volunteer: true,
+      },
+    });
+
+    if (!profile) throw new BadRequestException('Profile not found');
+
+    return profile;
   }
 }

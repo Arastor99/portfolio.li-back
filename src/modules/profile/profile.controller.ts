@@ -1,12 +1,27 @@
-import { BadRequestException, Controller, Get, Param } from '@nestjs/common';
+import {
+  BadRequestException,
+  Controller,
+  Get,
+  Param,
+  UseGuards,
+} from '@nestjs/common';
+
 import { CurrentUser } from 'src/common/decorators/current-user.decorator';
+import { JwtAuthGuard } from 'src/common/guards/jwt-auth.guard';
 
 import { ProfileService } from './profile.service';
 
 @Controller('profile')
-// @UseGuards(JwtAuthGuard)
 export class ProfileController {
   constructor(private readonly profileService: ProfileService) {}
+
+  @Get()
+  @UseGuards(JwtAuthGuard)
+  async getProfileByUserId(@CurrentUser('userId') userId: string) {
+    if (!userId) throw new BadRequestException('User ID is required');
+
+    return await this.profileService.getProfileByUserId(userId);
+  }
 
   @Get(':publicId')
   async getProfile(
@@ -14,6 +29,7 @@ export class ProfileController {
     @CurrentUser('userId') userId?: string,
   ) {
     if (!publicId) throw new BadRequestException('Public ID is required');
+    console.log('userId', userId);
 
     return await this.profileService.importLinkedInProfile({
       userId,

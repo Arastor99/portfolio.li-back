@@ -98,7 +98,7 @@ export function adaptProfileResponse(response: any): Profile {
     education:
       profileResponse.education?.map((edu) => ({
         schoolName: edu.schoolName,
-        schoolLogoUrl: edu.school.logoUrl,
+        schoolLogoUrl: edu.school?.logoUrl,
         degreeName: edu.degreeName,
         grade: edu.grade,
         fieldOfStudy: edu.fieldOfStudy,
