@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { ProxyService } from './proxy.service';
-import { ProxyImageController } from './proxy.controller';
+import { ProxyController } from './proxy.controller';
 
 @Module({
-  controllers: [ProxyImageController],
+  controllers: [ProxyController],
   providers: [ProxyService],
 })
 export class ProxyModule {}

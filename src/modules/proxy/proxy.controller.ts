@@ -6,7 +6,7 @@ import { promisify } from 'util';
 const streamPipeline = promisify(pipeline);
 
 @Controller('proxy-image')
-export class ProxyImageController {
+export class ProxyController {
   @Get()
   async getImageByProxy(@Query('url') url: string, @Res() res: Response) {
     if (!url || !url.includes('media.licdn')) {
