@@ -15,14 +15,6 @@ import { ProfileService } from './profile.service';
 export class ProfileController {
   constructor(private readonly profileService: ProfileService) {}
 
-  @Get()
-  @UseGuards(JwtAuthGuard)
-  async getProfileByUserId(@CurrentUser('userId') userId: string) {
-    if (!userId) throw new BadRequestException('User ID is required');
-
-    return await this.profileService.getProfileByUserId(userId);
-  }
-
   @Get(':publicId')
   async getProfile(
     @Param('publicId') publicId: string,
@@ -34,5 +26,13 @@ export class ProfileController {
       userId,
       publicId,
     });
+  }
+
+  @Get()
+  @UseGuards(JwtAuthGuard)
+  async getProfileByUserId(@CurrentUser('userId') userId: string) {
+    if (!userId) throw new BadRequestException('User ID is required');
+
+    return await this.profileService.getProfileByUserId(userId);
   }
 }

@@ -32,7 +32,7 @@ class ProfileExtractionApiService {
 
     const response = await fetch(`${this.API_URL}/${publicId}/raw`, {
       headers,
-      signal: AbortSignal.timeout(30000), // 30 seconds timeout
+      signal: AbortSignal.timeout(60000), // 30 seconds timeout
     }).catch(() => {
       throw new ServiceUnavailableException(
         'Service is temporarily unavailable',
@@ -40,6 +40,10 @@ class ProfileExtractionApiService {
     });
 
     if (!response.ok) {
+      this.logger.debug(
+        `Failed to fetch profile with publicId: ${publicId}, Response Details: ${response}`,
+      );
+
       if (response.status === 503)
         throw new ServiceUnavailableException(
           'Service is temporarily unavailable',
@@ -48,10 +52,6 @@ class ProfileExtractionApiService {
         throw new ServiceUnavailableException(
           'Service is temporarily unavailable',
         );
-
-      this.logger.debug(
-        `Failed to fetch profile with publicId: ${publicId}, Response Details: ${response}`,
-      );
 
       throw new Error('Failed to fetch profile');
     }
