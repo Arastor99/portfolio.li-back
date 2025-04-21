@@ -178,6 +178,17 @@ export class ProfileService {
           userMockedId: 'WAITING_FOR_USER',
         },
       },
+      include: {
+        certifications: true,
+        education: true,
+        experiences: true,
+        honors: true,
+        languages: true,
+        publications: true,
+        projects: true,
+        skills: true,
+        volunteer: true,
+      },
     });
 
     if (!profile) {
@@ -188,8 +199,21 @@ export class ProfileService {
 
       const adaptedProfile = adaptProfileResponse(profileData);
       const newProfile = await this.createProfile(adaptedProfile);
-
-      return newProfile;
+      const profileWithRelations = await this.profileDbService.findOne({
+        where: { id: newProfile.id },
+        include: {
+          certifications: true,
+          education: true,
+          experiences: true,
+          honors: true,
+          languages: true,
+          publications: true,
+          projects: true,
+          skills: true,
+          volunteer: true,
+        },
+      });
+      return profileWithRelations;
     }
 
     return profile;
