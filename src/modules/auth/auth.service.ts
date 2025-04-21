@@ -69,15 +69,16 @@ export class AuthService {
     if (!newUser)
       throw new InternalServerErrorException('Something went wrong');
 
-    const token = this.tokenMailVerificationService.generateVerificationToken(
-      newUser.id,
-    );
-    if (!token) throw new InternalServerErrorException('Something went wrong');
+    const tokenMail =
+      this.tokenMailVerificationService.generateVerificationToken(newUser.id);
+
+    if (!tokenMail)
+      throw new InternalServerErrorException('Something went wrong');
 
     const APP_URL = this.configService.get<string>(CLIENT_URL);
 
     // Send verification email
-    const verificationUrl = `${APP_URL}/verify/${token}`; // TODO: move to env an use correct URLS
+    const verificationUrl = `${APP_URL}/verify/${tokenMail}`; // TODO: move to env an use correct URLS
     const supportLink = `${APP_URL}/support`; // TODO: move to env an use correct URLS
 
     const mailDto = {
@@ -97,9 +98,14 @@ export class AuthService {
       `Verification email sent to ${email}. Verification URL: ${verificationUrl}`,
     );
 
+    const token = await this.generateToken(newUser.id);
+    if (!token) throw new InternalServerErrorException('Something went wrong');
+    this.logger.debug(`User ${email} registered successfully. Token: ${token}`);
+
     return {
       message:
         'User registered successfully. Please check your email for verification.',
+      token,
     };
   }
 

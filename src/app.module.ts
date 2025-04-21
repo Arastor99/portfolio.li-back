@@ -6,6 +6,7 @@ import { envValidationSchema } from './config/env.validation';
 import { ProfileModule } from './modules/profile/profile.module';
 import { PortfolioTemplateModule } from './modules/portfolio-template/portfolio-template.module';
 import { ProxyModule } from './modules/proxy/proxy.module';
+import { PortfolioModule } from './modules/portfolio/portfolio.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { ProxyModule } from './modules/proxy/proxy.module';
     PrismaModule,
     AuthModule,
     ProfileModule,
+    PortfolioModule,
     PortfolioTemplateModule,
     ProxyModule,
   ],
