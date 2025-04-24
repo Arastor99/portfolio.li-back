@@ -157,24 +157,25 @@ export class AuthService {
 
     // Check if user is verified proceed to send verification email
     if (!user.emailVerified) {
-      await this.mailService
-        .sendVerificationEmail({
-          to: user.email,
-          subject: 'Email Verification',
-          name: user.fullName,
-          url: `${process.env.APP_URL}/verify/${user.id}`,
-          supportLink: `${process.env.APP_URL}/support`,
-        })
-        .catch((err) => {
-          this.logger.error('Failed to send verification email', err);
-          throw new InternalServerErrorException(
-            'Failed to send verification email',
-          );
-        });
+      const tokenMail =
+        this.tokenMailVerificationService.generateVerificationToken(user.id);
+      if (!tokenMail)
+        throw new InternalServerErrorException('Something went wrong');
 
-      throw new BadRequestException(
-        'User not verified. Please check your email for verification.',
-      );
+      const mailDto = {
+        to: user.email,
+        subject: 'Email Verification',
+        name: user.fullName,
+        url: `${process.env.APP_URL}/verify/${tokenMail}`,
+        supportLink: `${process.env.APP_URL}/support`,
+      };
+
+      await this.mailService.sendVerificationEmail(mailDto).catch((err) => {
+        this.logger.error('Failed to send verification email', err);
+        throw new InternalServerErrorException(
+          'Failed to send verification email',
+        );
+      });
     }
 
     // Compare password
