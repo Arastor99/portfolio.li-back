@@ -9,7 +9,7 @@ export class PortfolioService {
   constructor(private readonly portfolioDbService: PortfolioDbService) {}
 
   async create(userId: string, createPortfolioDto: CreatePortfolioDto) {
-    const { templateId, url } = createPortfolioDto;
+    const { templateName, url } = createPortfolioDto;
 
     const existingPortfolio = await this.portfolioDbService.findOne({
       where: {
@@ -30,7 +30,7 @@ export class PortfolioService {
       },
       template: {
         connect: {
-          id: templateId,
+          name: templateName,
         },
       },
       url,
@@ -38,7 +38,7 @@ export class PortfolioService {
   }
 
   async update(userId: string, updatePortfolioDto: UpdatePortfolioDto) {
-    const { templateId, url, active } = updatePortfolioDto;
+    const { templateName, url, active } = updatePortfolioDto;
 
     const existingPortfolio = await this.portfolioDbService.findOne({
       where: {
@@ -56,10 +56,10 @@ export class PortfolioService {
         userId,
       },
       data: {
-        ...(templateId && {
+        ...(templateName && {
           template: {
             connect: {
-              id: templateId,
+              name: templateName,
             },
           },
         }),

@@ -2,7 +2,7 @@ import { IsBoolean, IsOptional, IsString } from 'class-validator';
 
 export class CreatePortfolioDto {
   @IsString()
-  templateId: string;
+  templateName: string;
 
   @IsString()
   url: string;
@@ -11,7 +11,7 @@ export class CreatePortfolioDto {
 export class UpdatePortfolioDto {
   @IsString()
   @IsOptional()
-  templateId?: string;
+  templateName?: string;
 
   @IsString()
   @IsOptional()
