@@ -1,9 +1,21 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   BadRequestException,
   Injectable,
   Logger,
   ServiceUnavailableException,
 } from '@nestjs/common';
+import {
+  Certification,
+  Education,
+  Experience,
+  Honor,
+  Project,
+  Publication,
+  Skill,
+  Volunteer,
+  Launguages,
+} from '@prisma/client';
 import ProfileExtractionApiService from 'src/common/apis/profile-extraction-api.service';
 import { Profile } from 'src/common/types/common';
 import { adaptProfileResponse } from 'src/common/utils/adapter';
@@ -219,8 +231,8 @@ export class ProfileService {
     return profile;
   }
 
-  async importLinkedInProfile(params: { userId?: string; publicId: string }) {
-    const { userId, publicId } = params;
+  async importLinkedInProfile(params: { publicId: string }) {
+    const { publicId } = params;
 
     try {
       const profile = await this.getProfile(publicId);
@@ -230,21 +242,6 @@ export class ProfileService {
       }
 
       // If a userId is provided, associate the profile with the user
-
-      if (userId) {
-        await this.profileDbService.update({
-          where: {
-            id: profile.id,
-          },
-          data: {
-            user: {
-              connect: {
-                id: userId,
-              },
-            },
-          },
-        });
-      }
 
       return profile;
     } catch (error) {
@@ -280,5 +277,134 @@ export class ProfileService {
     if (!profile) throw new BadRequestException('Profile not found');
 
     return profile;
+  }
+
+  async updateProfileByUserId(userId: string, profileDto: Partial<Profile>) {
+    const profile = await this.profileDbService.findOne({
+      where: {
+        userId,
+      },
+    });
+
+    if (!profile) throw new BadRequestException('Profile not found');
+
+    type WithProfileId<T> = T & { profileId?: string };
+
+    return await this.profileDbService.update({
+      where: {
+        id: profile.id,
+      },
+      data: {
+        ...profileDto,
+        id: undefined,
+
+        ...(profileDto.experiences && {
+          experiences: {
+            deleteMany: {},
+            create: (profileDto.experiences as WithProfileId<Experience[]>).map(
+              ({ profileId, ...exp }) => exp,
+            ),
+          },
+        }),
+
+        ...(profileDto.education && {
+          education: {
+            deleteMany: {},
+            create: (profileDto.education as WithProfileId<Education[]>).map(
+              ({ profileId, ...edu }) => edu,
+            ),
+          },
+        }),
+
+        ...(profileDto.languages && {
+          languages: {
+            deleteMany: {},
+            create: (profileDto.languages as WithProfileId<Launguages[]>).map(
+              ({ profileId, ...lang }) => lang,
+            ),
+          },
+        }),
+
+        ...(profileDto.publications && {
+          publications: {
+            deleteMany: {},
+            create: (
+              profileDto.publications as WithProfileId<Publication[]>
+            ).map(({ profileId, ...pub }) => pub),
+          },
+        }),
+
+        ...(profileDto.certifications && {
+          certifications: {
+            deleteMany: {},
+            create: (
+              profileDto.certifications as WithProfileId<Certification[]>
+            ).map(({ profileId, ...cert }) => cert),
+          },
+        }),
+
+        ...(profileDto.volunteer && {
+          volunteer: {
+            deleteMany: {},
+            create: (profileDto.volunteer as WithProfileId<Volunteer[]>).map(
+              ({ profileId, ...vol }) => vol,
+            ),
+          },
+        }),
+
+        ...(profileDto.honors && {
+          honors: {
+            deleteMany: {},
+            create: (profileDto.honors as WithProfileId<Honor[]>).map(
+              ({ profileId, ...honor }) => honor,
+            ),
+          },
+        }),
+
+        ...(profileDto.projects && {
+          projects: {
+            deleteMany: {},
+            create: (profileDto.projects as WithProfileId<Project[]>).map(
+              ({ profileId, ...proj }) => proj,
+            ),
+          },
+        }),
+
+        ...(profileDto.skills && {
+          skills: {
+            deleteMany: {},
+            create: (profileDto.skills as WithProfileId<Skill[]>).map(
+              ({ profileId, ...skill }) => skill,
+            ),
+          },
+        }),
+      },
+    });
+  }
+
+  async attachProfileToUser(userId: string, publicId: string) {
+    const profile = await this.profileDbService.findOne({
+      where: {
+        publicId_userMockedId: {
+          publicId,
+          userMockedId: 'WAITING_FOR_USER',
+        },
+      },
+    });
+
+    if (!profile) throw new BadRequestException('Profile not found');
+
+    return await this.profileDbService.update({
+      where: {
+        id: profile.id,
+      },
+      data: {
+        user: {
+          connect: {
+            id: userId,
+          },
+        },
+      },
+    });
   }
 }

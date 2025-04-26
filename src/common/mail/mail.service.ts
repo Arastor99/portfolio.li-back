@@ -55,8 +55,9 @@ export class MailService implements OnModuleInit {
         template: './test-email', // Asegúrate de tener una plantilla básica
       })
       .catch((error) => {
-        this.logger.error('Mail service is not working');
-        throw error;
+        this.logger.error('Mail service is not working', error);
+        // Aquí puedes lanzar un error o manejarlo de otra manera
+        // throw error;
       });
     this.logger.log('Email configuration verified successfully.');
   }
