@@ -78,6 +78,17 @@ export class PortfolioService {
       where: {
         userId,
       },
+      select: {
+        id: true,
+        url: true,
+        active: true,
+        template: {
+          select: {
+            id: true,
+            name: true,
+          },
+        },
+      },
     });
 
     if (!portfolio)
