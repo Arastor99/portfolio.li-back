@@ -67,7 +67,7 @@ model Profile {
   birthMonth          Int?
   industryName        String?
 
-  student             Boolean
+  student             Boolean @default(false)
 
   locationName        String?
   geoCountryName      String?
@@ -118,7 +118,7 @@ model Experience {
 model Education {
   id              String    @id @default(cuid())
 
-  schoolName      String
+  schoolName       String
   schoolLogoUrl    String?
 
   degreeName      String?
@@ -138,7 +138,7 @@ model Education {
 model Launguages {
   id              String    @id @default(cuid())
   name            String
-  proficiency     String
+  proficiency     String?
 
   profile         Profile   @relation(fields: [profileId], references: [id])
   profileId       String
@@ -147,9 +147,9 @@ model Launguages {
 model Publication {
   id              String    @id @default(cuid())
   name            String
-  publisher       String
+  publisher       String?
   description     String?
-  url             String
+  url             String?
 
   profile         Profile   @relation(fields: [profileId], references: [id])
   profileId       String
