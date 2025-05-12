@@ -21,12 +21,32 @@ model User {
 
   fullName            String?
   
+  CV                  CV?
   portfolio           Portfolio?
   
   profile             Profile?
 
   createdAt           DateTime   @default(now())
   updatedAt           DateTime   @updatedAt
+}
+
+model CV {
+  id                  String    @id @default(cuid())
+
+  userId              String    @unique
+  user                User      @relation(fields: [userId], references: [id])
+
+  templateId          String
+  template            CVTemplate  @relation(fields: [templateId], references: [id])
+
+}
+
+model CVTemplate {
+  id                  String    @id @default(cuid())
+  name                String    @unique
+  description         String
+
+  cvs                 CV[] 
 }
 
 model Portfolio {
