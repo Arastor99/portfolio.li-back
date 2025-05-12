@@ -1,8 +1,12 @@
 import { Module } from '@nestjs/common';
-import { CvService } from './cv.service';
+
+import { CVDbModule } from 'src/models/cv/cv.db.module';
+
 import { CvController } from './cv.controller';
+import { CvService } from './cv.service';
 
 @Module({
+  imports: [CVDbModule],
   controllers: [CvController],
   providers: [CvService],
 })

@@ -1,10 +1,12 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
 
 import { PrismaService } from '../prisma.service';
 
 @Injectable()
-export class CVTemplateDbService {
+export class CVTemplateDbService implements OnModuleInit {
+  private readonly logger = new Logger(CVTemplateDbService.name);
+
   constructor(private readonly prisma: PrismaService) {}
 
   private async handleRequest<T>(
@@ -72,6 +74,17 @@ export class CVTemplateDbService {
     );
   }
 
+  async createOrUpdateMany(
+    params: {
+      where: Prisma.CVTemplateWhereUniqueInput;
+      data: Prisma.CVTemplateCreateInput;
+    }[],
+  ) {
+    return Promise.all(
+      params.map(({ where, data }) => this.createOrUpdate({ where, data })),
+    );
+  }
+
   async update(params: {
     where: Prisma.CVTemplateWhereUniqueInput;
     data: Prisma.CVTemplateUpdateInput;
@@ -95,6 +108,36 @@ export class CVTemplateDbService {
     return this.handleRequest(
       () => this.prisma.cVTemplate.count({ where }),
       'Error counting cVTemplates',
+    );
+  }
+
+  //INIT CV TEMPLATES BASE
+  TEMPLATES = [
+    {
+      name: 'default',
+      description: 'Default CV template',
+    },
+    {
+      name: 'minimal',
+      description: 'Minimal CV template',
+    },
+    {
+      name: 'detailed',
+      description: 'Detailed CV template',
+    },
+  ];
+
+  async onModuleInit() {
+    this.logger.log(`Initializing ${this.TEMPLATES.length} cv templates...`);
+
+    await this.createOrUpdateMany(
+      this.TEMPLATES.map((template) => ({
+        where: { name: template.name },
+        data: {
+          name: template.name,
+          description: template.description,
+        },
+      })),
     );
   }
 }

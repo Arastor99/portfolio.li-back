@@ -1,10 +1,12 @@
-import { Injectable, OnModuleInit } from '@nestjs/common';
+import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
 
 import { PrismaService } from '../prisma.service';
 
 @Injectable()
 export class PortfolioTemplateDbService implements OnModuleInit {
+  private readonly logger = new Logger(PortfolioTemplateDbService.name);
+
   constructor(private readonly prisma: PrismaService) {}
 
   private async handleRequest<T>(
@@ -113,6 +115,7 @@ export class PortfolioTemplateDbService implements OnModuleInit {
     );
   }
 
+  //INIT PORTFOLIO TEMPLATES BASE
   TEMPLATES = [
     {
       name: 'default',
@@ -129,6 +132,10 @@ export class PortfolioTemplateDbService implements OnModuleInit {
   ];
 
   async onModuleInit() {
+    this.logger.log(
+      `Initializing ${this.TEMPLATES.length} portfolio templates...`,
+    );
+
     await this.createOrUpdateMany(
       this.TEMPLATES.map((template) => ({
         where: { name: template.name },

@@ -1,14 +1,12 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
-import { CVDbService } from 'src/models/cv/cv.db.service';
+
 import { CreateCVDto } from './dto/cv.dto';
-import { CVTemplateDbService } from 'src/models/cv-template/cv-template.db.service';
+
+import { CVDbService } from 'src/models/cv/cv.db.service';
 
 @Injectable()
 export class CvService {
-  constructor(
-    private readonly cVService: CVDbService,
-    private readonly cVTemplateService: CVTemplateDbService,
-  ) {}
+  constructor(private readonly cVService: CVDbService) {}
 
   async create(userId: string, createCVDto: CreateCVDto) {
     return await this.cVService.create({

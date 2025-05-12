@@ -7,6 +7,8 @@ import { ProfileModule } from './modules/profile/profile.module';
 import { PortfolioTemplateModule } from './modules/portfolio-template/portfolio-template.module';
 import { ProxyModule } from './modules/proxy/proxy.module';
 import { PortfolioModule } from './modules/portfolio/portfolio.module';
+import { CvModule } from './modules/cv/cv.module';
+import { CvTemplateModule } from './modules/cv-template/cv-template.module';
 
 @Module({
   imports: [
@@ -20,6 +22,8 @@ import { PortfolioModule } from './modules/portfolio/portfolio.module';
     PortfolioModule,
     PortfolioTemplateModule,
     ProxyModule,
+    CvModule,
+    CvTemplateModule,
   ],
 })
 export class AppModule {}
