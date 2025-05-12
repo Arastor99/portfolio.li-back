@@ -3,30 +3,37 @@ import {
   Injectable,
   InternalServerErrorException,
   Logger,
+  UnauthorizedException,
 } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
 import { JwtService } from '@nestjs/jwt';
+import { ConfigService } from '@nestjs/config';
+import { OAuth2Client, TokenPayload } from 'google-auth-library';
 
-import { LoginDto, RegisterDto } from './dto/auth.dto';
+import { GoogleAuthDto, LoginDto, RegisterDto } from './dto/auth.dto';
 
 import { UserDbService } from 'src/models/user/user.db.service';
 import { MailService } from 'src/common/mail/mail.service';
+import { CLIENT_URL, GOOGLE_CLIENT_ID } from 'src/common/constants';
 import { TokenMailVericationService } from './tokenMailVerification.service';
-import { ConfigService } from '@nestjs/config';
-import { CLIENT_URL } from 'src/common/constants';
 
 @Injectable()
 export class AuthService {
+  private googleClient: OAuth2Client;
+  private readonly logger = new Logger(AuthService.name);
+  private readonly saltRounds = 10;
+
   constructor(
     private readonly jwtService: JwtService,
     private readonly configService: ConfigService,
     private readonly userDbService: UserDbService,
     private readonly mailService: MailService,
     private readonly tokenMailVerificationService: TokenMailVericationService,
-  ) {}
-
-  private readonly logger = new Logger(AuthService.name);
-  private readonly saltRounds = 10;
+  ) {
+    this.googleClient = new OAuth2Client(
+      this.configService.get<string>(GOOGLE_CLIENT_ID),
+    );
+  }
 
   private async hashPassword(password: string): Promise<string> {
     const salt = await bcrypt.genSalt(this.saltRounds);
@@ -90,9 +97,9 @@ export class AuthService {
     };
     await this.mailService.sendVerificationEmail(mailDto).catch((err) => {
       this.logger.error('Failed to send verification email', err);
-      throw new InternalServerErrorException(
-        'Failed to send verification email',
-      );
+      // throw new InternalServerErrorException(
+      //   'Failed to send verification email',
+      // );
     });
     this.logger.debug(
       `Verification email sent to ${email}. Verification URL: ${verificationUrl}`,
@@ -172,9 +179,9 @@ export class AuthService {
 
       await this.mailService.sendVerificationEmail(mailDto).catch((err) => {
         this.logger.error('Failed to send verification email', err);
-        throw new InternalServerErrorException(
-          'Failed to send verification email',
-        );
+        // throw new InternalServerErrorException(
+        //   'Failed to send verification email',
+        // );
       });
     }
 
@@ -189,6 +196,55 @@ export class AuthService {
     this.logger.debug(
       `User ${user.email} signed in successfully. Token: ${token}`,
     );
+
+    return {
+      message: 'User signed in successfully',
+      token,
+    };
+  }
+
+  async googleAuth(googleAuthDto: GoogleAuthDto) {
+    let payload: TokenPayload;
+    try {
+      this.logger.debug(
+        'Verifying Google ID token with credentials:',
+        googleAuthDto,
+      );
+      const ticket = await this.googleClient.verifyIdToken({
+        idToken: googleAuthDto.credential,
+      });
+      payload = ticket.getPayload();
+    } catch (err) {
+      this.logger.debug('Google ID token verification failed', err);
+      throw new UnauthorizedException('Invalid Google ID token');
+    }
+
+    const { email, name } = payload;
+
+    this.logger.debug(
+      `Google ID token verified successfully. Creating or updating user with email: ${email}`,
+    );
+
+    const user = await this.userDbService.createOrUpdate({
+      where: { email },
+      create: {
+        email,
+        fullName: name,
+        emailVerified: true,
+        password: '',
+      },
+      update: {
+        emailVerified: true,
+      },
+    });
+
+    if (!user) throw new InternalServerErrorException('Something went wrong');
+
+    // Generate JWT token
+    const token = await this.generateToken(user.id);
+    if (!token) throw new InternalServerErrorException('Something went wrong');
+
+    this.logger.debug(`User ${email} signed in successfully. Token: ${token}`);
 
     return {
       message: 'User signed in successfully',

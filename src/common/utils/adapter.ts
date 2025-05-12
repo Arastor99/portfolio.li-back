@@ -135,7 +135,7 @@ export function adaptProfileResponse(response?: any): Profile {
       profileResponse?.certifications?.map((cert) => ({
         authority: cert?.authority,
         name: cert?.name,
-        url: cert?.url,
+        url: cert?.url || '',
         startDate: cert?.timePeriod?.startDate
           ? new Date(
               cert.timePeriod.startDate.year,

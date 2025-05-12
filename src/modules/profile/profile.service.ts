@@ -394,11 +394,17 @@ export class ProfileService {
 
     if (!profile) throw new BadRequestException('Profile not found');
 
+    this.logger.debug('Attaching profile to user', {
+      profileId: profile.id,
+      userId,
+    });
+
     return await this.profileDbService.update({
       where: {
         id: profile.id,
       },
       data: {
+        userMockedId: userId,
         user: {
           connect: {
             id: userId,

@@ -61,12 +61,13 @@ export class UserDbService {
 
   async createOrUpdate(params: {
     where: Prisma.UserWhereUniqueInput;
-    data: Prisma.UserCreateInput;
+    create: Prisma.UserCreateInput;
+    update: Prisma.UserUpdateInput;
   }) {
-    const { where, data } = params;
+    const { where, create, update } = params;
 
     return this.handleRequest(
-      () => this.prisma.user.upsert({ where, create: data, update: data }),
+      () => this.prisma.user.upsert({ where, create, update }),
       'Error creating or updating user',
     );
   }

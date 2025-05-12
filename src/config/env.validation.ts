@@ -22,4 +22,6 @@ export const envValidationSchema = Joi.object({
   PROFILE_EXTRACTION_API_URL: Joi.string().required(),
 
   CLIENT_URL: Joi.string().required(),
+
+  GOOGLE_CLIENT_ID: Joi.string().required(),
 });
