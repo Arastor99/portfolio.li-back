@@ -394,6 +394,15 @@ export class ProfileService {
 
     if (!profile) throw new BadRequestException('Profile not found');
 
+    const profileUser = await this.profileDbService.findOne({
+      where: {
+        userId,
+      },
+    });
+
+    if (!profileUser)
+      throw new BadRequestException('User has already a profile');
+
     this.logger.debug('Attaching profile to user', {
       profileId: profile.id,
       userId,
