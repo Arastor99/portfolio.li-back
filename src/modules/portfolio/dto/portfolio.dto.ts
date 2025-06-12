@@ -3,9 +3,6 @@ import { IsBoolean, IsOptional, IsString } from 'class-validator';
 export class CreatePortfolioDto {
   @IsString()
   templateName: string;
-
-  @IsString()
-  url: string;
 }
 
 export class UpdatePortfolioDto {

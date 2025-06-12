@@ -4,9 +4,10 @@ import { PortfolioDbModule } from 'src/models/portfolio/portfolio.db.module';
 
 import { PortfolioController } from './portfolio.controller';
 import { PortfolioService } from './portfolio.service';
+import { ProfileDbModule } from 'src/models/profile/profile.db.module';
 
 @Module({
-  imports: [PortfolioDbModule],
+  imports: [PortfolioDbModule, ProfileDbModule],
   controllers: [PortfolioController],
   providers: [PortfolioService],
 })
