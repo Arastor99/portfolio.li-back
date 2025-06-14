@@ -1,16 +1,19 @@
-import { ProfileDbService } from './../../models/profile/profile.db.service';
 import { BadRequestException, Injectable } from '@nestjs/common';
 
 import { CreatePortfolioDto, UpdatePortfolioDto } from './dto/portfolio.dto';
 
-import { PortfolioDbService } from 'src/models/portfolio/portfolio.db.service';
 import { generateRandomString } from 'src/common/utils/common';
+
+import { PortfolioDbService } from 'src/models/portfolio/portfolio.db.service';
+import { ProfileDbService } from 'src/models/profile/profile.db.service';
+import { ActivityDbService } from 'src/models/activity/activity.db.service';
 
 @Injectable()
 export class PortfolioService {
   constructor(
     private readonly portfolioDbService: PortfolioDbService,
     private readonly profileDbService: ProfileDbService,
+    private readonly activityDbService: ActivityDbService,
   ) {}
 
   async create(userId: string, createPortfolioDto: CreatePortfolioDto) {
@@ -36,6 +39,16 @@ export class PortfolioService {
       throw new BadRequestException(
         'Portfolio with this URL already exists. Please choose a different URL.',
       );
+
+    await this.activityDbService.create({
+      type: 'CREATE_PORTFOLIO',
+
+      user: {
+        connect: {
+          id: userId,
+        },
+      },
+    });
 
     return await this.portfolioDbService.create({
       user: {
@@ -65,6 +78,16 @@ export class PortfolioService {
       throw new BadRequestException(
         'Portfolio with this URL does not exist. Please choose a different URL.',
       );
+
+    await this.activityDbService.create({
+      type: 'UPDATE_PORTFOLIO',
+
+      user: {
+        connect: {
+          id: userId,
+        },
+      },
+    });
 
     return await this.portfolioDbService.update({
       where: {

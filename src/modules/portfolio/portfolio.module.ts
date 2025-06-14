@@ -1,13 +1,15 @@
 import { Module } from '@nestjs/common';
 
 import { PortfolioDbModule } from 'src/models/portfolio/portfolio.db.module';
+import { ProfileDbModule } from 'src/models/profile/profile.db.module';
+import { ActivityDbModule } from 'src/models/activity/activity.db.module';
 
 import { PortfolioController } from './portfolio.controller';
+
 import { PortfolioService } from './portfolio.service';
-import { ProfileDbModule } from 'src/models/profile/profile.db.module';
 
 @Module({
-  imports: [PortfolioDbModule, ProfileDbModule],
+  imports: [PortfolioDbModule, ProfileDbModule, ActivityDbModule],
   controllers: [PortfolioController],
   providers: [PortfolioService],
 })
