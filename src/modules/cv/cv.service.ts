@@ -3,12 +3,26 @@ import { BadRequestException, Injectable } from '@nestjs/common';
 import { CreateCVDto } from './dto/cv.dto';
 
 import { CVDbService } from 'src/models/cv/cv.db.service';
+import { ActivityDbService } from 'src/models/activity/activity.db.service';
 
 @Injectable()
 export class CvService {
-  constructor(private readonly cVService: CVDbService) {}
+  constructor(
+    private readonly cVService: CVDbService,
+    private readonly activityDbService: ActivityDbService,
+  ) {}
 
   async create(userId: string, createCVDto: CreateCVDto) {
+    await this.activityDbService.create({
+      type: 'CREATE_CV',
+
+      user: {
+        connect: {
+          id: userId,
+        },
+      },
+    });
+
     return await this.cVService.create({
       user: {
         connect: {
@@ -31,6 +45,16 @@ export class CvService {
       },
     });
     if (!existingCV) throw new BadRequestException('CV not found');
+
+    await this.activityDbService.create({
+      type: 'UPDATE_CV',
+
+      user: {
+        connect: {
+          id: userId,
+        },
+      },
+    });
 
     return await this.cVService.update({
       where: {
