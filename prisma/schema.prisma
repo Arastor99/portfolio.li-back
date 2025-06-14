@@ -20,6 +20,8 @@ model User {
   password            String?
 
   fullName            String?
+
+  activities          Activity[]
   
   CV                  CV?
   portfolio           Portfolio?
@@ -29,6 +31,17 @@ model User {
   createdAt           DateTime   @default(now())
   updatedAt           DateTime   @updatedAt
 }
+
+model Activity {
+  id                  String    @id @default(cuid())
+  type                String
+
+  createdAt           DateTime   @default(now())
+
+  userId              String
+  user                User      @relation(fields: [userId], references: [id])
+}
+
 
 model CV {
   id                  String    @id @default(cuid())
