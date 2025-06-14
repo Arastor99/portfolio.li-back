@@ -11,7 +11,7 @@ export class ActivityController {
   @Get()
   @UseGuards(JwtAuthGuard)
   async getActivities(
-    @CurrentUser() userId: string,
+    @CurrentUser('userId') userId: string,
     @Query('offset') offset: number,
     @Query('limit') limit: number,
   ) {

@@ -10,9 +10,11 @@ export class ActivityService {
     const { offset, limit = 10 } = dto;
 
     return await this.activityDbService.findMany({
-      where: { userId },
-      skip: offset,
-      take: limit,
+      where: {
+        userId: userId,
+      },
+      skip: Number(offset),
+      take: Number(limit),
     });
   }
 }
