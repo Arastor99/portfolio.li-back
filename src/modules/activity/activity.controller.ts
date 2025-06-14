@@ -1,10 +1,8 @@
-import { Body, Controller, Get, UseGuards } from '@nestjs/common';
+import { Controller, Get, Query, UseGuards } from '@nestjs/common';
 
 import { CurrentUser } from 'src/common/decorators/current-user.decorator';
 import { ActivityService } from './activity.service';
 import { JwtAuthGuard } from 'src/common/guards/jwt-auth.guard';
-
-import { GetActivityDto } from './dto/activity.dto';
 
 @Controller('activity')
 export class ActivityController {
@@ -14,8 +12,12 @@ export class ActivityController {
   @UseGuards(JwtAuthGuard)
   async getActivities(
     @CurrentUser() userId: string,
-    @Body() dto: GetActivityDto,
+    @Query('offset') offset: number,
+    @Query('limit') limit: number,
   ) {
-    return await this.activityService.getActivities(userId, dto);
+    return await this.activityService.getActivities(userId, {
+      offset,
+      limit,
+    });
   }
 }
